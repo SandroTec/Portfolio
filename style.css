@@ -14,23 +14,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 28px;
 }
 
 .logoAB {
-    width: 75px;
+    width: 100px;
     height: 75px;
 }
 
 main {
     background-image: url('./assets/img/hero_background.png');
     height: 100vh;
-    width: 100vw;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,21 +109,27 @@ h1 {
     align-items: center;
 }
 
+.yellow-wrapper {
+    position: relative;
+}
+
 .yellow-container {
     position: absolute;
-    bottom: -110px;
-    left: 350px;
     width: 500px;
+    top: 35%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blue-wrapper {
+    position: relative;
 }
 
 .blue-container {
     position: absolute;
-    bottom: -290px;
-    left: 350px;
+    top: 35%;
     width: 500px;
     color: white;
     display: flex;
@@ -130,11 +137,14 @@ h1 {
     justify-content: center;
 }
 
+.orange-wrapper {
+    position: relative
+}
+
 .orange-container {
     position: absolute;
-    bottom: -470px;
-    left: 350px;
     width: 500px;
+    top: 35%;
     color: white;
     display: flex;
     align-items: center;
@@ -143,4 +153,12 @@ h1 {
 
 h2 {
     font-size: 70px;
+}
+
+.about-me-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
