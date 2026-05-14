@@ -29,8 +29,8 @@ nav a {
 
 main {
     background-image: url('./assets/img/hero_background.png');
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@ main {
 }
 
 .img-and-text {
-    width: 100%;
+    width: 90%;
 }
 
 h1 {
@@ -73,6 +73,7 @@ h1 {
     width: fit-content;
     padding: 10px;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .hello-world-btn {
@@ -81,13 +82,13 @@ h1 {
 }
 
 .contact-btn-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-end;
 }
 
 .social-links-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -99,4 +100,47 @@ h1 {
     width: 40px;
     height: 136px;
     padding-left: 72px;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-container {
+    position: absolute;
+    bottom: -110px;
+    left: 350px;
+    width: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-container {
+    position: absolute;
+    bottom: -290px;
+    left: 350px;
+    width: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange-container {
+    position: absolute;
+    bottom: -470px;
+    left: 350px;
+    width: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 70px;
 }
