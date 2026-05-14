@@ -30,6 +30,8 @@ nav a {
 
 main {
     background-image: url('./assets/img/hero_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100dvw;
     display: flex;
@@ -161,4 +163,29 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.skill-section {
+    background-image: url('./assets/img/skills_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.skill-section h2 {
+    color: white;
+}
+
+.skill-section p {
+    color: white;
+}
+
+.skill-header {
+    display: flex;
+}
+
+.skill-header img {
+    width: 400px;
 }
