@@ -168,7 +168,7 @@ h2 {
 .skill-section {
     background-image: url('./assets/img/skills_background.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     height: 80vh;
     width: 100vw;
@@ -187,21 +187,51 @@ h2 {
     color: white;
 }
 
+.skill-content {
+    width: 60vw;
+}
+
 .skill-header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10%;
 }
 
 .skill-header img {
-    width: 400px;
+    width: 300px;
+    height: 100px;
+}
+
+.firstRow {
+    display: flex;
+}
+
+.secondRow {
+    display: flex;
 }
 
 .skill-and-sticker-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     gap: 20%;
+}
+
+.info-container p {
+    color: black;
+}
+
+.project-firstRow {
+    display: flex;
+}
+
+.project-secondRow {
+    display: flex;
+}
+
+.game-image {
+    width: 600px;
+    height: 400px;
 }
