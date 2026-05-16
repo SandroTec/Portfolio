@@ -221,6 +221,11 @@ h2 {
     gap: 20%;
 }
 
+.info-container {
+    width: 50%;
+    height: 50%;
+}
+
 .info-container p {
     color: black;
 }
@@ -229,12 +234,33 @@ h2 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .project-firstRow {
     display: flex;
+}
+.first-project {
+    width: 50%;
+    height: 50%;
+}
+
+.second-project {
+    width: 50%;
+    height: 50%;
+}
+
+.join-images {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    
+}
+
+.join-sticker {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
 }
 
 .project-secondRow {
