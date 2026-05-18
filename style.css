@@ -77,6 +77,9 @@ h1 {
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px, solid, white;
 }
 
 .hello-world-btn {
@@ -282,4 +285,66 @@ h2 {
 .game-image {
     width: 600px;
     height: 400px;
+}
+
+.colleagues-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colleagues-section-header {
+    width: 100%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.colleagues-design-element {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.sticker-one {
+    position: absolute;
+}
+
+.sticker-two {
+    position: absolute;
+    margin-left: 380px;
+}
+
+.sticker-three {
+    position: absolute;
+    margin-left: 720px;
+}
+
+
+
+.sticker-comment {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.sticker-comment-two {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: calc(380px + 10%);
+}
+
+.sticker-comment-three {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: calc(720px + 10%);
+
 }
