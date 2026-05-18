@@ -3,6 +3,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(29, 29, 29);
+    width: 100dvw;
+    height: 100dvh;
 }
 
 .project-image {
@@ -38,4 +40,29 @@ nav a {
 .logoAB {
     width: 100px;
     height: 75px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-hand-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.right-hand-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    justify-content: center;
 }
