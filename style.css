@@ -288,6 +288,8 @@ h2 {
 }
 
 .colleagues-section {
+    width: 100dvw;
+    height: 70dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,5 +348,22 @@ h2 {
     position: absolute;
     margin-top: 10%;
     margin-left: calc(720px + 10%);
-
 }
+
+.contact-section {
+    width: 100dvw;
+    height: 70dvh;
+    background-image: url(./assets/img/contacts-background-image.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.left-side {
+    width: 50%;
+    color: white;
+}
+
+.right-side {
+    width: 50%;
+}
+
