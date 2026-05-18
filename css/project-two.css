@@ -4,3 +4,33 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(29, 29, 29);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.logoAB {
+    width: 100px;
+    height: 75px;
+}
