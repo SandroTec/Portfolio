@@ -57,6 +57,10 @@ main {
     text-align: left;
 }
 
+.headline {
+    text-align: center;
+}
+
 .right-hand-side {
     width: 50%;
     height: 100%;
