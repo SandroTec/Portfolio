@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -32,8 +37,8 @@ main {
     background-image: url('./assets/img/hero_background.png');
     background-size: cover;
     background-repeat: repeat-x;
-    height: 100dvh;
-    width: 100dvw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +196,7 @@ h2 {
     background-position: center;
     background-repeat: repeat-x;
     height: 80vh;
-    width: 100dvw;
+    width: 100%;
     padding-bottom: 100px;
 
     display: flex;
@@ -266,7 +271,7 @@ h2 {
 .first-project {
     width: 50%;
     height: 50%;
-    
+    cursor: pointer;
 }
 
 .join-images img {
@@ -293,6 +298,12 @@ h2 {
     bottom: 0;
 }
 
+.third-project {
+    width: 50%;
+    height: 50%;
+}
+
+
 .project-secondRow {
     display: flex;
     justify-content: center;
@@ -304,7 +315,7 @@ h2 {
 }
 
 .colleagues-section {
-    width: 100dvw;
+    width: 100%;
     height: 70dvh;
     display: flex;
     flex-direction: column;
@@ -334,6 +345,7 @@ h2 {
 
 .sticker-one {
     position: absolute;
+    margin-left: 5%;
 }
 
 .sticker-two {
@@ -343,15 +355,13 @@ h2 {
 
 .sticker-three {
     position: absolute;
-    margin-left: 60%;
+    margin-left: 50%;
 }
-
-
 
 .sticker-comment {
     position: absolute;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 
 .sticker-comment-two {
@@ -363,11 +373,11 @@ h2 {
 .sticker-comment-three {
     position: absolute;
     margin-top: 10%;
-    margin-left: 65%;
+    margin-left: 55%;
 }
 
 .contact-section {
-    width: 100dvw;
+    width: 100%;
     height: 70dvh;
     background-image: url(./assets/img/contacts-background-image.png);
     background-repeat: repeat-x;
