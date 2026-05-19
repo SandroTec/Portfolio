@@ -33,6 +33,41 @@ nav a {
     height: 75px;
 }
 
+.language-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.language-container button {
+    background-color: transparent;
+}
+
+.lang-EN-btn {
+    color: rgb(248,122,85);
+}
+
+.lang-DE-btn {
+    color: white;
+}
+
+.vector-bar {
+    position: relative;
+}
+
+.vector-bubble {
+    position: absolute;
+    margin-left: -35px;
+}
+
 main {
     background-image: url('./assets/img/hero_background.png');
     background-size: cover;
@@ -55,6 +90,24 @@ main {
 
 .img-and-text {
     width: 90%;
+}
+
+.polaroid-frame {
+    position: relative;
+}
+
+.polaroid-image {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -160px;
+    color: white;
+}
+
+.polaroid-container h2 {
+    position: absolute;
+    font-size: 30px;
+    margin-top: -80px;
+    margin-left: 10px;
 }
 
 h1 {
