@@ -49,6 +49,7 @@ nav a {
 
 .language-container button {
     background-color: transparent;
+    cursor: pointer;
 }
 
 .lang-EN-btn {
