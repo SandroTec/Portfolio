@@ -316,6 +316,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .skill-header {
@@ -448,48 +449,78 @@ h2 {
 
 .testimonial-container {
     display: flex;
-    position: relative;
-    justify-content: flex-start;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Basis für die Sticker-Boxen */
+.sticker-one, .sticker-two, .sticker-three {
+    width: 450px;
+    height: 300px;
+    position: relative; /* Schafft den Stacking Context für Text und Hover-Effekt */
 }
 
 .sticker-one {
-    width: 450px;
-    height: 300px;
-    position: absolute;
+    position: relative;
+    margin-left: -50%;
 }
 
 .sticker-two {
-    width: 450px;
-    height: 300px;
+    position: absolute;
+}
+
+.sticker-three {
     position: absolute;
     margin-left: 50%;
 }
 
-.sticker-three {
+/* Das Original-Bild (bleibt unverändert sichtbar) */
+.colleagues-sticker {
     width: 450px;
     height: 300px;
-    position: absolute;
-    margin-left: 90%;
+    position: relative;
+    z-index: 1; /* Liegt ganz unten in der Box */
 }
 
 .sticker-comment {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 8%;
+    position: relative;
+    z-index: 2; /* Höher als das Original-Bild */
+    width: 70%;
+    height: 70%;
+    margin-top: -65%; /* Deine Original-Positionierung */
+    margin-left: 5%;
+    padding: 30px;
 }
 
-.sticker-comment-two {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 35%;
+
+/* 1. Wenn die Box gehovert wird, kommt sie über alle anderen Sticker */
+.sticker-one:hover, 
+.sticker-two:hover, 
+.sticker-three:hover {
+    z-index: 500; /* Bringt die gehoverte Box über die Nachbar-Sticker */
 }
 
-.sticker-comment-three {
+/* 2. Das Hover-Bild wird als neue Ebene ganz oben DRÜBER gelegt */
+.sticker-one:hover::after,
+.sticker-two:hover::after,
+.sticker-three:hover::after {
+    content: "";
     position: absolute;
-    margin-top: 10%;
-    margin-left: 55%;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    z-index: 3; /* Höher als das Original-Bild (1) und der Text (2) */
+    
+    /* Dein Hover-Bild */
+    background-image: url("./assets/img/03_Stickers/02_Testimonials/Color option 1/Hover.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    pointer-events: none; /* Verhindert ein Flackern, falls die Maus sich bewegt */
 }
+
 
 .contact-section {
     width: 100%;
