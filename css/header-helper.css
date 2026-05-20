@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    position: relative;
+}
+
+nav > div {
+    position: relative;
+    display: flex;
+}
+
+.header-hover {
+    position: absolute;
+    width: 150px;
+    margin-top: -15px;
+    margin-left: -25px;
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
+    pointer-events: none; 
+}
+
+.skill-underline {
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+nav div:hover .header-hover {
+    opacity: 1;
+}
+
+.logoAB {
+    width: 100px;
+    height: 75px;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.language-container button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lang-EN-btn {
+    color: rgb(248,122,85);
+}
+
+.lang-DE-btn {
+    color: white;
+}
+
+.vector-bar {
+    position: relative;
+}
+
+.vector-bubble {
+    position: absolute;
+    margin-left: -35px;
+}

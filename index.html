@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessandro's Portfolio</title>
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/header-helper.css">
+    <link rel="stylesheet" href="./css/transitions-helper.css">
+
     <script defer src="./script.js"></script>
 </head>
 <body>
@@ -12,10 +16,27 @@
         <header>
             <nav>
                 <a href="#heroSection"><img src="./assets/img/AB_Logo.png" alt="Logo" class="logoAB"></a>
-                <a href="#aboutMeSection">About me</a>
-                <a href="#skillSection">Skills</a>
-                <a href="#projectSection">Project</a>
-                <a href="#contactSection">Contact</a>
+                <div>
+                    <a href="#aboutMeSection">About me</a>
+                    <img class="header-hover" src="./assets/img/Header_hover_images/hover-circle.png" alt="yellow circle">
+                </div>
+                
+                <div>
+                    <a href="#skillSection">Skills</a>
+                    <img class="header-hover skill-underline" src="./assets/img/Header_hover_images/hover-line.png" alt=" yellow-line">
+                </div>
+
+                <div>
+                    <a href="#projectSection">Project</a>
+                    <img class="header-hover" src="./assets/img/Header_hover_images/hover-curved-line.png" alt="">
+
+                </div>
+
+                <div>
+                    <a href="#contactSection">Contact</a>
+                    <img class="header-hover" src="./assets/img/Header_hover_images/hover-line-through.png" alt="yellow line">                
+                </div>
+                
                 <div class="language-container">
                 <button class="lang-EN-btn">EN</button>
                 <div class="vector-container">
@@ -107,7 +128,7 @@
                     den Lernkontext zu digitalisieren hilft mir bis heute. Die Materialien gehen eben nicht verloren.
                 </p>
                 <div class="talk-btn-container">
-                    <button>Let's talk</button>
+                    <button><a href="#contactSection">Let's talk</a></button>
                 </div>
             </div>
         </div>
