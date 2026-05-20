@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 
 nav {
@@ -69,10 +69,12 @@ nav div:hover .header-hover {
 
 .lang-EN-btn {
     color: rgb(248,122,85);
+    position: relative;
 }
 
 .lang-DE-btn {
     color: white;
+    position: relative;
 }
 
 .vector-bar {
@@ -82,4 +84,20 @@ nav div:hover .header-hover {
 .vector-bubble {
     position: absolute;
     margin-left: -35px;
+}
+
+.lang-frame-EN {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin-left: -75px;
+    margin-top: 1px;
+}
+
+.lang-frame-DE {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin-left: 78px;
+    margin-top: 1px;
 }

@@ -304,6 +304,7 @@ h2 {
 .secondRow {
     display: flex;
     gap: 5%;
+    margin-top: 5%;
 }
 
 .skill-and-sticker-container {
