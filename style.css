@@ -282,7 +282,11 @@ h2 {
 }
 
 .skill-content {
-    width: 60vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-header {
@@ -294,17 +298,19 @@ h2 {
 
 .firstRow {
     display: flex;
+    gap: 5%;
 }
 
 .secondRow {
     display: flex;
+    gap: 5%;
 }
 
 .skill-and-sticker-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 80%;
     gap: 20%;
     margin-top: 30px;
 }
