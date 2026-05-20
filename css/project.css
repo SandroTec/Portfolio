@@ -36,6 +36,11 @@ main {
     text-align: center;
 }
 
+.headline-underline {
+    width: 300px;
+    margin-left: -50px;
+}
+
 .right-hand-side {
     width: 50%;
     height: 100%;
@@ -45,3 +50,4 @@ main {
     
     justify-content: center;
 }
+
