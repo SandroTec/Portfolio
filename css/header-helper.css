@@ -19,6 +19,10 @@ nav a {
     position: relative;
 }
 
+.black-links {
+    color: black;
+}
+
 nav > div {
     position: relative;
     display: flex;
