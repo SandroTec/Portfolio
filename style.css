@@ -484,7 +484,7 @@ h2 {
 
 .sticker-comment {
     position: relative;
-    z-index: 2; /* Höher als das Original-Bild */
+    z-index: 4; 
     width: 70%;
     height: 70%;
     margin-top: -65%; /* Deine Original-Positionierung */
@@ -510,7 +510,7 @@ h2 {
     left: 0;
     width: 450px;
     height: 300px;
-    z-index: 3; /* Höher als das Original-Bild (1) und der Text (2) */
+    z-index: 1; /* Höher als das Original-Bild (1) und der Text (2) */
     
     /* Dein Hover-Bild */
     background-image: url("./assets/img/03_Stickers/02_Testimonials/Color option 1/Hover.png");
@@ -521,6 +521,43 @@ h2 {
     pointer-events: none; /* Verhindert ein Flackern, falls die Maus sich bewegt */
 }
 
+.sticker-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -20%;
+    z-index: 1;
+}
+
+.sticker-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.sticker-footer a:hover {
+    z-index: 1001;
+    color: white;
+}
+
+.sticker-footer a:hover::after {
+    z-index: 1;
+    color: black;
+}
+
+.profile-link-container {
+    display: flex;
+}
+
+.profile-link{
+    cursor: pointer;
+}
 
 .contact-section {
     width: 100%;
