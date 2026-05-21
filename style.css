@@ -358,9 +358,13 @@ h2 {
 .skill-sticker-content {
     width: 200px;
     position: absolute;
-    margin-top: -200px;
+    margin-top: -220px;
     margin-left: 40px;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-sticker-content-peeled {
@@ -369,12 +373,36 @@ h2 {
     margin-top: -170px;
     margin-left: 30px;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container {
+    display: flex;
+    gap: 30px;
+}
+
+.icon-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-desc span {
+    color: white;
 }
 
 .skill-sticker {
     width: 250px;
     height: 250px;
     cursor: pointer;
+}
+
+.whit-arrow {
+    width: 50px;
+    height: 50px;
 }
 
 .info-container {
