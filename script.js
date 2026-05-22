@@ -51,3 +51,71 @@ function peelSticker() {
         }, 40); 
     }
 }
+
+// headline hover effect
+const headline = document.getElementById('interactive-headline');
+const secondHeadline = document.getElementById('interactive-headline_second_part');
+const text = headline.textContent;
+const secondText = secondHeadline.textContent;
+headline.textContent = '';
+secondHeadline.textContent = '';
+
+// using spread operator to iterate over each letter in the text
+[...text].forEach(char => {
+    const span = document.createElement('span');
+    span.textContent = char;       
+    // Important for spaces!
+    if (char === ' ') {
+        span.style.whiteSpace = 'pre';
+    }
+    manipulateLetters(span, char)
+
+    headline.appendChild(span);
+});
+
+[...secondText].forEach(char => {
+    const span = document.createElement('span');
+    span.textContent = char;       
+    // Important for spaces!
+    if (char === ' ') {
+        span.style.whiteSpace = 'pre';
+    }
+    manipulateLetters(span, char)
+
+    secondHeadline.appendChild(span);
+});
+
+function manipulateLetters(span, char) {
+    span.addEventListener('mouseenter', () => {
+        if (span.textContent === span.textContent.toUpperCase()) {
+            span.textContent = span.textContent.toLowerCase();
+        } else {
+            span.textContent = span.textContent.toUpperCase();
+        }
+        span.classList.add('headline-hover');
+    });
+    span.addEventListener('mouseleave', () => {
+        // back to char means reset to original character (upper or lower)
+        span.textContent = char;
+        span.classList.remove('headline-hover');
+    });
+}
+
+// Project-images hover button displaying
+
+const projectImages = document.querySelectorAll('.project-images');
+
+projectImages.forEach(image => {
+    const button = document.querySelectorAll('.project-btn');
+    image.addEventListener('mouseenter', () => {
+        button.forEach(btn => {
+            btn.classList.remove('d-none');
+        });
+    });
+
+    image.addEventListener('mouseleave', (e) => {
+        button.forEach(btn => {
+            btn.classList.add('d-none');
+        });
+    });
+});

@@ -53,9 +53,9 @@
         <div class="hero-information-container">
             <div class="img-and-text">
                 <div class="design-element">
-                    <div>
+                    <div class="btn-and-headline-container">
                         <button class="hello-world-btn"> Hello world</button>
-                        <h1>Frontend</h1>
+                        <h1 class="headline" id="interactive-headline">Frontend</h1>
                     </div>
                     <div class="polaroid-container">
                         <img class="polaroid-frame" src="./assets/img/03_Stickers/Polaroid Frame.png" alt="polaroid-img">
@@ -65,7 +65,7 @@
                 
                 </div>
                 <div class="second-desing-element">
-                    <h1>DEVELOPER</h1>
+                    <h1 class="headline" id="interactive-headline_second_part">DEVELOPER</h1>
                 </div>
             </div>
             <div class="contact-btn-container">
@@ -231,24 +231,32 @@
                 <span></span>
             </div>
 
-            <div class="frist-project" onclick="openFirstProject()">
-                <img class="game-image" src="./assets/img/08_project_images/Pollo.png" alt="Pollo Loco Image">
+            <div class="frist-project">
+               <div class="project-content">
+                 <img class="project-images" src="./assets/img/08_project_images/Pollo.png" alt="Pollo Loco Image">
+                 <button onclick="openFirstProject()" class="project-btn d-none">Project Details</button>
+               </div>
+                
                 <h3>El Pollo Loco</h3>
                 <span></span>
             </div>
         </div>
         <div class="project-secondRow">
-            <div class="second-project" onclick="openSecondProject()">
-                <div class="join-images">
-                    <img src="./assets/img/08_project_images/join d.png" alt="Join Image">
+            <div class="second-project">
+                <div class="join-images project-content" >
+                    <img class="project-images" src="./assets/img/08_project_images/join d.png" alt="Join Image">
                     <img class="join-sticker" src="./assets/img/08_project_images/join-sticcker.png" alt="sticker">
+                    <button onclick="openSecondProject()" class="project-btn d-none">Project Details</button>
                 </div>
                 <h3>Join</h3>
                 <span></span>
             </div>
 
-            <div class="third-project" onclick="openThirdProject()">
-                <img src="" alt="pokedex Image">
+            <div class="third-project">
+                <div class="project-content">
+                    <img class="project-images" src="" alt="pokedex Image">
+                    <button onclick="openThirdProject()" class="project-btn d-none">Project Details</button>
+                </div>
                 <h3>Pokedex</h3>
                 <span></span>
             </div>

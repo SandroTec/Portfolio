@@ -60,8 +60,28 @@ main {
 h1 {
     color: white;
     font-size: 128px;
+}
 
+.headline span {
+  display: inline-flex;     
+  justify-content: center;  
+  min-width: 0.7em;         
+  transition: color 0.2s ease-in-out; 
 
+  padding: 4px;
+  margin: -2px;
+}
+
+.headline {
+    white-space: nowrap;
+}
+
+#interactive-headline span {
+    margin: -8px;
+}
+
+.headline-hover {
+  color: #F7C518;
 }
 
 .design-element {
@@ -69,12 +89,20 @@ h1 {
     justify-content: center;
     align-items: flex-end;
     gap: 10%;
+    height: 300px;
+    width: 100%;
+}
+
+.btn-and-headline-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .second-desing-element {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 300px;
 }
 
 .hello-world-btn {
@@ -115,14 +143,14 @@ h1 {
     padding-left: 24px;
     background: #00000003;
     color: #F8F9FA;
-    border: solid #F8F9FA;
-    border-width: 1px 2px 5px 2px;
+    border: 1px solid #F8F9FA;
     cursor: pointer;
+    box-shadow: 2px 4px 0px 0px #F8F9FA;
 }
 
 .get-in-touch-btn:hover {
     background-color: rgb(248, 122, 85);
-    border-width: 1px;
+    box-shadow: 0px 0px 0px 0px #F8F9FA;
 }
 
 .social-links-container {
@@ -426,21 +454,30 @@ h2 {
 
 .project-section {
     height: 100vh;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
 }
 
-.project-section img {
+.project-images {
     cursor: pointer;
     border-radius: 12px;
+    margin: 86px;
+}
+
+.project-images:hover {
+    transform: scale(0.95);
+    transition: ease-in-out 0.2s;
+    background: linear-gradient(180deg, rgba(14, 16, 19, 0) 50%, #0E1013 100%);
+    z-index: 1;
 }
 
 .project-firstRow {
     display: flex;
 }
 .first-project {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -450,8 +487,8 @@ h2 {
 
 
 .second-project {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .join-images {
@@ -465,7 +502,9 @@ h2 {
     width: 200px;
     height: 200px;
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
+    left: 10%;
+    z-index: 2;
 }
 
 .third-project {
@@ -479,9 +518,25 @@ h2 {
     justify-content: center;
 }
 
-.game-image {
-    width: 600px;
-    height: 400px;
+.project-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-btn {
+    position: absolute;
+    width: 172px;
+    height: 40px;
+    border-radius: 100px;
+    border-width: 1px;
+    gap: 10px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    z-index: 10;
+    color: white;
 }
 
 .colleagues-section {
