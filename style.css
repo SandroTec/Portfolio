@@ -460,7 +460,6 @@ h2 {
 }
 
 .project-images {
-    cursor: pointer;
     border-radius: 12px;
     margin: 86px;
 }
@@ -537,6 +536,8 @@ h2 {
     padding-left: 24px;
     z-index: 10;
     color: white;
+    margin-top: 50%;
+    margin-left: -50%;
 }
 
 .colleagues-section {
