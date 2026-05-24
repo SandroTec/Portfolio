@@ -47,7 +47,7 @@ body {
 main {
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
 }
 
 .left-hand-side {
@@ -80,6 +80,7 @@ main {
 
 footer {
     width: 90dvw;
+    position: absolute;
     display: flex;
     justify-content: flex-end;
     align-items: center;
