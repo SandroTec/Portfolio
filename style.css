@@ -42,13 +42,32 @@ section {
 .polaroid-frame {
     position: relative;
     width: 200px;
+    height: 250px;
 }
+
+
 
 .polaroid-image {
     position: absolute;
-    margin-top: 50px;
-    margin-left: -160px;
+    margin-top: 15px;
+    margin-left: -186px;
     color: white;
+    width: 172px;
+    height: 180px;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: scale(1);
+
+    transition:
+        filter 0.5s ease,
+        -webkit-filter 0.5s ease,
+        transform 0.5s ease;
+}
+
+.polaroid-image:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }
 
 .polaroid-container h2 {

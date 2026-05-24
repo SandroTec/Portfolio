@@ -119,3 +119,14 @@ projectImages.forEach(image => {
         });
     });
 });
+
+
+const profileImage = document.getElementById('profileImage');
+
+profileImage.addEventListener('mouseenter', () => {
+    profileImage.src = './assets/img/profile-image.jpeg';
+});
+
+profileImage.addEventListener('mouseleave', () => {
+    profileImage.src = './assets/img/troll_image.jpeg';
+})
