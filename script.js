@@ -130,3 +130,15 @@ profileImage.addEventListener('mouseenter', () => {
 profileImage.addEventListener('mouseleave', () => {
     profileImage.src = './assets/img/troll_image.jpeg';
 })
+
+const helloWorldButton = document.getElementById('helloWorldBtn');
+
+helloWorldButton.addEventListener('mouseenter', () => {
+    helloWorldButton.textContent = 'Ich bin Alessandro';
+    helloWorldButton.style.background = ' #3355FF';
+})
+
+helloWorldButton.addEventListener('mouseleave', () => {
+    helloWorldButton.textContent = 'Hello world';
+    helloWorldButton.style.background = 'transparent';
+})
