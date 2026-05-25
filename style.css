@@ -843,3 +843,17 @@ form input {
 .d-none {
     display: none;
 }
+
+.footer-hover {
+    position: absolute;
+    width: 150px;
+    margin-top: -50px;
+    margin-left: -25px;
+    opacity: 0; 
+    transition: opacity 0.2s ease; 
+    pointer-events: none; 
+}
+
+ div:hover .footer-hover {
+    opacity: 1;
+}
