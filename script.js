@@ -141,7 +141,7 @@ helloWorldButton.addEventListener('mouseleave', () => {
 });
 
 
-
+// comtact form hover effect for input and headline
 const formInputs = document.querySelectorAll('form input');
 const formHeadlines = document.querySelectorAll('form h4');
 
