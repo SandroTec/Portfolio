@@ -108,6 +108,7 @@
   text-decoration: none;
   padding: 10px 10px;
   overflow: visible; 
+  width: 200px;
 }
 
 .rolling-link .icon {

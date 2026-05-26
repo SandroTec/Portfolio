@@ -105,18 +105,14 @@ function manipulateLetters(span, char) {
 
 const projectImages = document.querySelectorAll('.project-images');
 
-projectImages.forEach(image => {
+projectImages.forEach((image, i )=> {
     const button = document.querySelectorAll('.project-btn');
+    
     image.addEventListener('mouseenter', () => {
-        button.forEach(btn => {
-            btn.classList.remove('d-none');
+            button[i].classList.remove('d-none');
         });
-    });
-
     image.addEventListener('mouseleave', (e) => {
-        button.forEach(btn => {
-            btn.classList.add('d-none');
-        });
+            button[i].classList.add('d-none');
     });
 });
 
@@ -142,3 +138,17 @@ helloWorldButton.addEventListener('mouseleave', () => {
     helloWorldButton.textContent = 'Hello world';
     helloWorldButton.style.background = 'transparent';
 })
+
+
+
+const formInputs = document.querySelectorAll('form input');
+const formHeadlines = document.querySelectorAll('form h4');
+
+formInputs.forEach((input, i) => {
+    input.addEventListener('mouseenter', () => {
+        formHeadlines[i].style.color = 'var(--highlight-color-red)';
+    });
+    input.addEventListener('mouseleave', () => {
+        formHeadlines[i].style.color = 'var(--prime-color-white)';
+    });
+});

@@ -493,11 +493,32 @@ form {
 }
 
 form input {
-    height: 32px;
+    height: 52px;
     width: 100%;
+    padding: 54px 0 12px 0;
     background: transparent;
-    border-bottom: 1px solid var(--highlight-color-yellow)
+    border: 1px solid var(--highlight-color-yellow);
+    border-width: 0 0 1px 0;
+    box-sizing: border-box; /* Wichtig, damit das Input-Feld nicht springt! */
+    transition: border 0.2s ease; /* Macht den Übergang geschmeidiger */
+    
 }
+
+form input:hover {
+    border-width: 1px 0px; /* Oben/Unten: 5px, Links/Rechts: 0 */
+    border-color: var(--highlight-color-blue);
+}
+
+form h4 {
+    position: absolute;
+    margin-top: 4px;
+    pointer-events: none;
+    padding: 4px;
+}
+form h4:hover {
+    color: var(--highlight-color-red);
+}
+
 
 .privacy-notice-container {
     display: flex;
@@ -541,14 +562,14 @@ form input {
 .contact-section-footer-links a {
     text-decoration: none;
     color: var(--prime-color-white);
-    width: 84px;
+    width: fit-content;
     height: 40px;
     opacity: 1;
     gap: 10px;
     padding-top: 12px;
-    padding-right: 24px;
+    padding-right: 34px;
     padding-bottom: 12px;
-    padding-left: 24px;
+    padding-left: 34px;
     border-radius: 100px;
 
     display: flex;
@@ -575,7 +596,6 @@ form input {
     position: absolute;
     width: 150px;
     margin-top: -50px;
-    margin-left: -25px;
     opacity: 0; 
     transition: opacity 0.2s ease; 
     pointer-events: none; 
