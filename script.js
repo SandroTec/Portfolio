@@ -107,7 +107,7 @@ const projectImages = document.querySelectorAll('.project-images');
 
 projectImages.forEach((image, i )=> {
     const button = document.querySelectorAll('.project-btn');
-    
+
     image.addEventListener('mouseenter', () => {
             button[i].classList.remove('d-none');
         });
@@ -127,17 +127,18 @@ profileImage.addEventListener('mouseleave', () => {
     profileImage.src = './assets/img/troll_image.jpeg';
 })
 
+
+// hello world button hover effect
 const helloWorldButton = document.getElementById('helloWorldBtn');
+const buttonText = helloWorldButton.querySelector('.btn-text');
 
 helloWorldButton.addEventListener('mouseenter', () => {
-    helloWorldButton.textContent = 'Ich bin Alessandro';
-    helloWorldButton.style.background = ' #3355FF';
-})
+    buttonText.textContent = 'Ich bin Alessandro';
+});
 
 helloWorldButton.addEventListener('mouseleave', () => {
-    helloWorldButton.textContent = 'Hello world';
-    helloWorldButton.style.background = 'transparent';
-})
+    buttonText.textContent = 'Hello world';
+});
 
 
 
