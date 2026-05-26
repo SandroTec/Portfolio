@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/skill-helper.css">
     <link rel="stylesheet" href="./css/project-section-helper.css">
     <link rel="stylesheet" href="./css/transitions-helper.css">
-
+    <link rel="stylesheet" href="./css/media-querrys.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,407 +20,419 @@
 </head>
 <body>
     <main id="heroSection">
-        <header>
-            <nav>
-                <a href="#heroSection"><img src="./assets/img/AB_Logo.png" alt="Logo" class="logoAB"></a>
-                <div>
-                    <a href="#aboutMeSection">About me</a>
-                    <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/1.png" alt="yellow circle">
-                </div>
-                
-                <div>
-                    <a href="#skillSection">Skills</a>
-                    <img class="header-hover skill-underline" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/2.png" alt=" yellow-line">
-                </div>
+        <div class="max-content">
+            <header>
+                <nav>
+                    <a href="#heroSection"><img src="./assets/img/AB_Logo.png" alt="Logo" class="logoAB"></a>
+                    <div>
+                        <a href="#aboutMeSection">About me</a>
+                        <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/1.png" alt="yellow circle">
+                    </div>
+                    
+                    <div>
+                        <a href="#skillSection">Skills</a>
+                        <img class="header-hover skill-underline" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/2.png" alt=" yellow-line">
+                    </div>
 
-                <div>
-                    <a href="#projectSection">Projects</a>
-                    <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/4.png" alt="">
+                    <div>
+                        <a href="#projectSection">Projects</a>
+                        <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/4.png" alt="">
 
-                </div>
+                    </div>
 
-                <div>
-                    <a href="#contactSection">Contact</a>
-                    <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/3.png" alt="yellow line">                
-                </div>
-                
-                <div class="language-container">
-                <button class="lang-EN-btn">EN</button>
-                <img class="header-hover lang-frame-EN" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
-                <div class="vector-container">
-                    <img class="vector-bar" src="./assets/img/07_vectors/Vector-line.png" alt="bar">
-                    <img class="vector-bubble" src="./assets/img/07_vectors/Vector-bubble.png" alt="bubble">
-                </div>
-                <button class="lang-DE-btn">DE</button>
-                <img class="header-hover lang-frame-DE" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
-                </div>
-            </nav>
-        </header>
+                    <div>
+                        <a href="#contactSection">Contact</a>
+                        <img class="header-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/3.png" alt="yellow line">                
+                    </div>
+                    
+                    <div class="language-container">
+                    <button class="lang-EN-btn">EN</button>
+                    <img class="header-hover lang-frame-EN" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
+                    <div class="vector-container">
+                        <img class="vector-bar" src="./assets/img/07_vectors/Vector-line.png" alt="bar">
+                        <img class="vector-bubble" src="./assets/img/07_vectors/Vector-bubble.png" alt="bubble">
+                    </div>
+                    <button class="lang-DE-btn">DE</button>
+                    <img class="header-hover lang-frame-DE" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
+                    </div>
+                </nav>
+            </header>
 
-        <div class="hero-information-container">
-            <div class="img-and-text">
-                <div class="design-element">
-                    <div class="btn-and-headline-container">
-                        <div class="rolling-link">
-                            <span class="icon waving-icon"><img src="./assets/img/04_social_icons/waving_hand.png" alt="waving hand icon"></span>
-                            <button id="helloWorldBtn" class="hello-world-btn">
-                                <span class="btn-text">Hello world</span>
-                            </button>
+            <div class="hero-information-container">
+                <div class="img-and-text">
+                    <div class="design-element">
+                        <div class="btn-and-headline-container">
+                            <div class="rolling-link">
+                                <span class="icon waving-icon"><img src="./assets/img/04_social_icons/waving_hand.png" alt="waving hand icon"></span>
+                                <button id="helloWorldBtn" class="hello-world-btn">
+                                    <span class="btn-text">Hello world</span>
+                                </button>
+                            </div>
+                            <h1 class="headline" id="interactive-headline">Frontend</h1>
                         </div>
-                        <h1 class="headline" id="interactive-headline">Frontend</h1>
+                        <div class="polaroid-container">
+                            <img class="polaroid-frame" src="./assets/img/03_Stickers/Polaroid Frame.png" alt="polaroid-img">
+                            <img class="polaroid-image" id="profileImage" src="./assets/img/troll_image.jpeg" alt="Personal-Image">
+                            <h2 class="kalma-font">Alessandro :D</h2>
+                        </div>
+                    
                     </div>
-                    <div class="polaroid-container">
-                        <img class="polaroid-frame" src="./assets/img/03_Stickers/Polaroid Frame.png" alt="polaroid-img">
-                        <img class="polaroid-image" id="profileImage" src="./assets/img/troll_image.jpeg" alt="Personal-Image">
-                        <h2>Alessandro ;D</h2>
+                    <div class="second-desing-element">
+                        <h1 class="headline" id="interactive-headline_second_part">DEVELOPER</h1>
                     </div>
+                </div>
+                <div class="contact-btn-container">
+                    <button class="get-in-touch-btn"><a href="#contactSection">Get in Touch</a></button>
+                </div>
                 
-                </div>
-                <div class="second-desing-element">
-                    <h1 class="headline" id="interactive-headline_second_part">DEVELOPER</h1>
-                </div>
-            </div>
-            <div class="contact-btn-container">
-                <button class="get-in-touch-btn"><a href="#contactSection">Get in Touch</a></button>
-            </div>
-            
-            
+                
 
-        </div>
+            </div>
 
-        <div class="social-links-container">
-            <nav class="social-links">
-                <a href=""><img src="./assets/img/04_social_icons/linkedIn.png" alt="linkedIn-icon"></a>
-                <a href="https://github.com/SandroTec?tab=overview&from=2026-05-01&to=2026-05-14"><img src="./assets/img/04_social_icons/Git hub.png" alt="github- icon"></a>
-                <a href="#contactSection"><img src="./assets/img/04_social_icons/Mail icon.png" alt="Mail-icon"></a>
-            </nav>
+            <div class="social-links-container">
+                <nav class="social-links">
+                    <a href=""><img src="./assets/img/04_social_icons/linkedIn.png" alt="linkedIn-icon"></a>
+                    <a href="https://github.com/SandroTec?tab=overview&from=2026-05-01&to=2026-05-14"><img src="./assets/img/04_social_icons/Git hub.png" alt="github- icon"></a>
+                    <a href="#contactSection"><img src="./assets/img/04_social_icons/Mail icon.png" alt="Mail-icon"></a>
+                </nav>
+            </div>
         </div>
     </main>
 
     <section id="aboutMeSection" class="about-me-section">
-        <div class="locations-container">
-            <div class="locations-left-side">
-                <div class="yellow-wrapper">
-                    <img src="./assets/img/02_Ripped Paper/Option 1/Yellow.png" alt="yellow ripped paper">
-                    <p class="yellow-container container-position">
-                        <img src="./assets/img/05_location_icons/18_Location Icons.png" alt="location icon">
-                        Based in Schwarzwald
+        <div class="max-content">
+            <div class="locations-container">
+                <div class="locations-left-side">
+                    <div class="yellow-wrapper">
+                        <img src="./assets/img/02_Ripped Paper/Option 1/Yellow.png" alt="yellow ripped paper">
+                        <p class="yellow-container container-position">
+                            <img src="./assets/img/05_location_icons/18_Location Icons.png" alt="location icon">
+                            Based in Schwarzwald
+                        </p>
+                    </div>
+
+                    <div class="blue-wrapper">
+                        <img src="./assets/img/02_Ripped Paper/Option 1/2 Blue.png" alt=" blue ripped paper">
+                        <p class="blue-container container-position">
+                            <img src="./assets/img/05_location_icons/18_Location Icons (1).png" alt="location icon">
+                            open to relocate
+                        </p>
+                    </div>
+
+                    <div class="orange-wrapper">
+                        <img src="./assets/img/02_Ripped Paper/Option 1/3 Orange.png" alt="orange ripped paper">
+                        <p class="orange-container container-position">
+                            <img src="./assets/img/05_location_icons/18_Location Icons (2).png" alt="location icon">
+                            open to work remote
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-me-text-container">
+                    <div>
+                        <p>WHO'S Alessandro?</p>
+                        <h2>About me</h2>
+                        <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/01_About me/Color option 1.png" alt="blue line">
+                    </div>
+                    <p> 
+                        Hey, ich bin Alessandro, 23 Jahre alt und lerne momentan programmieren bei der DA. <br>
+                        Innerhalb der Zeit habe ich gelernt programmier-projekte alleine und in Gruppen, <br>
+                        mit hilfe von Scrum techniken, zu bearbeiten und mit Zufriedenheit abzuschließen. <br>
+                        Zum programmieren hat mich mein Lebensweg inspiriert. Ich habe schon immer großes Interesse an IT. <br>
+                        Insbesondere an interlligenten Lösungen für komplizierte Probleme. Sobald es möglich wurde, <br>
+                        in der Schule statt Heft ein IPad zu nutzen hatte ich dieses was uns unglaublich viel Zeit ersparrte, <br>
+                        den Lernkontext zu digitalisieren hilft mir bis heute. Die Materialien gehen eben nicht verloren.
+                    
+                        <div class="talk-btn-container">
+                            <button><a href="#contactSection">Let's talk</a></button>
+                        </div>
                     </p>
-                </div>
-
-                <div class="blue-wrapper">
-                    <img src="./assets/img/02_Ripped Paper/Option 1/2 Blue.png" alt=" blue ripped paper">
-                    <p class="blue-container container-position">
-                        <img src="./assets/img/05_location_icons/18_Location Icons (1).png" alt="location icon">
-                        open to relocate
-                    </p>
-                </div>
-
-                <div class="orange-wrapper">
-                    <img src="./assets/img/02_Ripped Paper/Option 1/3 Orange.png" alt="orange ripped paper">
-                    <p class="orange-container container-position">
-                        <img src="./assets/img/05_location_icons/18_Location Icons (2).png" alt="location icon">
-                        open to work remote
-                    </p>
-                </div>
-            </div>
-
-            <div class="about-me-text-container">
-                <div>
-                    <p>WHO'S Alessandro?</p>
-                    <h2>About me</h2>
-                    <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/01_About me/Color option 1.png" alt="blue line">
-                </div>
-                <p> 
-                    Hey, ich bin Alessandro, 23 Jahre alt und lerne momentan programmieren bei der DA. <br>
-                    Innerhalb der Zeit habe ich gelernt programmier-projekte alleine und in Gruppen, <br>
-                    mit hilfe von Scrum techniken, zu bearbeiten und mit Zufriedenheit abzuschließen. <br>
-                    Zum programmieren hat mich mein Lebensweg inspiriert. Ich habe schon immer großes Interesse an IT. <br>
-                    Insbesondere an interlligenten Lösungen für komplizierte Probleme. Sobald es möglich wurde, <br>
-                    in der Schule statt Heft ein IPad zu nutzen hatte ich dieses was uns unglaublich viel Zeit ersparrte, <br>
-                    den Lernkontext zu digitalisieren hilft mir bis heute. Die Materialien gehen eben nicht verloren.
-                
-                    <div class="talk-btn-container">
-                        <button><a href="#contactSection">Let's talk</a></button>
-                    </div>
-                </p>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="skillSection" class="skill-section">
-        <div class="skill-content">
-            <div class="skill-header">
-                <div>
-                    <p>MY STACK</p>
-                    <h2>Skill set</h2>
-                    <img class="circle-headline element-revealHideRightToLeft" src="./assets/img/00_Hand-drawn lines/02_Skills/Color option 1.png" alt="circle">
-                </div>
-                <div class="skill-description-container">
-                    <img class="skill-descriptionfield" src="./assets/img/02_Ripped Paper/1.Skills description.png" alt="Papel for skills description">
-                    <p>
-                        Während meiner Weiterbildung habe ich verschiedene Programmiersprachen <br> 
-                        und Technologien kennengelernt und praktisch angewendet. <br>
-                        In folgenden Bereichen bin ich besonders erfahren:
-                    </p>
-                </div>
-            </div>
-            <div class="skill-and-sticker-container">
-                <div class="skill-icons-container">
-                    <div class="firstRow">
-                        <div class="icon-and-name">
-                            <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction.png" alt="HTML-Icon">
-                            <p>HTML</p>
-                        </div>
-                        <div class="icon-and-name">
-                            <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (1).png" alt="CSS-Icon">
-                            <p>CSS</p>
-                        </div>
-                        <div class="icon-and-name">
-                            <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (2).png" alt="JS-Icon">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="icon-and-name">
-                            <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (3).png" alt="TypeScript-Icon">
-                            <p>TypeScript</p>
-                        </div>
-                        <div class="icon-and-name">
-                            <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (4).png" alt="Angular-Icon">
-                            <p>Angular</p>
-                        </div>
-                    </div>
-                    <div class="secondRow">
-                        <div class="icon-and-name">
-                            <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (5).png" alt="Supabase-Icon">
-                            <p>Supabase</p>
-                        </div>
-                        
-                        <div class="icon-and-name">
-                            <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (6).png" alt="Git-Icon">
-                            <p>Git-Hub</p>
-                        </div>
-                        
-                        <div class="icon-and-name">
-                            <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (7).png" alt="REST-API">
-                            <p>REST API</p>
-                        </div>
-                        
-                        <div class="icon-and-name">
-                            <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (8).png" alt="Scrum-Icon">
-                            <p>Scrum</p>
-                        </div>
-                        
-                        <div class="icon-and-name">
-                            <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (9).png" alt="Material-Design-Icon">
-                            <p>Material Design</p>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="sticker-container">
-                    <img onclick="peelSticker()" id="skillSticker" class="skill-sticker" src="./assets/img/03_Stickers/01_Skills - Peel off/Default.png" alt="Sticker-Image">
-                    <div id="appetizer" class="skill-sticker-content">
-                        <img class="whit-arrow" src="./assets/img/03_Stickers/Arrow.png" alt="white arrow">
-                        <h3>Pull to <br> peel</h3>
-                    </div>
-                    <div id="futureSkills" class="skill-sticker-content-peeled d-none">
-                        <p>Also, I'm interested in diving into:</p>
-                        <div class="icon-container">
-                            <div class="icon-desc">
-                                <img src="./assets/img/03_Stickers/01_Skills - Peel off/React.png" alt="React-icon">
-                                <span>React</span>
-                            </div>
-                            <div class="icon-desc">
-                                <img src="./assets/img/03_Stickers/01_Skills - Peel off/Vue Js.png" alt="Vue.js-icon">
-                                <span>Vue.js</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projectSection" class="project-section">
-        <div class="project-firstRow">
-            <div class="info-container">
-                <p>MY CRAFT</p>
-                <h2>Projects</h2>
-                <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/03_Portfolio/Color option 1.png" alt="yellow line">
-                <span>
-                    Das sind meine bisher ausgefeiltesten Projekte, <br>
-                    schauen sie sich hier gerne um: Die Projekte zeigen verschiedene wichtige <br>
-                    Anwendungen von HTML, CSS und JavaScript, die ich während meiner Weiterbildung erlernt habe. <br>
-                    Es ist jeweil ein Live-test möglich so wie mein GitHub Repository einzusehen, <br>
-                    damit sie sich einen tieferen Einblick in meinen Code und meine Arbeitsweise verschaffen können. <br>
-                </span>
-            </div>
-
-            <div class="frist-project">
-               <div class="project-content">
-                 <img class="project-images" src="./assets/img/08_project_images/Pollo.png" alt="Pollo Loco Image">
-                 <button onclick="openFirstProject()" class="project-btn d-none">Project Details</button>
-               
-                </div>
-                <h3>El Pollo Loco</h3>
-                <span>
-                    Ein Jump'n Run Spiel in welchem man den Character Pepe steuert,<br>
-                    dieser kann auf Gegner springen, Coins und Flaschen sammeln und die Flaschen auf Gegner werfen. <br>
-                    Das Ziel ist den Endboss "Die wilde Henne" zu besiegen.
-                </span>
-                
-            </div>
-        </div>
-        <div class="project-secondRow">
-            <div class="second-project">
-                <div class="join-images project-content" >
-                    <img class="project-images" src="./assets/img/08_project_images/join d.png" alt="Join Image">
-                    <img class="join-sticker" src="./assets/img/08_project_images/join-sticcker.png" alt="sticker">
-                    <button onclick="openSecondProject()" class="project-btn d-none">Project Details</button>
-                </div>
-                <h3>Join</h3>
-                <span>
-                    Diese Web-App ist ein Task-Manager tool inspiriert vom Kanban System <br>
-                    Man kann Aufgaben erstellen und organisieren in verschiedenen Spalten, je nach Status der Aufgabe. <br>
-                    Das ist besonders gut durch drag and drop zu bedienen. Die Aufgaben können einem oder mehrer Users zugewiesen werden.
-                </span>
-            </div>
-
-            <div class="third-project">
-                <div class="project-content">
-                    <img class="project-images" src="" alt="pokedex Image">
-                    <button onclick="openThirdProject()" class="project-btn d-none">Project Details</button>
-                </div>
-                <h3>Pokedex</h3>
-                <span>
-                    Diese Web-App ist dem klassischen Pokedex aus der Pokemon Welt nachempfunden. <br>
-                    Dieses kann genutzt werden um Informationen über alle Pokemon zu erhalten, inklusive Bilder, Fähigkeiten, Statuswerte und mehr. <br>
-                    Es ist möglich die Pokemon per Suchlesitenfunktion zu finden oder durchzuscrollen
-                </span>
-            </div>
-        </div>
-    </section>
-
-    <section id="colleaguesSection" class="colleagues-section">
-        <div class="colleagues-section-header">
-            <div class="colleagues-design-element">
-                <img class="element right-to-left" src="./assets/img/00_Hand-drawn lines/04_Testimonials/Color option 1.png" alt="blue-arrow">
-                <p>IN THEIR WORDS:</p>
-            </div>
-            <h2>Colleagues' Thoughts</h2>
-        </div>
-        <div class="testimonial-container">
-            <div class="sticker-one">
-                <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/A.png" alt="Sticker">
-                <p class="sticker-comment">Kommentar eines Teammembers</p>
-                <div class="sticker-footer">
-                    <div class="name-postion-container">
-                        <h3>Name</h3>
-                        <p>Position</p>
-                    </div>
-                    <a href="" class="profile-link"><img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">Profile</a>
-                </div>
-            </div>
-            <div class="sticker-two">
-                <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/B.png" alt="Sticker">
-                <p class="sticker-comment">Comment</p>
-                <div class="sticker-footer">
-                    <div class="name-postion-container">
-                        <h3>Name</h3>
-                        <p>Position</p>
-                    </div>
-                    <a href="" class="profile-link"><img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">Profile</a>
-                </div>
-            </div>
-            <div class="sticker-three">
-                <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/A.png" alt="Sticker">
-                <p class="sticker-comment">Comment</p>
-                <div class="sticker-footer">
-                    <div class="name-postion-container">
-                        <h3>Name</h3>
-                        <p>Position</p>
-                    </div>
-                    <div class="profile-link-container">
-                        <img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">
-                        <a href="" class="profile-link">Profile</a>
-                    </div>
                     
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contactSection" class="contact-section">
-        <div class="contact-context">
-            <div class="left-side">
-                <p>CONTACT ME</p>
-                <h3>
-                    Ready to work <br>
-                    together?
-                </h3>
-                <span>
-                    Wenn Sie überzeugt sind mich als Frontend-Entwickler einzustellen,<br>
-                    dann kontaktieren Sie mich über das Kontaktformular!
-                    Meine Skill sind, wie den Projekten zu entnehmen ist, hauptsächlich im Frontend Bereich, <br>
-                    aber ich bin auch offen für Positionen als Junior Fullstack Developer, <br>
-                    Ich habe großes Interesse meine Fähigkeiten und Kenntnisse zu erweitern, insbesondere im Backend Bereich, <br>
-                    und bin bereit, mich schnell in neue Technologien und Frameworks einzuarbeiten.
-
-                </span>
-                <img class="element-revealHideRightToLeft headline-underline" src="./assets/img/00_Hand-drawn lines/05_Contact/Color option 1.png" alt="yellow curved arrow">
-            </div>
-
-            <div class="right-side">
-                <div>
-                    <img src="./assets/img/AB_Logo.png" class="logoAB" alt="Logo">
+    <section id="skillSection" class="skill-section">
+        <div class="max-content">
+            <div class="skill-content">
+                <div class="skill-header">
+                    <div>
+                        <p>MY STACK</p>
+                        <h2>Skill set</h2>
+                        <img class="circle-headline element-revealHideRightToLeft" src="./assets/img/00_Hand-drawn lines/02_Skills/Color option 1.png" alt="circle">
+                    </div>
+                    <div class="skill-description-container">
+                        <img class="skill-descriptionfield" src="./assets/img/02_Ripped Paper/1.Skills description.png" alt="Papel for skills description">
+                        <p>
+                            Während meiner Weiterbildung habe ich verschiedene Programmiersprachen <br> 
+                            und Technologien kennengelernt und praktisch angewendet. <br>
+                            In folgenden Bereichen bin ich besonders erfahren:
+                        </p>
+                    </div>
                 </div>
-                <form action="">
-                    <div class="name-form">
-                        <h4>What's your name?</h4>
-                        <input id="nameInput" type="text" placeholder="Your name goes here!">
-                    </div>
-                    <div class="mail-form">
-                        <h4>What's your email?</h4>
-                        <input id="mailInput" type="email" placeholder="bsp-mail@bspmail.com">
-                    </div>
-                    <div class="message-form">
-                        <h4>How can I help you?</h4>
-                        <input id="messageInput" type="text" placeholder="Hello Alessandro, I'm interested in...">
+                <div class="skill-and-sticker-container">
+                    <div class="skill-icons-container">
+                        <div class="firstRow">
+                            <div class="icon-and-name">
+                                <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction.png" alt="HTML-Icon">
+                                <p>HTML</p>
+                            </div>
+                            <div class="icon-and-name">
+                                <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (1).png" alt="CSS-Icon">
+                                <p>CSS</p>
+                            </div>
+                            <div class="icon-and-name">
+                                <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (2).png" alt="JS-Icon">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="icon-and-name">
+                                <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (3).png" alt="TypeScript-Icon">
+                                <p>TypeScript</p>
+                            </div>
+                            <div class="icon-and-name">
+                                <img class="greyed skill-icon" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (4).png" alt="Angular-Icon">
+                                <p>Angular</p>
+                            </div>
+                        </div>
+                        <div class="secondRow">
+                            <div class="icon-and-name">
+                                <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (5).png" alt="Supabase-Icon">
+                                <p>Supabase</p>
+                            </div>
+                            
+                            <div class="icon-and-name">
+                                <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (6).png" alt="Git-Icon">
+                                <p>Git-Hub</p>
+                            </div>
+                            
+                            <div class="icon-and-name">
+                                <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (7).png" alt="REST-API">
+                                <p>REST API</p>
+                            </div>
+                            
+                            <div class="icon-and-name">
+                                <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (8).png" alt="Scrum-Icon">
+                                <p>Scrum</p>
+                            </div>
+                            
+                            <div class="icon-and-name">
+                                <img class="greyed" src="./assets/img/06_skill_icons/21_Frontend Icons interaction (9).png" alt="Material-Design-Icon">
+                                <p>Material Design</p>
+                            </div>
+                            
+                        </div>
                     </div>
 
-                    <div class="form-footer">
-                        <div class="privacy-notice-container">
-                            <input type="checkbox" id="privacyCheck" required>
-                            <label for="privacyCheck">I agree to the processing of my data in accordance with the privacy policy.</label>
+                    <div class="sticker-container">
+                        <img onclick="peelSticker()" id="skillSticker" class="skill-sticker" src="./assets/img/03_Stickers/01_Skills - Peel off/Default.png" alt="Sticker-Image">
+                        <div id="appetizer" class="skill-sticker-content">
+                            <img class="whit-arrow" src="./assets/img/03_Stickers/Arrow.png" alt="white arrow">
+                            <h3>Pull to <br> peel</h3>
                         </div>
-                        <div class="sub-container">
-                            <button type="submit">Send</button>
+                        <div id="futureSkills" class="skill-sticker-content-peeled d-none">
+                            <p>Also, I'm interested in diving into:</p>
+                            <div class="icon-container">
+                                <div class="icon-desc">
+                                    <img src="./assets/img/03_Stickers/01_Skills - Peel off/React.png" alt="React-icon">
+                                    <span>React</span>
+                                </div>
+                                <div class="icon-desc">
+                                    <img src="./assets/img/03_Stickers/01_Skills - Peel off/Vue Js.png" alt="Vue.js-icon">
+                                    <span>Vue.js</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
-                
+                </div>
             </div>
         </div>
-        <div class="contact-section-footer-links">
-            <div>
-                <a class="rolling-link  legal-notice" href="./html/legal-notice.html"><span class="text">legal notice</span></a>
-                <img class="footer-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/3.png" alt="yellow line">                
 
+    </section>
+
+    <section id="projectSection" class="project-section">
+        <div class="max-content">
+            <div class="project-firstRow">
+                <div class="info-container">
+                    <p>MY CRAFT</p>
+                    <h2>Projects</h2>
+                    <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/03_Portfolio/Color option 1.png" alt="yellow line">
+                    <span>
+                        Das sind meine bisher ausgefeiltesten Projekte, <br>
+                        schauen sie sich hier gerne um: Die Projekte zeigen verschiedene wichtige <br>
+                        Anwendungen von HTML, CSS und JavaScript, die ich während meiner Weiterbildung erlernt habe. <br>
+                        Es ist jeweil ein Live-test möglich so wie mein GitHub Repository einzusehen, <br>
+                        damit sie sich einen tieferen Einblick in meinen Code und meine Arbeitsweise verschaffen können. <br>
+                    </span>
+                </div>
+
+                <div class="frist-project">
+                <div class="project-content">
+                    <img class="project-images" src="./assets/img/08_project_images/Pollo.png" alt="Pollo Loco Image">
+                    <button onclick="openFirstProject()" class="project-btn d-none">Project Details</button>
+                
+                    </div>
+                    <h3>El Pollo Loco</h3>
+                    <span>
+                        Ein Jump'n Run Spiel in welchem man den Character Pepe steuert,<br>
+                        dieser kann auf Gegner springen, Coins und Flaschen sammeln und die Flaschen auf Gegner werfen. <br>
+                        Das Ziel ist den Endboss "Die wilde Henne" zu besiegen.
+                    </span>
+                    
+                </div>
             </div>
-            <a class="background-color rolling-link" href="https://github.com/SandroTec">
-                <span class="icon"><img src="./assets/img/04_social_icons/Git hub.png" alt="GitHub-icon"></span>
-                <span class="text">GitHub</span>
-            </a>
-            <a class="background-color rolling-link" href="">
-                <span class="icon"> <img src="./assets/img/04_social_icons/linkedIn.png" alt="linked in icon"></span>
-                <span class="text">LinkedIn</span>
-            </a>
-            <a class="background-color rolling-link" href="">
-                <span class="icon"><img src="./assets/img/04_social_icons/Mail icon.png" alt="Email icon"></span>
-                <span class="text">E-Mail</span>
-            </a>
+            <div class="project-secondRow">
+                <div class="second-project">
+                    <div class="join-images project-content" >
+                        <img class="project-images" src="./assets/img/08_project_images/join d.png" alt="Join Image">
+                        <img class="join-sticker" src="./assets/img/08_project_images/join-sticcker.png" alt="sticker">
+                        <button onclick="openSecondProject()" class="project-btn d-none">Project Details</button>
+                    </div>
+                    <h3>Join</h3>
+                    <span>
+                        Diese Web-App ist ein Task-Manager tool inspiriert vom Kanban System <br>
+                        Man kann Aufgaben erstellen und organisieren in verschiedenen Spalten, je nach Status der Aufgabe. <br>
+                        Das ist besonders gut durch drag and drop zu bedienen. Die Aufgaben können einem oder mehrer Users zugewiesen werden.
+                    </span>
+                </div>
+
+                <div class="third-project">
+                    <div class="project-content">
+                        <img class="project-images" src="" alt="pokedex Image">
+                        <button onclick="openThirdProject()" class="project-btn d-none">Project Details</button>
+                    </div>
+                    <h3>Pokedex</h3>
+                    <span>
+                        Diese Web-App ist dem klassischen Pokedex aus der Pokemon Welt nachempfunden. <br>
+                        Dieses kann genutzt werden um Informationen über alle Pokemon zu erhalten, inklusive Bilder, Fähigkeiten, Statuswerte und mehr. <br>
+                        Es ist möglich die Pokemon per Suchlesitenfunktion zu finden oder durchzuscrollen
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colleaguesSection" class="colleagues-section">
+        <div class="max-content">
+            <div class="colleagues-section-header">
+                <div class="colleagues-design-element">
+                    <img class="element right-to-left" src="./assets/img/00_Hand-drawn lines/04_Testimonials/Color option 1.png" alt="blue-arrow">
+                    <p>IN THEIR WORDS:</p>
+                </div>
+                <h2>Colleagues' Thoughts</h2>
+            </div>
+            <div class="testimonial-container">
+                <div class="sticker-one">
+                    <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/A.png" alt="Sticker">
+                    <p class="sticker-comment">Kommentar eines Teammembers</p>
+                    <div class="sticker-footer">
+                        <div class="name-postion-container">
+                            <h3>Name</h3>
+                            <p>Position</p>
+                        </div>
+                        <a href="" class="profile-link"><img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">Profile</a>
+                    </div>
+                </div>
+                <div class="sticker-two">
+                    <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/B.png" alt="Sticker">
+                    <p class="sticker-comment">Comment</p>
+                    <div class="sticker-footer">
+                        <div class="name-postion-container">
+                            <h3>Name</h3>
+                            <p>Position</p>
+                        </div>
+                        <a href="" class="profile-link"><img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">Profile</a>
+                    </div>
+                </div>
+                <div class="sticker-three">
+                    <img class="colleagues-sticker" src="./assets/img/03_Stickers/02_Testimonials/Color option 1/A.png" alt="Sticker">
+                    <p class="sticker-comment">Comment</p>
+                    <div class="sticker-footer">
+                        <div class="name-postion-container">
+                            <h3>Name</h3>
+                            <p>Position</p>
+                        </div>
+                        <div class="profile-link-container">
+                            <img id="footerImage" src="./assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-sticker.png" alt="linkedIN icon">
+                            <a href="" class="profile-link">Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contactSection" class="contact-section">
+        <div class="max-content">
+            <div class="contact-context">
+                <div class="left-side">
+                    <p>CONTACT ME</p>
+                    <h3>
+                        Ready to work <br>
+                        together?
+                    </h3>
+                    <span>
+                        Wenn Sie überzeugt sind mich als Frontend-Entwickler einzustellen,<br>
+                        dann kontaktieren Sie mich über das Kontaktformular!
+                        Meine Skill sind, wie den Projekten zu entnehmen ist, hauptsächlich im Frontend Bereich, <br>
+                        aber ich bin auch offen für Positionen als Junior Fullstack Developer, <br>
+                        Ich habe großes Interesse meine Fähigkeiten und Kenntnisse zu erweitern, insbesondere im Backend Bereich, <br>
+                        und bin bereit, mich schnell in neue Technologien und Frameworks einzuarbeiten.
+                    </span>
+                    <img class="element-revealHideRightToLeft headline-underline" src="./assets/img/00_Hand-drawn lines/05_Contact/Color option 1.png" alt="yellow curved arrow">
+                </div>
+
+                <div class="right-side">
+                    <div>
+                        <img src="./assets/img/AB_Logo.png" class="logoAB" alt="Logo">
+                    </div>
+                    <form action="">
+                        <div class="name-form">
+                            <h4>What's your name?</h4>
+                            <input id="nameInput" type="text" placeholder="Your name goes here!">
+                        </div>
+                        <div class="mail-form">
+                            <h4>What's your email?</h4>
+                            <input id="mailInput" type="email" placeholder="bsp-mail@bspmail.com">
+                        </div>
+                        <div class="message-form">
+                            <h4>How can I help you?</h4>
+                            <input id="messageInput" type="text" placeholder="Hello Alessandro, I'm interested in...">
+                        </div>
+
+                        <div class="form-footer">
+                            <div class="privacy-notice-container">
+                                <input type="checkbox" id="privacyCheck" required>
+                                <label for="privacyCheck">I agree to the processing of my data in accordance with the privacy policy.</label>
+                            </div>
+                            <div class="sub-container">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="contact-section-footer-links">
+                <div>
+                    <a class="rolling-link  legal-notice" href="./html/legal-notice.html"><span class="text">legal notice</span></a>
+                    <img class="footer-hover" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/3.png" alt="yellow line">                
+
+                </div>
+                <a class="background-color rolling-link" href="https://github.com/SandroTec">
+                    <span class="icon"><img src="./assets/img/04_social_icons/Git hub.png" alt="GitHub-icon"></span>
+                    <span class="text">GitHub</span>
+                </a>
+                <a class="background-color rolling-link" href="">
+                    <span class="icon"> <img src="./assets/img/04_social_icons/linkedIn.png" alt="linked in icon"></span>
+                    <span class="text">LinkedIn</span>
+                </a>
+                <a class="background-color rolling-link" href="">
+                    <span class="icon"><img src="./assets/img/04_social_icons/Mail icon.png" alt="Email icon"></span>
+                    <span class="text">E-Mail</span>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

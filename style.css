@@ -21,12 +21,20 @@ main {
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.max-content {
+    width: 1440px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-information-container {
-    width: 70%;
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -69,7 +77,8 @@ section {
     -webkit-filter: grayscale(0%);
 }
 
-.polaroid-container h2 {
+.kalma-font {
+    font-family: 'kalma';
     position: absolute;
     font-size: 30px;
     margin-top: -60px;
@@ -198,11 +207,11 @@ h1 {
 }
 
 .social-links-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 }
 
 .social-links {
@@ -226,6 +235,10 @@ h1 {
 
 .about-me-section {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .locations-container {
@@ -336,16 +349,16 @@ h2 {
 .colleagues-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 50vh;
 }
 
 .colleagues-section-header {
-    width: 70%;
-    margin-right: 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .colleagues-design-element {
@@ -370,7 +383,7 @@ h2 {
 
 .sticker-one {
     position: relative;
-    margin-left: -50%;
+    margin-left: -45%;
     transform: rotate(-6deg); 
 }
 
@@ -380,7 +393,7 @@ h2 {
 
 .sticker-three {
     position: absolute;
-    margin-left: 50%;
+    margin-left: 40%;
     transform: rotate(6deg); 
 }
 
