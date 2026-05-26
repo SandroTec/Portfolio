@@ -595,12 +595,13 @@ form h4:hover {
 .footer-hover {
     position: absolute;
     width: 150px;
-    margin-top: -50px;
+    margin-top: -65px;
+    margin-left: 15px;
     opacity: 0; 
     transition: opacity 0.2s ease; 
     pointer-events: none; 
 }
 
- div:hover .footer-hover {
+ .legal-notice:hover + .footer-hover {
     opacity: 1;
 }
