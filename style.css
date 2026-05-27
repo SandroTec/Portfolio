@@ -563,13 +563,20 @@ input {
     height: 52px;
     width: 100%;
     padding: 54px 0 12px 0;
-    background: transparent;
+    background-color: transparent !important; 
+    background: transparent !important;
     border: 1px solid var(--highlight-color-yellow);
     border-width: 0 0 1px 0;
     box-sizing: border-box; 
     transition: border 0.2s ease; 
-    color: var(--prime-color-white);
-    
+    color: var(--prime-color-white);   
+}
+
+input:focus, 
+input:active,
+input:hover {
+    background-color: transparent !important;
+    background: transparent !important;
 }
 
 form input:hover {
@@ -588,7 +595,16 @@ form h4:hover {
     color: var(--highlight-color-red);
 }
 
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block; 
+    min-height: 18px; 
+}
 
+input:invalid {
+}
 
 
 .privacy-notice-container {

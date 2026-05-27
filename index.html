@@ -391,31 +391,36 @@
                         <img src="./assets/img/AB_Logo.png" class="logoAB logo-on-sticker" alt="Logo">
                     </div>
 
-                    <form id="contactForm">
-                        <div class="name-form">
-                            <h4>What's your name?</h4>
-                            <input id="nameInput" name="name" type="text" placeholder="Your name goes here!" required>
-                        </div>
-                        <div class="mail-form">
-                            <h4>What's your email?</h4>
-                            <input id="mailInput" name="email" type="email" placeholder="bsp-mail@bspmail.com" required>
-                        </div>
-                        <div class="message-form">
-                            <h4>How can I help you?</h4>
-                            <input id="messageInput" name="message" placeholder="Hello, I'm interested in..." required></textarea>
-                        </div>
+                    <form id="contactForm" novalidate> <div class="name-form">
+                        <h4>What's your name?</h4>
+                        <input id="nameInput" name="name" type="text" placeholder="Your name goes here!" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    
+                    <div class="mail-form">
+                        <h4>What's your email?</h4>
+                        <input id="mailInput" name="email" type="email" placeholder="bsp-mail@bspmail.com" required>
+                        <span class="error-msg" id="mailError"></span>
+                    </div>
+                    
+                    <div class="message-form">
+                        <h4>How can I help you?</h4>
+                        <input id="messageInput" name="message" type="text" placeholder="Hello Alessandro, I'm interested in..." required>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
 
-                        <div class="form-footer">
-                            <div class="privacy-notice-container">
-                                <input type="checkbox" id="privacyCheck" required>
-                                <label for="privacyCheck">I agree to the processing of my data in accordance with the <a href="./html/privacy-policy.html">privacy policy</a>.</label>
-                            </div>
-                            <div class="sub-container">
-                                <button type="submit">Send</button>
-                            </div>
+                    <div class="form-footer">
+                        <div class="privacy-notice-container">
+                            <input type="checkbox" id="privacyCheck" required>
+                            <label for="privacyCheck">I agree to the processing of my data in accordance with the <a href="./html/privacy-policy.html">privacy policy</a>.</label>
+                            <span class="error-msg" id="privacyError"></span>
                         </div>
-                    </form>
-                    <div id="formStatus"></div>
+                        <div class="sub-container">
+                            <button type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="formStatus"></div>
                 </div>
             </div>
             <div class="contact-section-footer-links">

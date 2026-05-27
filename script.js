@@ -142,45 +142,95 @@ const formHeadlines = document.querySelectorAll('form h4');
 
 formInputs.forEach((input, i) => {
     input.addEventListener('mouseenter', () => {
-        formHeadlines[i].style.color = 'var(--highlight-color-red)';
+        formHeadlines[i].style.color = ' #F87A55';
     });
     input.addEventListener('mouseleave', () => {
-        formHeadlines[i].style.color = 'var(--prime-color-white)';
+        formHeadlines[i].style.color = ' #F8F9FA';
     });
 });
 
 //contact form 
 
 const form = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
+const formStatus = document.getElementById('formStatus'
+
+);
+const nameInput = document.getElementById('nameInput');
+const nameError = document.getElementById('nameError');
+
+const mailInput = document.getElementById('mailInput');
+const mailError = document.getElementById('mailError');
+
+const messageInput = document.getElementById('messageInput');
+const messageError = document.getElementById('messageError');
+
+const privacyCheck = document.getElementById('privacyCheck');
+const privacyError = document.getElementById('privacyError');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault(); 
 
+    resetErrors();
+
+    let isValid = true;
+
+    if (!nameInput.value.trim()) {
+        nameError.textContent = "Please enter your name.";
+        isValid = false;
+    }
+
+    if (!mailInput.value.trim()) {
+        mailError.textContent = "Please enter your email address.";
+        isValid = false;
+    } else if (!mailInput.checkValidity()) {
+        mailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    if (!messageInput.value.trim()) {
+        messageError.textContent = "Please enter a message.";
+        isValid = false;
+    }
+
+    if (!privacyCheck.checked) {
+        privacyError.textContent = "You must agree to the privacy policy to proceed.";
+        isValid = false;
+    }
+
+    if (!isValid) return;
+
     const formData = new FormData(form);
-    
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('https://formspree.io/f/mjgzjewr', {
+        formStatus.innerHTML = "Sending...";
+        const response = await fetch('https://formspree.io/f/xnjrlbjd', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify(data) 
+            body: JSON.stringify(data)
         });
 
         if (response.ok) {
-            formStatus.innerHTML = "Danke! Deine Nachricht wurde erfolgreich gesendet.";
-            form.reset(); 
+            formStatus.innerHTML = "Thank you! Your message has been sent successfully.";
+            form.reset();
         } else {
             const errorData = await response.json();
-            formStatus.innerHTML = "failed sending your message.";
+            formStatus.innerHTML = "Oops! Something went wrong.";
             console.error(errorData);
         }
     } catch (error) {
-        formStatus.innerHTML = "Netzwerkfehler. Bitte versuche es später noch einmal.";
-        console.error("Fetch-error:", error);
+        formStatus.innerHTML = "Network error. Please try again later.";
+        console.error("Fetch error:", error);
     }
 });
+
+function resetErrors() {
+    nameError.textContent = "";
+    mailError.textContent = "";
+    messageError.textContent = "";
+    privacyError.textContent = "";
+    formStatus.innerHTML = "";
+}
