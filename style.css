@@ -543,6 +543,13 @@ h2 {
     margin-left: 250px;
 }
 
+.logo-on-sticker {
+    position: absolute;
+    margin-left: -140px;
+    margin-top: 50px;
+    z-index: 1000;
+}
+
 .message-form {
     display: flex;
     flex-direction: column;
@@ -605,12 +612,8 @@ form h4:hover {
     color: var(--prime-color-white);
     border: 1px solid var(--prime-color-white);
     margin-top: 20px;
-
     box-shadow: 2px 4px 0px 0px var(--prime-color-white);
-
 }
-
-
 
 .contact-section-footer-links {
     width: 90%;
