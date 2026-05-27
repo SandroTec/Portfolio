@@ -1,5 +1,5 @@
 
-
+//Open Projectsites
 function openFirstProject() {
     window.location.href = "../html/project-one.html";
 }
@@ -22,6 +22,8 @@ const link = document.getElementById('footerImage');
     link.href = './assets/img/03_Stickers/02Testimonials/linkedIN-Icon-sticker.png';
   });
 
+
+//Peel-Sticker
 const sticker = document.getElementById('skillSticker');
 const stickerDefault = './assets/img/03_Stickers/01_Skills - Peel off/Default.png';
 const appetizer = document.getElementById('appetizer')

@@ -536,6 +536,13 @@ h2 {
     align-items: center;
 }
 
+.round-sticker {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    margin-left: 250px;
+}
+
 .message-form {
     display: flex;
     flex-direction: column;

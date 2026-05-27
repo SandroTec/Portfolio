@@ -97,6 +97,8 @@ main {
 
 .btn-container button a {
     text-decoration: none;
+    color: var(--prime-color-white);
+
 }
 
 footer {
