@@ -69,6 +69,14 @@ main {
     margin-left: -50px;
 }
 
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
 .right-hand-side {
     width: 50%;
     height: 100%;
@@ -77,6 +85,18 @@ main {
     align-items: center; 
     gap: 5%;
     justify-content: center;
+}
+
+.btn-container button {
+    background: transparent;
+    border: none;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.btn-container button a {
+    text-decoration: none;
 }
 
 footer {
