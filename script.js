@@ -103,20 +103,7 @@ function manipulateLetters(span, char) {
     });
 }
 
-// Project-images hover button displaying
 
-const projectImages = document.querySelectorAll('.project-images');
-
-projectImages.forEach((image, i )=> {
-    const button = document.querySelectorAll('.project-btn');
-
-    image.addEventListener('mouseenter', () => {
-            button[i].classList.remove('d-none');
-        });
-    image.addEventListener('mouseleave', (e) => {
-            button[i].classList.add('d-none');
-    });
-});
 
 
 const profileImage = document.getElementById('profileImage');
