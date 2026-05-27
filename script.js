@@ -148,3 +148,39 @@ formInputs.forEach((input, i) => {
         formHeadlines[i].style.color = 'var(--prime-color-white)';
     });
 });
+
+//contact form 
+
+const form = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); 
+
+    const formData = new FormData(form);
+    
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+        const response = await fetch('https://formspree.io/f/mjgzjewr', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(data) 
+        });
+
+        if (response.ok) {
+            formStatus.innerHTML = "Danke! Deine Nachricht wurde erfolgreich gesendet.";
+            form.reset(); 
+        } else {
+            const errorData = await response.json();
+            formStatus.innerHTML = "failed sending your message.";
+            console.error(errorData);
+        }
+    } catch (error) {
+        formStatus.innerHTML = "Netzwerkfehler. Bitte versuche es später noch einmal.";
+        console.error("Fetch-error:", error);
+    }
+});

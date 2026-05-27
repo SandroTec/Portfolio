@@ -559,7 +559,7 @@ form {
     width: 50%;
 }
 
-form input {
+input {
     height: 52px;
     width: 100%;
     padding: 54px 0 12px 0;
@@ -587,6 +587,8 @@ form h4 {
 form h4:hover {
     color: var(--highlight-color-red);
 }
+
+
 
 
 .privacy-notice-container {

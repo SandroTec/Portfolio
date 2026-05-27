@@ -391,18 +391,18 @@
                         <img src="./assets/img/AB_Logo.png" class="logoAB logo-on-sticker" alt="Logo">
                     </div>
 
-                    <form action="">
+                    <form id="contactForm">
                         <div class="name-form">
                             <h4>What's your name?</h4>
-                            <input id="nameInput" type="text" placeholder="Your name goes here!">
+                            <input id="nameInput" name="name" type="text" placeholder="Your name goes here!" required>
                         </div>
                         <div class="mail-form">
                             <h4>What's your email?</h4>
-                            <input id="mailInput" type="email" placeholder="bsp-mail@bspmail.com">
+                            <input id="mailInput" name="email" type="email" placeholder="bsp-mail@bspmail.com" required>
                         </div>
                         <div class="message-form">
                             <h4>How can I help you?</h4>
-                            <input id="messageInput" type="text" placeholder="Hello Alessandro, I'm interested in...">
+                            <input id="messageInput" name="message" placeholder="Hello, I'm interested in..." required></textarea>
                         </div>
 
                         <div class="form-footer">
@@ -415,7 +415,7 @@
                             </div>
                         </div>
                     </form>
-                    
+                    <div id="formStatus"></div>
                 </div>
             </div>
             <div class="contact-section-footer-links">
