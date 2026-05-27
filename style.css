@@ -138,30 +138,33 @@ h1 {
 }
 
 .hello-world-btn {
-  position: relative;
-  top: 15%;
-  width: 120px;
-  height: 42px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
+    position: relative;
+    top: 15%;
+    width: 120px;
+    border-radius: 100px;
+    border-width: 1px;
+    background: transparent;
+    cursor: pointer;
 }
 
 .hello-world-btn .btn-text {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 12px;
-  background-color: var(--prime-color-black);
-  color: var(--prime-color-white);
-  border: 1px solid var(--prime-color-white);
-  text-align: center;
-  white-space: nowrap;
-  transition: width 0.3s ease, background-color 0.3s ease;
-  pointer-events: none; 
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    background-color: var(--prime-color-black);
+    color: var(--prime-color-white);
+    border: 1px solid var(--prime-color-white);
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    pointer-events: none; 
 }
 
 .hello-world-btn:hover .btn-text {
@@ -344,7 +347,19 @@ h2 {
     justify-content: flex-end;
 }
 
+.talk-btn-container button {
+    box-shadow: 2px 4px 0px 0px var(--prime-color-black);
+}
 
+.talk-btn-container button:hover {
+    background-color: var(--highlight-color-red);
+    box-shadow: 0px 0px 0px 0px var(--prime-color-black);
+    
+}
+
+.talk-btn-container button a {
+    padding: 12px 20px;
+}
 
 .colleagues-section {
     display: flex;
@@ -505,7 +520,10 @@ h2 {
     color: var(--prime-color-white);
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.mar_right {
+    margin-left: 50%;
 }
 
 .right-side {
@@ -532,14 +550,15 @@ form input {
     background: transparent;
     border: 1px solid var(--highlight-color-yellow);
     border-width: 0 0 1px 0;
-    box-sizing: border-box; /* Wichtig, damit das Input-Feld nicht springt! */
-    transition: border 0.2s ease; /* Macht den Übergang geschmeidiger */
+    box-sizing: border-box; 
+    transition: border 0.2s ease; 
     
 }
 
 form input:hover {
-    border-width: 1px 0px; /* Oben/Unten: 5px, Links/Rechts: 0 */
+    border-width: 1px 0px; 
     border-color: var(--highlight-color-blue);
+    cursor: pointer;
 }
 
 form h4 {

@@ -123,6 +123,6 @@
 
 
 .rolling-link:hover .icon {
-  opacity: 1;
-  transform: translateX(90px) rotate(360deg); 
+    transform: translateX(90px) rotate(360deg); 
+    pointer-events: none; 
 }

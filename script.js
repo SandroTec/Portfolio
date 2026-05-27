@@ -131,13 +131,19 @@ profileImage.addEventListener('mouseleave', () => {
 // hello world button hover effect
 const helloWorldButton = document.getElementById('helloWorldBtn');
 const buttonText = helloWorldButton.querySelector('.btn-text');
+const wavingIconContainer = document.getElementById('iconContainer');
+const wavingIcon = document.getElementById('wavingIcon');
 
 helloWorldButton.addEventListener('mouseenter', () => {
     buttonText.textContent = 'Ich bin Alessandro';
+    wavingIconContainer.style.opacity = '1';
+    wavingIcon.style.opacity = '1';
 });
 
 helloWorldButton.addEventListener('mouseleave', () => {
     buttonText.textContent = 'Hello world';
+    wavingIconContainer.style.opacity = '0';
+    wavingIcon.style.opacity = '0';
 });
 
 
