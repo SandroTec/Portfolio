@@ -1,0 +1,141 @@
+
+.colleagues-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+.colleagues-section-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.colleagues-design-element {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.sticker-one, .sticker-two, .sticker-three {
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+.sticker-one {
+    position: relative;
+    margin-left: -45%;
+    transform: rotate(-6deg); 
+}
+
+.sticker-two {
+    position: absolute;
+}
+
+.sticker-three {
+    position: absolute;
+    margin-left: 40%;
+    transform: rotate(6deg); 
+}
+
+
+.colleagues-sticker {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    z-index: 1; 
+}
+
+.sticker-comment {
+    position: relative;
+    z-index: 4; 
+    width: 70%;
+    height: 70%;
+    margin-top: -65%; 
+    margin-left: 5%;
+    padding: 30px;
+    pointer-events: none;
+    color: var(--prime-color-black);
+}
+
+.sticker-one:hover, 
+.sticker-two:hover, 
+.sticker-three:hover {
+    z-index: 500; 
+}
+
+.sticker-one:hover::after,
+.sticker-two:hover::after,
+.sticker-three:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    z-index: 1;
+    
+    background-image: url("./assets/img/03_Stickers/02_Testimonials/Color option 1/Hover.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    pointer-events: none; 
+}
+
+.sticker-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -10%;
+    z-index: 1;
+}
+
+.sticker-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--prime-color-black);
+    padding: 8px;
+    z-index: 1000;
+}
+
+.sticker-one:hover, 
+.sticker-two:hover, 
+.sticker-three:hover,
+.sticker-footer:hover {
+    color: var(--prime-color-white);
+}
+
+.sticker-footer a:hover {
+    z-index: 1001;
+    color: var(--prime-color-white);
+}
+
+.sticker-footer a:hover::after {
+    z-index: 1;
+    color: var(--prime-color-black);
+}
+
+.profile-link-container {
+    display: flex;
+}
+
+.profile-link{
+    cursor: pointer;
+}

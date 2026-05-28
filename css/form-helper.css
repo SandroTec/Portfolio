@@ -1,0 +1,94 @@
+.message-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    height: 44px;
+    width: 100%;
+    padding: 54px 0 12px 0;
+    background-color: transparent !important; 
+    background: transparent !important;
+    border: 1px solid var(--highlight-color-yellow);
+    border-width: 0 0 1px 0;
+    box-sizing: border-box; 
+    transition: border 0.2s ease; 
+    color: var(--prime-color-white);   
+}
+
+input:focus, 
+input:active,
+input:hover {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; 
+    
+    /* Erzwingt deine Textfarbe */
+    -webkit-text-fill-color: var(--prime-color-white) !important;
+    
+    /* Behält die Transition bei */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+form input:hover {
+    border-width: 1px 0 1px 0; 
+    border-color: var(--highlight-color-blue);
+    cursor: pointer;
+}
+
+form h4 {
+    position: absolute;
+    margin-top: 4px;
+    pointer-events: none;
+    padding: 4px;
+}
+form h4:hover {
+    color: var(--highlight-color-red);
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    min-height: 18px; 
+}
+
+
+.privacy-notice-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-footer button {
+    width: 154px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: var(--prime-color-black);
+    color: var(--prime-color-white);
+    border: 1px solid var(--prime-color-white);
+    margin-top: 20px;
+    box-shadow: 2px 4px 0px 0px var(--prime-color-white);
+}
+
+
