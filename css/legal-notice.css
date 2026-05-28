@@ -1,3 +1,8 @@
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
 header {
     background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x/03_Skills.png');
     background-position: center;
@@ -7,12 +12,9 @@ header {
 
 footer div a{
     color: var(--prime-color-black) !important;
-
 }
 
-.rolling-link .icon {
-    background-color: var(--prime-color-black) !important;
-    border-radius: 120px;
-    height: 30px;
-    margin-top: 3px;
+.black-icon {
+    filter: invert(1) !important;
 }
+
