@@ -579,6 +579,19 @@ input:hover {
     background: transparent !important;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; 
+    
+    /* Erzwingt deine Textfarbe */
+    -webkit-text-fill-color: var(--prime-color-white) !important;
+    
+    /* Behält die Transition bei */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 form input:hover {
     border-width: 1px 0px; 
     border-color: var(--highlight-color-blue);
