@@ -12,16 +12,6 @@ function openThirdProject() {
     window.location.href = "../html/project-three.html";
 }
 
-const link = document.getElementById('footerImage');
-
-  link.addEventListener('mouseenter', () => {
-    link.href = './assets/img/03_Stickers/02Testimonials/linkedIN-Icon-sticker-hover.png';
-  });
-
-  link.addEventListener('mouseleave', () => {
-    link.href = './assets/img/03_Stickers/02Testimonials/linkedIN-Icon-sticker.png';
-  });
-
 
 //Peel-Sticker
 const sticker = document.getElementById('skillSticker');
@@ -234,3 +224,21 @@ function resetErrors() {
     privacyError.textContent = "";
     formStatus.innerHTML = "";
 }
+
+// colleagues sticker footer hovering:
+const footerContainers = document.querySelectorAll('.sticker-footer');
+
+footerContainers.forEach((footer) => {
+    const link = footer.querySelector('.profile-link');
+    const img = footer.querySelector('.footerImage');
+
+    if (link && img) {
+        link.addEventListener('mouseenter', () => {
+            img.src = './assets/img/03_Stickers/02_Testimonials/linkedIN-Icon.png';
+        });
+        
+        link.addEventListener('mouseleave', () => {
+            img.src = './assets/img/03_Stickers/02_Testimonials/linkedIN-Icon-black.png';
+        });
+    }
+});

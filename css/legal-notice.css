@@ -9,3 +9,10 @@ footer div a{
     color: var(--prime-color-black) !important;
 
 }
+
+.rolling-link .icon {
+    background-color: var(--prime-color-black) !important;
+    border-radius: 120px;
+    height: 30px;
+    margin-top: 3px;
+}

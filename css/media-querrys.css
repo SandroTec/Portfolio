@@ -1,3 +1,11 @@
+.max-content {
+    width: 1440px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (min-width: 1740px) {
     .sticker-three {
         margin-left: 30%;

@@ -26,14 +26,6 @@ section {
     margin: 5% 0;
 }
 
-.max-content {
-    width: 1440px;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .hero-information-container {
     width: 100%;
     height: 50%;
@@ -560,7 +552,7 @@ form {
 }
 
 input {
-    height: 52px;
+    height: 44px;
     width: 100%;
     padding: 54px 0 12px 0;
     background-color: transparent !important; 
@@ -593,7 +585,7 @@ input:-webkit-autofill:active {
 }
 
 form input:hover {
-    border-width: 1px 0px; 
+    border-width: 1px 0 1px 0; 
     border-color: var(--highlight-color-blue);
     cursor: pointer;
 }
@@ -612,7 +604,6 @@ form h4:hover {
     color: #ff4d4d;
     font-size: 0.85rem;
     margin-top: 4px;
-    display: block; 
     min-height: 18px; 
 }
 
