@@ -175,25 +175,25 @@ form.addEventListener('submit', async (e) => {
     let isValid = true;
 
     if (!nameInput.value.trim()) {
-        nameError.textContent = "Please enter your name.";
+        nameError.textContent = "*Please enter your name.";
         isValid = false;
     }
 
     if (!mailInput.value.trim()) {
-        mailError.textContent = "Please enter your email address.";
+        mailError.textContent = "*Please enter your email address.";
         isValid = false;
     } else if (!mailInput.checkValidity()) {
-        mailError.textContent = "Please enter a valid email address.";
+        mailError.textContent = "*Please enter a valid email address.";
         isValid = false;
     }
 
     if (!messageInput.value.trim()) {
-        messageError.textContent = "Please enter a message.";
+        messageError.textContent = "*Please enter a message.";
         isValid = false;
     }
 
     if (!privacyCheck.checked) {
-        privacyError.textContent = "You must agree to the privacy policy to proceed.";
+        privacyError.textContent = "*You must agree to the privacy policy to proceed.";
         isValid = false;
     }
 

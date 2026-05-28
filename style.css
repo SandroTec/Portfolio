@@ -603,9 +603,6 @@ form h4:hover {
     min-height: 18px; 
 }
 
-input:invalid {
-}
-
 
 .privacy-notice-container {
     display: flex;
@@ -634,37 +631,9 @@ input:invalid {
     box-shadow: 2px 4px 0px 0px var(--prime-color-white);
 }
 
-.contact-section-footer-links {
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 10%;
-}
 
-.contact-section-footer-links a {
-    text-decoration: none;
-    color: var(--prime-color-white);
-    width: fit-content;
-    height: 40px;
-    opacity: 1;
-    gap: 10px;
-    padding-top: 12px;
-    padding-right: 34px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-    border-radius: 100px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.background-color:hover {
-    background-color: var(--highlight-color-blue);
-   
-
-}
 
 #aboutMeSection button a {
     text-decoration: none;
@@ -673,18 +642,4 @@ input:invalid {
 
 .d-none {
     display: none;
-}
-
-.footer-hover {
-    position: absolute;
-    width: 150px;
-    margin-top: -65px;
-    margin-left: 15px;
-    opacity: 0; 
-    transition: opacity 0.2s ease; 
-    pointer-events: none; 
-}
-
- .legal-notice:hover + .footer-hover {
-    opacity: 1;
 }

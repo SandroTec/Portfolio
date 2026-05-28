@@ -4,3 +4,8 @@ header {
     background-size: cover;
     height: 25vh;
 }
+
+footer div a{
+    color: var(--prime-color-black) !important;
+
+}
