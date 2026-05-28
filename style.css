@@ -419,6 +419,7 @@ h2 {
     margin-top: -65%; 
     margin-left: 5%;
     padding: 30px;
+    pointer-events: none;
     color: var(--prime-color-black);
 }
 
@@ -464,6 +465,8 @@ h2 {
     align-items: center;
     text-decoration: none;
     color: var(--prime-color-black);
+    padding: 8px;
+    z-index: 1000;
 }
 
 .sticker-one:hover, 

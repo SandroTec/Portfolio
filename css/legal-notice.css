@@ -10,8 +10,28 @@ body {
 header {
     background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x/03_Skills.png');
     background-position: center;
-    height: 25vh;
     width: 100%;
+    height: 33vh;
+    
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10%;
+}
+
+main {
+    padding-left: 90px;
+    padding-top: 70px;
+}
+
+h1 {
+    z-index: 1000;
+    position: absolute;
+    color: var(--prime-color-white);
+    margin-top: -250px;
 }
 
 footer div a{
@@ -22,3 +42,13 @@ footer div a{
     filter: invert(1) !important;
 }
 
+.logoAB {
+    width: 100px;
+    height: 75px;
+    
+}
+
+.copyright-container {
+    padding-left: 90px;
+    padding-top: 70px;
+}

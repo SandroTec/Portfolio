@@ -85,7 +85,6 @@
     top: 80%;
     left: 70%;
     transform: translate(-50%, -50%);
-    
     transition: opacity 0.3s ease, background-color 0.2s ease, box-shadow 0.2s ease; 
     cursor: pointer;
 }
