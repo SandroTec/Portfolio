@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/colleagues-helper.css">
     <link rel="stylesheet" href="./css/form-helper.css">
     <link rel="stylesheet" href="./css/footer-helper.css">
+    <link rel="stylesheet" href="./css/lang-helper.css">
     <link rel="stylesheet" href="./css/transitions-helper.css">
     <link rel="stylesheet" href="./css/media-querrys.css">
 
@@ -20,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <script defer src="./script.js"></script>
+    <script defer src="./js/lang.helper.js"></script>
 </head>
 <body>
     <main id="heroSection">
@@ -49,13 +51,13 @@
                     </div>
                     
                     <div class="language-container">
-                    <button class="lang-EN-btn">EN</button>
+                    <button id="langEnButton" class="lang-EN-btn">EN</button>
                     <img class="header-hover lang-frame-EN" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
                     <div class="vector-container">
                         <img class="vector-bar" src="./assets/img/07_vectors/Vector-line.png" alt="bar">
                         <img class="vector-bubble" src="./assets/img/07_vectors/Vector-bubble.png" alt="bubble">
                     </div>
-                    <button class="lang-DE-btn">DE</button>
+                    <button id="langDeButton" class="lang-DE-btn">DE</button>
                     <img class="header-hover lang-frame-DE" src="./assets/img/00_Hand-drawn lines/00_Header/Color option 1/Toggle.png" alt="">
                     </div>
                 </nav>
@@ -139,7 +141,7 @@
                         <h2>About me</h2>
                         <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/01_About me/Color option 1.png" alt="blue line">
                     </div>
-                    <p> 
+                    <p class="lang-de"> 
                         Hey, ich bin Alessandro, 23 Jahre alt und lerne momentan programmieren bei der DA. <br>
                         Innerhalb der Zeit habe ich gelernt programmier-projekte alleine und in Gruppen, <br>
                         mit hilfe von Scrum techniken, zu bearbeiten und mit Zufriedenheit abzuschließen. <br>
@@ -147,7 +149,20 @@
                         Insbesondere an interlligenten Lösungen für komplizierte Probleme. Sobald es möglich wurde, <br>
                         in der Schule statt Heft ein IPad zu nutzen hatte ich dieses was uns unglaublich viel Zeit ersparrte, <br>
                         den Lernkontext zu digitalisieren hilft mir bis heute. Die Materialien gehen eben nicht verloren.
-                    
+                        
+                        <div>
+                            <p class="lang-en">
+                                Hey, I’m Alessandro, 23 years old, and I’m currently learning to code at DA. <br>
+                                Over time, I’ve learned to work on programming projects—both on my own and in groups—<br>
+                                using Scrum techniques, and to complete them successfully. <br>
+                                My life journey inspired me to get into programming. I’ve always had a keen interest in IT. <br>
+                                Especially in intelligent solutions for complicated problems. As soon as it became possible <br>
+                                to use an iPad instead of a notebook in school, I did so, which saved us an incredible amount of time; <br>
+                                digitizing the learning environment continues to help me to this day. The materials simply don’t get lost.
+                            
+                            </p>
+                        </div>
+
                         <div class="talk-btn-container">
                             <button><a href="#contactSection">Let's talk</a></button>
                         </div>
@@ -169,10 +184,16 @@
                     </div>
                     <div class="skill-description-container">
                         <img class="skill-descriptionfield" src="./assets/img/02_Ripped Paper/1.Skills description.png" alt="Papel for skills description">
-                        <p>
+                        <p class="lang-de">
                             Während meiner Weiterbildung habe ich verschiedene Programmiersprachen <br> 
                             und Technologien kennengelernt und praktisch angewendet. <br>
                             In folgenden Bereichen bin ich besonders erfahren:
+                        </p>
+
+                        <p class="lang-en">
+                            During my professional development, I learned about and gained hands-on experience with various programming languages <br> 
+                            and technologies. <br>
+                            I have particular expertise in the following skills:
                         </p>
                     </div>
                 </div>
@@ -236,7 +257,8 @@
                             <h3>Pull to <br> peel</h3>
                         </div>
                         <div id="futureSkills" class="skill-sticker-content-peeled d-none">
-                            <p>Also, I'm interested in diving into:</p>
+                            <p class="lang-de">Außerdem würde ich mich gerne näher mit folgenden Themen befassen:</p>
+                            <p class="lang-en">Also, I'm interested in diving into:</p>
                             <div class="icon-container">
                                 <div class="icon-desc">
                                     <img src="./assets/img/03_Stickers/01_Skills - Peel off/React.png" alt="React-icon">
@@ -262,13 +284,21 @@
                     <p>MY CRAFT</p>
                     <h2>Projects</h2>
                     <img class="element-revealHideLeftToRight headline-underline" src="./assets/img/00_Hand-drawn lines/03_Portfolio/Color option 1.png" alt="yellow line">
-                    <span>
+                    <p class="lang-de">
                         Das sind meine bisher ausgefeiltesten Projekte, <br>
                         schauen sie sich hier gerne um: <br>
                         Die Projekte zeigen verschiedene wichtige Anwendungen von HTML, CSS und JavaScript, die ich während meiner Weiterbildung erlernt habe. <br>
                         Es ist jeweil ein Live-test möglich so wie mein GitHub Repository einzusehen, <br>
                         damit sie sich einen tieferen Einblick in meinen Code und meine Arbeitsweise verschaffen können. <br>
-                    </span>
+                    </p>
+
+                    <p class="lang-en">
+                        These are my most polished projects to date, <br>
+                        please feel free to have a look around here: <br>
+                        The projects showcase various key applications of HTML, CSS and JavaScript that I learnt during my further training. <br>
+                        You can test each one live and view my GitHub repository, <br>
+                        so that you can gain a deeper insight into my code and my working methods. 
+                    </p>
                 </div>
 
                 <div class="frist-project">
@@ -278,12 +308,17 @@
                 
                     </div>
                     <h3>El Pollo Loco</h3>
-                    <span>
+                    <p class="lang-de">
                         Ein Jump'n Run Spiel in welchem man den Character Pepe steuert,<br>
                         dieser kann auf Gegner springen, Coins und Flaschen sammeln und die Flaschen auf Gegner werfen. <br>
                         Das Ziel ist den Endboss "Die wilde Henne" zu besiegen.
-                    </span>
-                    
+                    </p>
+
+                    <p class="lang-en">
+                        A platform game in which you control the character Pepe,<br>
+                        who can jump on enemies, collect coins and bottles, and throw the bottles at enemies. <br>
+                        The aim is to defeat the final boss, ‘The Wild Hen’.
+                    </p>
                 </div>
             </div>
             <div class="project-secondRow">
@@ -294,11 +329,17 @@
                         <button onclick="openSecondProject()" class="project-btn">Project Details</button>
                     </div>
                     <h3>Join</h3>
-                    <span>
+                    <p class="lang-de">
                         Diese Web-App ist ein Task-Manager tool inspiriert vom Kanban System <br>
                         Man kann Aufgaben erstellen und organisieren in verschiedenen Spalten, je nach Status der Aufgabe. <br>
                         Das ist besonders gut durch drag and drop zu bedienen. Die Aufgaben können einem oder mehrer Users zugewiesen werden.
-                    </span>
+                    </p>
+
+                    <p class="lang-en">
+                        This web app is a task management tool inspired by the Kanban system <br>
+                        You can create and organise tasks in different columns, depending on the task’s status. <br>
+                        It is particularly easy to use via drag and drop. Tasks can be assigned to one or more users.
+                    </p>
                 </div>
 
                 <div class="third-project">
@@ -307,11 +348,17 @@
                         <button onclick="openThirdProject()" class="project-btn">Project Details</button>
                     </div>
                     <h3>Pokedex</h3>
-                    <span>
+                    <p class="lang-de">
                         Diese Web-App ist dem klassischen Pokedex aus der Pokemon Welt nachempfunden. <br>
                         Dieses kann genutzt werden um Informationen über alle Pokemon zu erhalten, inklusive Bilder, Fähigkeiten, Statuswerte und mehr. <br>
                         Es ist möglich die Pokemon per Suchlesitenfunktion zu finden oder durchzuscrollen
-                    </span>
+                    </p>
+
+                    <p class="lang-en">
+                        This web app is modelled on the classic Pokédex from the Pokémon world. <br>
+                        It can be used to find information about all Pokémon, including images, abilities, stats and more. <br>
+                        You can find Pokémon using the search function or by scrolling through the list
+                    </p>
                 </div>
             </div>
         </div>
@@ -372,14 +419,22 @@
                         Ready to work <br>
                         together?
                     </h2>
-                    <span>
+                    <p class="lang-de">
                         Wenn Sie überzeugt sind mich als Frontend-Entwickler einzustellen,<br>
                         dann kontaktieren Sie mich über das Kontaktformular!
                         Meine Skill sind, wie den Projekten zu entnehmen ist, hauptsächlich im Frontend Bereich, <br>
                         aber ich bin auch offen für Positionen als Junior Fullstack Developer, <br>
                         Ich habe großes Interesse meine Fähigkeiten und Kenntnisse zu erweitern, insbesondere im Backend Bereich, <br>
                         und bin bereit, mich schnell in neue Technologien und Frameworks einzuarbeiten.
-                    </span>
+                    </p>
+                    <p class="lang-en">
+                        If you are convinced that I am the right person for the role of Frontend Developer,<br>
+                        please get in touch via the contact form!
+                        As you can see from my projects, my skills lie mainly in the front-end area, <br>
+                        but I am also open to roles as a junior full-stack developer, <br>
+                        I am keen to expand my skills and knowledge, particularly in the back-end area, <br>
+                        and am willing to quickly familiarise myself with new technologies and frameworks.
+                    </p>
                     <img class="element-revealHideRightToLeft headline-underline mar_right" src="./assets/img/00_Hand-drawn lines/05_Contact/Color option 1.png" alt="yellow curved arrow">
                 </div>
 
@@ -410,7 +465,11 @@
                     <div class="form-footer">
                         <div class="privacy-notice-container">
                             <input type="checkbox" id="privacyCheck" required>
-                            <label for="privacyCheck">I agree to the processing of my data in accordance with the <a href="./html/privacy-policy.html">privacy policy</a>.</label>
+                            <label class="lang-de" for="privacyCheck">
+                                Ich stimme der Verarbeitung meiner Daten gemäß der <br>
+                                <a href="./html/privacy-policy.html">Datenschutzerklärung</a> zu.
+                            </label>
+                            <label class="lang-en" for="privacyCheck">I agree to the processing of my data in accordance with the <a href="./html/privacy-policy.html">privacy policy</a>.</label>
                             <span class="error-msg" id="privacyError"></span>
                         </div>
                         <div class="sub-container">
