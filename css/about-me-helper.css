@@ -1,0 +1,123 @@
+.about-me-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-container {
+    display: flex;
+    height: 100%;
+}
+
+.locations-left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.locations-left-side img {
+    max-width: 70%;
+    margin-left: 70px;
+}
+
+.container-position {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -15%;
+}
+
+.yellow-wrapper {
+    position: relative;
+    height: 100px;
+}
+
+.yellow-container {
+    position: absolute;
+    width: 300px;
+    color: var(--prime-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-wrapper {
+    position: relative;
+    height: 100px;
+}
+
+.blue-container {
+    position: absolute;
+    width: 300px;
+    color: var(--prime-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange-wrapper {
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.orange-container {
+    position: absolute;
+    width: 300px;
+    color: var(--prime-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+.headline-underline {
+    width: 400px;
+    margin-left: -50px;
+}
+
+.about-me-text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10%;
+}
+
+.about-me-text-container button {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--prime-color-white);
+    color: var(--prime-color-black);
+    border: 1px, solid, var(--prime-color-black);
+}
+
+.talk-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.talk-btn-container button {
+    box-shadow: 2px 4px 0px 0px var(--prime-color-black);
+}
+
+.talk-btn-container button:hover {
+    background-color: var(--highlight-color-red);
+    box-shadow: 0px 0px 0px 0px var(--prime-color-black);
+    
+}
+
+.talk-btn-container button a {
+    padding: 12px 20px;
+}

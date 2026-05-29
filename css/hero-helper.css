@@ -1,0 +1,208 @@
+
+.hero-information-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%
+
+}
+
+.img-and-text {
+    width: 90%;
+}
+
+.polaroid-frame {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+
+
+.polaroid-image {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -186px;
+    color: var(--prime-color-white);
+    width: 172px;
+    height: 180px;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: scale(1);
+
+    transition:
+        filter 0.5s ease,
+        -webkit-filter 0.5s ease,
+        transform 0.5s ease;
+}
+
+.polaroid-image:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.kalma-font {
+    font-family: 'kalma';
+    position: absolute;
+    font-size: 30px;
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+.polaroid-container {
+  transform: rotate(12deg); 
+}
+
+h1 {
+    color: var(--prime-color-white);
+    font-size: 128px;
+}
+
+.headline span {
+  display: inline-flex;     
+  justify-content: center;  
+  min-width: 0.7em;         
+  transition: color 0.2s ease-in-out; 
+
+  padding: 4px;
+  margin: -2px;
+}
+
+.headline {
+    white-space: nowrap;
+}
+
+#interactive-headline span {
+    margin: -8px;
+}
+
+.headline-hover {
+  color: var(--highlight-color-yellow);
+}
+
+.design-element {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10%;
+    height: 300px;
+    width: 100%;
+}
+
+.btn-and-headline-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-desing-element {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+}
+
+.hello-world-btn {
+    position: relative;
+    top: 15%;
+    width: 120px;
+    border-radius: 100px;
+    border-width: 1px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hello-world-btn .btn-text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    background-color: var(--prime-color-black);
+    color: var(--prime-color-white);
+    border: 1px solid var(--prime-color-white);
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    pointer-events: none; 
+}
+
+.hello-world-btn:hover .btn-text {
+    width: 200px; 
+    background-color: #3355FF; 
+}
+
+.hero-information-container button a {
+    color: var(--prime-color-white);
+    text-decoration: none;
+}
+
+.waving-icon {
+    margin-top: -5px;
+}
+
+.contact-btn-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.get-in-touch-btn {
+    width: 154px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 100px;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    background: transparent;
+    color: var(--prime-color-white);
+    border: 1px solid var(--prime-color-white);
+    cursor: pointer;
+    box-shadow: 2px 4px 0px 0px var(--prime-color-white);
+}
+
+.get-in-touch-btn:hover {
+    background-color: var(--highlight-color-red);
+    box-shadow: 0px 0px 0px 0px var(--prime-color-white);
+}
+
+.social-links-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 250px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 136px;
+    padding-left: 72px;
+}
+
+.social-links a img {
+    border-radius: 16px;
+    border: 1px solid var(--prime-color-white);
+
+}
+
+.social-links a img:hover {
+    background: var(--highlight-color-blue);
+
+}
+
+#aboutMeSection button a {
+    text-decoration: none;
+    color: var(--prime-color-black);
+}
