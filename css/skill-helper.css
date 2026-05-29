@@ -89,7 +89,7 @@
 .skill-header {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10%;
 }
 

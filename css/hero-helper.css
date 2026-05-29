@@ -89,6 +89,7 @@ h1 {
     gap: 10%;
     height: 300px;
     width: 100%;
+    padding: 0 70px;
 }
 
 .btn-and-headline-container {
