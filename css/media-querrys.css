@@ -11,3 +11,52 @@
         margin-left: 30%;
     }
 }
+
+@media (max-width: 1150px) {
+    section {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .locations-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .skill-header {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+    .skill-and-sticker-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .project-firstRow {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .project-secondRow {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .contact-context {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+}
