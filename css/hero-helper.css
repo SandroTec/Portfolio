@@ -12,13 +12,21 @@
     width: 90%;
 }
 
+.mobile-polaroid-container {
+    display: none;
+}
+
 .polaroid-frame {
     position: relative;
     width: 200px;
     height: 250px;
 }
 
-
+.mobile-polaroid-frame {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
 
 .polaroid-image {
     position: absolute;
@@ -28,6 +36,24 @@
     width: 172px;
     height: 180px;
 
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: scale(1);
+
+    transition:
+        filter 0.5s ease,
+        -webkit-filter 0.5s ease,
+        transform 0.5s ease;
+}
+
+.mobile-polaroid-image {
+    position: absolute;
+    color: var(--prime-color-white);
+    width: 172px;
+    height: 180px;
+
+    margin-left: 15px;
+    margin-top: 14px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transform: scale(1);
@@ -49,6 +75,13 @@
     font-size: 30px;
     margin-top: -60px;
     margin-left: 10px;
+}
+
+.mobile-kalma-font {
+    font-family: 'kalma';
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
 }
 
 .polaroid-container {
