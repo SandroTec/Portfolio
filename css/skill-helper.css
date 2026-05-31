@@ -39,7 +39,7 @@
 }
 
 .skill-descriptionfield {
-    width: 600px;
+    max-width: 600px;
     height: 120px;
 }
 
@@ -49,6 +49,11 @@
     color: var(--prime-color-black);
     margin-top: 30px;
 }
+
+.skill-description-container p {
+    margin-top: 20%;
+}
+
 .skill-content {
     display: flex;
     flex-direction: column;

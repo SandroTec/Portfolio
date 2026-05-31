@@ -14,9 +14,17 @@
 }
 
 @media (max-width: 1150px) {
+
+    header {
+        display: none;
+    }
+
     section {
         display: flex;
         flex-direction: column !important;
+        position: relative;
+        height: 100%;
+        max-height: fit-content;
     }
 
     .headline {
@@ -29,7 +37,7 @@
 
     .locations-container {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
         align-items: center;
         justify-content: space-evenly;
         height: 100%;
@@ -85,9 +93,17 @@
 }
 
 @media (max-width: 960px) {
+    body {
+        gap: 10%;
+    }
+
     .headline {
         font-size: 56px;
         align-items: center;
+    }
+
+    .headline-underline {
+        max-width: 300px;
     }
 
     .design-element {
@@ -116,5 +132,43 @@
         width: 100%;
         max-width: 300px;
         height: 100px;
+    }
+
+    .colleagues-section-header {
+        padding: 0;
+    }
+
+    .colleagues-section-header h2 {
+        font-size: 32px;
+    }
+
+    .container-position {
+        margin-top: -20%;
+    }
+
+    .skill-descriptionfield {
+        max-width: 300px;
+        height: 240px;
+    }
+
+    .firstRow {
+        flex-wrap: wrap;
+    }
+
+    .secondRow {
+        flex-wrap: wrap;
+    }
+
+    .colleagues-sticker {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .contact-section-footer-links .text {
+        font-size: 24px;
+    }
+
+    .contact-section-footer-links a {
+        padding: 0;
     }
 }
