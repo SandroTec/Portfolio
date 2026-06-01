@@ -40,3 +40,16 @@
 .background-color:hover {
     background-color: var(--highlight-color-blue);
 }
+
+.mobile-footer {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.mobile-social-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
