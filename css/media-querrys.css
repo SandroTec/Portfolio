@@ -15,10 +15,6 @@
 
 @media (max-width: 1150px) {
 
-    header {
-        display: none;
-    }
-
     section {
         display: flex;
         flex-direction: column !important;
@@ -95,6 +91,15 @@
 @media (max-width: 960px) {
     body {
         gap: 10%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        flex-direction: column;
     }
 
     .headline {

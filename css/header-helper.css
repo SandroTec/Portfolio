@@ -105,3 +105,9 @@ nav div:hover .header-hover {
     margin-left: 78px;
     margin-top: 1px;
 }
+
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+}

@@ -7,7 +7,9 @@ body {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-
+.mobile-header {
+    display: none;
+}
 
 main {
     background-image: url('./assets/img/01_Background/Img-Original-Size/12\ Isolated\ Paper\ Rips\ copia.png');
