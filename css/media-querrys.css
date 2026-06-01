@@ -114,6 +114,7 @@
     .mobile-header {
         width: 100%;
         background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x//01_Hero.png');
+        background-size: contain;
         display: none;
         flex-direction: column;
         
