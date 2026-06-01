@@ -105,6 +105,10 @@
         display: none;
     }
 
+    #toggleMobileMenu {
+        background-color: transparent;
+    }
+
     .logo-mobile-container {
         width: 100%;
         display: flex;
