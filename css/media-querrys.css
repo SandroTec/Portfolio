@@ -14,21 +14,26 @@
 }
 
 @media (max-width: 1150px) {
-
     section {
         display: flex;
         flex-direction: column !important;
         position: relative;
-        height: 100%;
-        max-height: fit-content;
+        height: max-content !important;
+        padding: 50px 0px 50px 0px;
     }
 
-    .headline {
+    h1 {
         font-size: 86px;
     }
 
-    .about-me-section {
-        height: 100vh;
+    
+
+    .about-me-text-container {
+        width: 90%;
+    }
+
+    .locations-container {
+        width: 90%;
     }
 
     .locations-container {
@@ -51,6 +56,10 @@
         align-items: center;
     }
 
+    .project-images {
+        width: 280px;
+    }
+
     .project-firstRow {
         display: flex;
         flex-direction: column !important;
@@ -63,15 +72,14 @@
         align-items: center;
     }
 
-    .colleagues-section {
-        height: 100vh;
+    .project-section p {
+        padding: 0;
     }
 
     #colleaguesSection .max-content .testimonial-container {
         display: flex;
         flex-direction: column !important;
         align-items: center;
-        height: 100vh !important;
         gap: 24px;
     }
 
@@ -97,8 +105,12 @@
         display: none;
     }
 
-    .mobile-header {
+    .logo-mobile-container {
         display: flex;
+    }
+
+    .mobile-header {
+        display: none;
         flex-direction: column;
     }
 
@@ -109,13 +121,19 @@
         align-items: center;
     }
 
-    .headline {
+    .headline span {
         font-size: 36px;
-        align-items: center;
+        min-width: 1.1em;
+
+    }
+
+    .social-links-container {
+        display: none;
     }
 
     .headline-underline {
-        max-width: 300px;
+        width: 280px;
+        margin: 0;
     }
 
     .design-element {
@@ -223,6 +241,11 @@
 
     .contact-section .right-side {
         width: 100%;
+    }
+
+    .contact-section .left-side {
+        padding: 0;
+        width: 90%;
     }
 
     form input {

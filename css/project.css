@@ -3,8 +3,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(29, 29, 29);
-    width: 100vw;
-    height: 100vh;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
@@ -47,7 +45,7 @@ body {
 
 main {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
 }
 
@@ -102,7 +100,7 @@ main {
 }
 
 footer {
-    width: 90dvw;
+    width: 90%;
     position: absolute;
     display: flex;
     justify-content: flex-end;

@@ -1,5 +1,5 @@
 .contact-section {
-    height: fit-content;
+    height: max-content;
     background-image: url(../assets/img/01_Background/Img-Original-Size/Footer.png);
 
     padding-bottom: 50px;

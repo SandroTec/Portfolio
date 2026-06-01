@@ -106,6 +106,9 @@ nav div:hover .header-hover {
     margin-top: 1px;
 }
 
+.logo-mobile-container {
+    display: none;
+}
 
 .mobile-nav {
     display: flex;
