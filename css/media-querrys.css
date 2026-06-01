@@ -106,12 +106,17 @@
     }
 
     .logo-mobile-container {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
     }
 
     .mobile-header {
+        width: 100%;
+        background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x//01_Hero.png');
         display: none;
         flex-direction: column;
+        
     }
 
     .img-and-text {
