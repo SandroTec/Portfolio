@@ -102,8 +102,15 @@
         flex-direction: column;
     }
 
+    .img-and-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .headline {
-        font-size: 56px;
+        font-size: 36px;
         align-items: center;
     }
 
@@ -115,6 +122,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .second-desing-element {
+        height: 100px;
     }
 
     .polaroid-container {
@@ -130,12 +143,15 @@
 
     .mobile-polaroid-container {
         display: flex;
-        margin-left: 40%;
+        margin-left: 25%;
+    }
+
+    .locations-left-side img {
+        margin: 0;
     }
 
     .paper {
-        width: 100%;
-        max-width: 300px;
+        width: 280px;
         height: 100px;
     }
 
@@ -148,12 +164,18 @@
     }
 
     .container-position {
-        margin-top: -20%;
+        margin-top: -80px;
+        margin-left: 0;
+        max-width: 280px;
     }
 
     .skill-descriptionfield {
         max-width: 300px;
         height: 240px;
+    }
+
+    .skill-description-container p {
+        margin-top: 20%;
     }
 
     .firstRow {
@@ -164,9 +186,47 @@
         flex-wrap: wrap;
     }
 
+    .blue-arrow {
+        width: 200px;
+    }
+
     .colleagues-sticker {
-        max-width: 400px;
+        max-width: 280px;
         width: 100%;
+    }
+
+    .sticker-one, .sticker-two, .sticker-three {
+        max-width: 280px;
+    }
+
+    .sticker-comment {
+        height: 100%;
+        margin-top: -280px;
+    }
+
+    .sticker-footer {
+        width: 80%;
+        margin-top: -140px;
+    }
+
+    .round-sticker {
+        padding: 0;
+    }
+
+    .mar_right {
+        padding: 0;
+    }
+
+    .headline-underline {
+        width: 280px;
+    }
+
+    .contact-section .right-side {
+        width: 100%;
+    }
+
+    form input {
+        width: 200px;
     }
 
     .contact-section-footer-links .text {
