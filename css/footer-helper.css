@@ -51,11 +51,11 @@
 .mobile-social-links {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
 }
 
 .mobile-legal-notice {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-end;
     margin-right: 100px;
