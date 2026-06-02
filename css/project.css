@@ -45,7 +45,7 @@ body {
 }
 
 .go-back-btn a:hover {
-    color: #F7C518;
+    color: var(--highlight-color-yellow);
 }
 
 .project-image {
@@ -161,7 +161,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #F7C518;
+    color: var(--highlight-color-yellow);
 
 }
 
@@ -204,6 +204,8 @@ footer a img {
     }
 
     body {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        overflow-wrap: break-word;
         background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
         background-size: contain;
         background-size: cover;
@@ -233,12 +235,29 @@ footer a img {
     .mobile-footer-link {
         display: flex;
     }
+
+    .go-back-arrow {
+    transform: rotate(0deg);
+    }
+
+    .mobile-footer-link:hover {
+        color: var(--highlight-color-red) !important;
+    }
 }
 
 
 @media (max-width: 950px) {
     nav a {
         color: var(--prime-color-white) !important;
+    }
+
+    .content {
+        padding-bottom: 250px;
+
+    }
+
+    .header-hover {
+        margin-top: -22px !important;
     }
 }
 
