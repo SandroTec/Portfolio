@@ -129,5 +129,9 @@ nav div:hover .header-hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 90%;
+}
+
+#toggleMobileMenu {
+    background-color: black;
 }
