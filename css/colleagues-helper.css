@@ -89,6 +89,7 @@
     background-image: url("./assets/img/03_Stickers/02_Testimonials/Color option 1/Hover.png");
     background-position: center;
     background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     
     pointer-events: none; 

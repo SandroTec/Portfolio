@@ -4,6 +4,7 @@ html {
 
 body {
     background-image: url(../assets/img//01_Background/Img-Original-Size/Note\ book\ paper.png);
+    background-size: contain;
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
@@ -179,10 +180,21 @@ footer a img {
         display: none;
     }
 
+    .max-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     main {
         flex-direction: column;
         height: auto;
         
+    }
+
+    nav a {
+        color: var(--prime-color-black) !important;
     }
 
     h1 {
@@ -193,6 +205,7 @@ footer a img {
     body {
         background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
         background-size: contain;
+        background-size: cover;
         height: auto;
         background-color: black;
     }
@@ -220,3 +233,11 @@ footer a img {
         display: flex;
     }
 }
+
+
+@media (max-width: 950px) {
+    nav a {
+        color: var(--prime-color-white) !important;
+    }
+}
+

@@ -1,6 +1,7 @@
 
 .skill-section {
     background-image: url(../assets/img/01_Background/Img-Original-Size/Skills\ BG.png);
+    background-size: contain;
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;

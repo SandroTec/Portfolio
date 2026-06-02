@@ -12,6 +12,7 @@ header {
 
 .mobile-header {
     display: none;
+    opacity: 0;
 }
 
 nav {

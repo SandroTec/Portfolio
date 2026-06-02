@@ -1,7 +1,8 @@
 .contact-section {
     height: max-content;
     background-image: url(../assets/img/01_Background/Img-Original-Size/Footer.png);
-
+    background-size: contain;
+    background-size: cover;
     padding-bottom: 50px;
     width: 100%;
     display: flex;
