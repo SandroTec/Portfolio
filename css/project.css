@@ -13,6 +13,7 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .go-back-arrow {
@@ -147,6 +148,7 @@ footer {
 footer a {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: transparent;
     border: none;
     height: 50px;
@@ -189,7 +191,7 @@ footer a img {
     }
 
     body {
-        background-image: url(../assets/img/01_Background/Img-Original-Size/project\ background\ mobile.png);
+        background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
         background-size: contain;
         height: auto;
         background-color: black;
