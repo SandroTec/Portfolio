@@ -96,7 +96,7 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 950px) {
     body {
         gap: 10%;
     }
@@ -264,6 +264,11 @@
         flex-wrap: wrap;
     }
 
+    .join-sticker {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
     .blue-arrow {
         width: 200px;
     }
@@ -339,5 +344,9 @@
         width: 130px;
         margin-top: -50px;
         margin-left: 0px;
+    }
+
+    .mobile-social-links {
+        margin-top: 40px;
     }
 }
