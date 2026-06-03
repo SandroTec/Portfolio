@@ -19,7 +19,7 @@
         flex-direction: column !important;
         position: relative;
         height: max-content !important;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 50px 50px 50px;
     }
 
     h1 {
@@ -30,6 +30,7 @@
 
     .about-me-text-container {
         width: 90%;
+        margin-right: 0;
     }
 
     .locations-container {
@@ -180,7 +181,7 @@
     }
 
     .headline span {
-        font-size: 36px;
+        font-size: 32px;
         min-width: 1.1em;
 
     }
@@ -264,13 +265,8 @@
         flex-wrap: wrap;
     }
 
-    .join-sticker {
-        width: 75px !important;
-        height: 75px !important;
-    }
-
     .blue-arrow {
-        width: 200px;
+        width: 150px;
     }
 
     .colleagues-sticker {
