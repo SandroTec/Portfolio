@@ -13,6 +13,17 @@ function openThirdProject() {
     window.location.href = "../html/project-three.html";
 }
 
+//hoverring effect for join Image 
+const joinImage = document.getElementById('joinImage');
+const joinMovingImage = joinImage.querySelector('.join-image');
+joinImage.addEventListener('mouseenter', () => {
+    joinMovingImage.classList.remove('moving-image');
+});
+
+joinImage.addEventListener('mouseleave', () => {
+    joinMovingImage.classList.add('moving-image');
+});
+
 
 //Peel-Sticker
 const sticker = document.getElementById('skillSticker');
