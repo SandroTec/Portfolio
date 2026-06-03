@@ -64,11 +64,9 @@ const secondText = secondHeadline.textContent;
 headline.textContent = '';
 secondHeadline.textContent = '';
 
-// using spread operator to iterate over each letter in the text
 [...text].forEach(char => {
     const span = document.createElement('span');
     span.textContent = char;       
-    // Important for spaces!
     if (char === ' ') {
         span.style.whiteSpace = 'pre';
     }
@@ -80,7 +78,6 @@ secondHeadline.textContent = '';
 [...secondText].forEach(char => {
     const span = document.createElement('span');
     span.textContent = char;       
-    // Important for spaces!
     if (char === ' ') {
         span.style.whiteSpace = 'pre';
     }
@@ -99,15 +96,13 @@ function manipulateLetters(span, char) {
         span.classList.add('headline-hover');
     });
     span.addEventListener('mouseleave', () => {
-        // back to char means reset to original character (upper or lower)
         span.textContent = char;
         span.classList.remove('headline-hover');
     });
 }
 
 
-
-
+//profile image hover effect
 const profileImage = document.getElementById('profileImage');
 
 profileImage.addEventListener('mouseenter', () => {
