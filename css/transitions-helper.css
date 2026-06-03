@@ -122,9 +122,24 @@
 }
 
 .rolling-link:hover .icon {
-    /* Ende: Wandert hoch auf 0px, gleicht die Rotation aus */
     transform: translateX(100px) translateY(0px) rotate(360deg); 
     opacity: 1;
+}
+
+.moving-image {  
+  animation: moving 3s ease-in-out infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(50px); 
+  }
+  100% {
+    transform: translateY(-20px); 
+  }
 }
 
 @media (max-width: 950px) {
@@ -139,7 +154,6 @@
 }
 
 .rolling-link:hover .icon {
-    /* Ende: Wandert hoch auf 0px, gleicht die Rotation aus */
     transform: translateX(40px) translateY(0px) rotate(360deg); 
     opacity: 1;
 }

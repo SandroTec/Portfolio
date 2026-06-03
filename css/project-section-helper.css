@@ -38,6 +38,11 @@
     border-radius: 16px;
 }
 
+.join-sticker {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
 
 .second-project {
     width: 100%;
