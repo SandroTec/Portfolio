@@ -61,6 +61,10 @@
         width: 280px;
     }
 
+    .info-container {
+        width: 100%;
+    }
+
     .project-firstRow {
         display: flex;
         flex-direction: column !important;
