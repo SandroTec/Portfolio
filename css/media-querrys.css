@@ -20,6 +20,7 @@
         position: relative;
         height: max-content !important;
         padding: 50px 50px 50px 50px;
+        min-height: 80vh;
     }
 
     h1 {
@@ -43,6 +44,20 @@
         align-items: center;
         justify-content: space-evenly;
         height: 100%;
+    }
+
+    .yellow-wrapper {
+        transform: rotate(-4deg);
+    }
+
+    .blue-wrapper {
+        margin-top: -30px;
+        transform: rotate(4deg);
+    }
+
+    .orange-wrapper {
+        margin-top: -30px;
+        transform: rotate(-4deg);
     }
 
     .skill-header {
@@ -105,16 +120,34 @@
     }
 
     #colleaguesSection .max-content .testimonial-container {
+        height: auto;
         display: flex;
         flex-direction: column !important;
         align-items: center;
         gap: 24px;
     }
 
+
     .sticker-one, .sticker-two, .sticker-three {
         position: relative;
         margin-left: 0;
         transform: rotate(0deg);
+    }
+
+    .sticker-one {
+        margin-top: 150px;
+        transform: rotate(4deg);
+
+    }
+
+    .sticker-two {
+        margin-top: -100px;
+        transform: rotate(-4deg);
+    }
+
+    .sticker-three {
+        margin-top: -100px;
+        transform: rotate(4deg);
     }
     
     .contact-context {
@@ -392,12 +425,13 @@
 
     .mobile-social-links {
         margin-top: 40px;
+        padding-left: 0;
     }
 
     .mobile-logo-copyright-container {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -413,5 +447,15 @@
     .yellow-arrow-mobile {
         width: 100px;
         height: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mobile-project-btn {
+        margin-left: 40px;
+    }
+
+    .mobile-legal-notice {
+        margin-right: 5%;
     }
 }
