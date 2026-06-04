@@ -99,6 +99,14 @@
         flex-direction: column !important;
         align-items: center;
     }
+
+    .footer-hover {
+        width: 130px;
+        margin-top: 0px;
+        margin-left: 0px;
+        right: 80px;
+    }
+
 }
 
 @media (max-width: 950px) {
@@ -348,9 +356,17 @@
         width: 130px;
         margin-top: -50px;
         margin-left: 0px;
+        right: 100px;
     }
 
     .mobile-social-links {
         margin-top: 40px;
+    }
+
+    .mobile-logo-copyright-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 }
