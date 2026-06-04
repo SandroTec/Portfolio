@@ -369,4 +369,18 @@
         justify-content: flex-end;
         align-items: center;
     }
+
+    .sub-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .yellow-arrow {
+        display: none;
+    }
+
+    .yellow-arrow-mobile {
+        width: 100px;
+        height: 30px;
+    }
 }
