@@ -111,6 +111,24 @@
     cursor: pointer;
 }
 
+.mobile-project-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 40px;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: var(--prime-color-black);
+    box-shadow: 2px 4px 0px 0px var(--prime-color-black);
+    z-index: 10;
+    color: var(--prime-color-white);
+    background-color: transparent;
+    color: var(--prime-color-black);
+    transform: translate(-50%, -50%);
+    margin: 46px 0;
+}
+
 
 .project-content:hover .project-images,
 .project-images:hover {
@@ -141,7 +159,7 @@
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-.project-btn:hover {
+.project-btn:hover, .mobile-project-btn:hover {
     box-shadow: 0px 0px 0px 0px var(--prime-color-white);
     background-color: var(--highlight-color-red);
 }

@@ -265,8 +265,8 @@
     }
 
     .skill-descriptionfield {
-        max-width: 300px;
-        height: 240px;
+        max-width: 280px;
+        height: 210px;
     }
 
     .skill-description-container p {
@@ -279,6 +279,14 @@
 
     .secondRow {
         flex-wrap: wrap;
+    }
+
+    .project-btn {
+        display: none;
+    }
+
+    .mobile-project-btn {
+        display: flex;
     }
 
     .blue-arrow {
