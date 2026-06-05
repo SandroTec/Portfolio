@@ -49,3 +49,7 @@
     margin-top: 50px;
     z-index: 1000;
 }
+
+.yellow-arrow-mobile {
+    display: none;
+}
