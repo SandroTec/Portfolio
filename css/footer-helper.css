@@ -74,3 +74,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.privacy-notice-container {
+    display: flex;
+    margin-top: 5%;
+}

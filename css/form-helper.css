@@ -63,12 +63,6 @@ form h4:hover {
     min-height: 18px; 
 }
 
-
-.privacy-notice-container {
-    display: flex;
-    margin-top: 5%;
-}
-
 .form-footer {
     display: flex;
     flex-direction: column;
