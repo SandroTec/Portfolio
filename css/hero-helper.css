@@ -52,7 +52,6 @@
     width: 172px;
     height: 180px;
 
-    margin-left: 15px;
     margin-top: 14px;
 }
 
@@ -97,6 +96,7 @@ h1 {
 
 .headline {
     white-space: nowrap;
+    
 }
 
 #interactive-headline span {

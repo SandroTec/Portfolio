@@ -27,8 +27,6 @@
         font-size: 86px;
     }
 
-    
-
     .about-me-text-container {
         width: 90%;
         margin-right: 0;
@@ -296,7 +294,7 @@
 
     .mobile-polaroid-container {
         display: flex;
-        margin-left: 25%;
+        justify-content: center;
         padding-bottom: 200px;
     }
 
@@ -474,6 +472,7 @@
 }
 
 @media (max-width: 600px) {
+
     .mobile-project-btn {
         margin-left: 40px;
     }
