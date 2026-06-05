@@ -20,7 +20,7 @@
         position: relative;
         height: max-content !important;
         padding: 50px 50px 50px 50px;
-        min-height: 80vh;
+        min-height: auto;
     }
 
     h1 {
@@ -44,20 +44,6 @@
         align-items: center;
         justify-content: space-evenly;
         height: 100%;
-    }
-
-    .yellow-wrapper {
-        transform: rotate(-4deg);
-    }
-
-    .blue-wrapper {
-        margin-top: -30px;
-        transform: rotate(4deg);
-    }
-
-    .orange-wrapper {
-        margin-top: -30px;
-        transform: rotate(-4deg);
     }
 
     .skill-header {
@@ -92,7 +78,7 @@
         width: 250px;
         height: 120px;
         margin-left: 30px;
-        margin-top: 0px;
+        margin-top: -40px;
     }
 
     .project-images {
@@ -124,9 +110,8 @@
         display: flex;
         flex-direction: column !important;
         align-items: center;
-        gap: 24px;
+        margin: 0;
     }
-
 
     .sticker-one, .sticker-two, .sticker-three {
         position: relative;
@@ -154,6 +139,16 @@
         display: flex;
         flex-direction: column !important;
         align-items: center;
+    }
+
+    .yellow-arrow {
+        display: none;
+    }
+
+    .yellow-arrow-mobile {
+        display: flex;
+        height: 30px;
+        width: 250px;
     }
 
     .footer-hover {
@@ -306,6 +301,20 @@
         height: 100px;
     }
 
+    .yellow-wrapper {
+        transform: rotate(-4deg);
+    }
+
+    .blue-wrapper {
+        margin-top: -30px;
+        transform: rotate(4deg);
+    }
+
+    .orange-wrapper {
+        margin-top: -30px;
+        transform: rotate(-4deg);
+    }
+
     .colleagues-section-header {
         padding: 0;
     }
@@ -327,6 +336,10 @@
 
     .skill-description-container p {
         margin-top: 20%;
+    }
+
+    .skill-and-sticker-container {
+        width: 100%;
     }
 
     .firstRow {
@@ -445,6 +458,7 @@
     }
 
     .yellow-arrow-mobile {
+        display: flex;
         width: 100px;
         height: 30px;
     }
@@ -457,5 +471,15 @@
 
     .mobile-legal-notice {
         margin-right: 5%;
+    }
+
+    .firstRow, .secondRow {
+        gap: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .headline-circle {
+        margin-left: 80px;
     }
 }

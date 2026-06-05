@@ -33,6 +33,7 @@
 .yellow-wrapper {
     position: relative;
     height: 100px;
+    transform: rotate(3deg);
 }
 
 .yellow-container {
@@ -47,6 +48,7 @@
 .blue-wrapper {
     position: relative;
     height: 100px;
+    transform: rotate(6deg);
 }
 
 .blue-container {
@@ -62,6 +64,8 @@
     position: relative;
     height: 100px;
     margin-top: 20px;
+    transform: rotate(4deg);
+
 }
 
 .orange-container {
