@@ -159,7 +159,6 @@
 
     .footer-hover {
         width: 130px;
-        margin-top: 0px;
         margin-left: 0px;
         right: 80px;
     }
@@ -437,9 +436,7 @@
     }
 
     .footer-hover {
-        width: 130px;
         margin-top: -50px;
-        margin-left: 0px;
         right: 100px;
     }
 
@@ -478,7 +475,12 @@
     }
 
     .mobile-legal-notice {
-        margin-right: 5%;
+        margin-right: 25px;
+    }
+
+    .footer-hover {
+        margin-top: -50px;
+        right: 20px;
     }
 
     .firstRow, .secondRow {
