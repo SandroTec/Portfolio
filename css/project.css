@@ -251,11 +251,6 @@ footer a img {
         color: var(--prime-color-white) !important;
     }
 
-    .content {
-        padding-bottom: 250px;
-
-    }
-
     .header-hover {
         margin-top: -22px !important;
     }
