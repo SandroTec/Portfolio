@@ -96,7 +96,9 @@ h1 {
 
 .headline {
     white-space: nowrap;
-    
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
 }
 
 #interactive-headline span {
