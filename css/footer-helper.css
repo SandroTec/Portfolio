@@ -84,4 +84,34 @@
     margin-top: 5%;
 }
 
+.icon-bg-color {
+    background-color: white;
+    border-radius: 100px;
+}
 
+
+.logo-copyright-container div p {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.mobile-logo-copyright-container div p {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+@media (max-width: 950px) {
+    .footer-left-side {
+        padding: 12px 34px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-left-side {
+        margin-left: 0;
+    }
+}
