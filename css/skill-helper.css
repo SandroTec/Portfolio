@@ -196,3 +196,47 @@
 .d-none {
     display: none;
 }
+
+@media (max-width: 1150px) {
+    .skill-header {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+    .skill-and-sticker-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .skill-descriptionfield {
+        margin-top: 40px;
+        max-width: 450px;
+        height: 180px;
+    }
+
+    .skill-description-container p {
+        margin-top: 100px;
+        width: 90%;
+    }
+
+    .headline-circle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: -40px;
+    }
+
+    .headline-circle h2, .headline-circle p {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .headline-circle {
+        margin-left: 80px;
+    }
+}
