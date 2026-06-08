@@ -3,11 +3,11 @@
 }
 
 body.lang-en-active .lang-en {
-    display: block;
-    width: 90%;
+  display: block;
+ 
 }
 
 body.lang-en-active .lang-de {
   display: none;
-  width: 90%;
+
 }
