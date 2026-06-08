@@ -70,6 +70,10 @@
     width: 100%;
 }
 
+.mobile-logo-copyright-container {
+    color: var(--prime-color-white);
+}
+
 .social-footer-links {
     display: flex;
     justify-content: space-evenly;
