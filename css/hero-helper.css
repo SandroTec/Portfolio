@@ -251,3 +251,13 @@ h1 {
     text-decoration: none;
     color: var(--prime-color-black);
 }
+
+@media (max-width: 950px) {
+    .design-element {
+        padding-top: 100px;
+    }
+
+    .second-desing-element {
+        padding-top: 100px;
+    }
+}
