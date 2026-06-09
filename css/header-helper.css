@@ -112,6 +112,13 @@ nav div:hover .header-hover {
     position: absolute;
     margin-left: -75px;
     margin-top: 1px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.lang-EN-btn:hover + .lang-frame-EN {
+    opacity: 1;
 }
 
 .lang-frame-DE {
@@ -120,6 +127,13 @@ nav div:hover .header-hover {
     position: absolute;
     margin-left: 78px;
     margin-top: 1px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.lang-DE-btn:hover + .lang-frame-DE {
+    opacity: 1;
 }
 
 .logo-mobile-container {
