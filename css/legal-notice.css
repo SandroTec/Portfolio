@@ -7,13 +7,12 @@ body {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-header{
+.header-bg{
     background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x/03_Skills.png');
     background-position: center;
-    background-size: cover;
     width: 100%;
     height: auto;
-    min-height: 20vh;
+    min-height: 40vh;
     
 }
 
@@ -21,7 +20,7 @@ nav {
     height: 100%;
     display: flex;
     align-items: flex-start;
-    padding-top: 10%;
+    padding-top: 60px;
 }
 
 main {
@@ -32,7 +31,7 @@ h1 {
     z-index: 1000;
     position: absolute;
     color: var(--prime-color-white);
-    margin-top: -250px;
+    margin-top: -150px;
 }
 
 footer div a{
