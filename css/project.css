@@ -4,14 +4,12 @@
 }
 
 body {
-    background-image: url(../assets/img//01_Background/Img-Original-Size/Note\ book\ paper.png);
-    background-size: contain;
+    background-image: url(../assets/img/01_Background/Design\ Size\ Relation@3x/Note\ book\ paper.png);
     background-size: cover;
-    background-position: center;
     background-repeat: repeat-x;
     background-color: rgb(29, 29, 29);
     font-family: 'Bricolage Grotesque', sans-serif;
-
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,16 +201,6 @@ footer a img {
         padding-top: 75px;
     }
 
-    body {
-        font-family: 'Bricolage Grotesque', sans-serif;
-        overflow-wrap: break-word;
-        background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
-        background-size: contain;
-        background-size: cover;
-        height: auto;
-        background-color: black;
-    }
-
     .left-hand-side {
         width: 100%;
     }
@@ -247,12 +235,46 @@ footer a img {
 
 
 @media (max-width: 950px) {
+    body {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        overflow-wrap: break-word;
+        background-image: none;
+        background-color: black;
+        height: 100%;
+    }
+
     nav a {
         color: var(--prime-color-white) !important;
     }
 
     .header-hover {
         margin-top: -22px !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .content {
+        gap: 4px;
+    }
+
+    .left-hand-side {
+        height: auto;
+        background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
+        background-size: cover;
+        padding: 100px 0;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .left-hand-side {
+        padding-top: 0;
     }
 }
 
