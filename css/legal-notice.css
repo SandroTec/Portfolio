@@ -113,8 +113,21 @@ footer div a{
     }
 
     h1 {
-        margin-top: -160px;
+        margin-top: -200px;
+        padding-bottom: 40px
     }
 
     
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 46px !important;
+        margin-top: -160px;
+    }
+
+    h2 {
+        font-size: 24px !important;
+        word-break: break-all;
+    }
 }
