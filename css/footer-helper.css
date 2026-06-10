@@ -25,6 +25,10 @@
     align-items: center;
 }
 
+.footer-left-side {
+    margin-top: -100px;
+}
+
 .footer-hover {
     position: absolute;
     width: 150px;
@@ -65,9 +69,9 @@
 .logo-copyright-container {
     color: var(--prime-color-white);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin-top: -100px;
 }
 
 .mobile-logo-copyright-container {
@@ -75,6 +79,7 @@
 }
 
 .social-footer-links {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -107,6 +112,7 @@
     .footer-left-side {
         padding: 12px 34px;
         margin-left: 25px;
+        margin-top: 0;
     }
 }
 
