@@ -85,6 +85,10 @@ nav div:hover .header-hover {
 .language-container button {
     background-color: transparent;
     cursor: pointer;
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 0;
+
 }
 
 .lang-EN-btn {

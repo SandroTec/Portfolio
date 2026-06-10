@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Bricolage Grotesque', sans-serif;
+    box-sizing: border-box;
 }
 
 .header-bg{
@@ -12,11 +13,13 @@ body {
     background-position: center;
     width: 100%;
     height: auto;
-    min-height: 40vh;
+    min-height: 20vh;
     
 }
 
 nav {
+    width: 100%;
+    max-width: 1440px;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -25,6 +28,7 @@ nav {
 
 h1 {
     color: var(--prime-color-white);
+    z-index: 1000;
 }
 
 footer {
@@ -75,6 +79,25 @@ footer div a{
     text-align: left !important;  
 }
 
+.dark-version {
+  filter: invert(1); 
+}
+
+.logo-copyright-container {
+    color: var(--prime-color-black) !important;
+}
+
+.logo-copyright-container p {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1150px) {
+    .align-text-center {
+        margin-top: 70px;
+    }
+}
+
 @media (max-width: 950px) {
     .header-nav {
         display: none;
@@ -92,4 +115,6 @@ footer div a{
     h1 {
         margin-top: -160px;
     }
+
+    
 }
