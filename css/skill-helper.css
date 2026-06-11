@@ -41,14 +41,14 @@
 
 .skill-descriptionfield {
     max-width: 600px;
-    height: 120px;
+    height: 200px;
 }
 
 .skill-description-container p {
     position: absolute;
     z-index: 1;
     color: var(--prime-color-black);
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .skill-content {
@@ -213,7 +213,7 @@
     .skill-descriptionfield {
         margin-top: 40px;
         max-width: 450px;
-        height: 180px;
+        height: 240px;
     }
 
     .skill-description-container p {
@@ -238,5 +238,11 @@
 @media (max-width: 450px) {
     .headline-circle {
         margin-left: 80px;
+    }
+
+    .skill-descriptionfield {
+        margin-top: 50px;
+        width: 280px;
+        height: 300px;
     }
 }
