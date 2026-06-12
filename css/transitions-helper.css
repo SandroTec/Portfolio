@@ -126,6 +126,32 @@
     opacity: 1;
 }
 
+.rolling-link-wave-icon {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 10px;
+    overflow: visible; 
+    width: 200px; 
+}
+
+.rolling-link-wave-icon .icon {
+    position: absolute;
+    left: 0;
+    top: -20px; 
+    opacity: 0;
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(15px) translateY(0px) rotate(180deg); 
+    pointer-events: none;
+}
+
+.rolling-link-wave-icon:hover .icon {
+    transform: translateX(180px) translateY(0px) rotate(360deg); 
+    opacity: 1;
+}
+
 .moving-image {  
   animation: moving 3s ease-in-out infinite;
 }
