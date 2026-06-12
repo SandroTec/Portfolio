@@ -121,4 +121,8 @@
     .footer-left-side {
         margin-left: 0;
     }
+
+    .legal-notice:hover + .footer-hover {
+        width: 80px;
+    }
 }
