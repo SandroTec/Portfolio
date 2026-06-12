@@ -101,19 +101,6 @@ function manipulateLetters(span, char) {
     });
 }
 
-
-//profile image hover effect
-const profileImage = document.getElementById('profileImage');
-
-profileImage.addEventListener('mouseenter', () => {
-    profileImage.src = './assets/img/profile-image.jpeg';
-});
-
-profileImage.addEventListener('mouseleave', () => {
-    profileImage.src = './assets/img/troll_image.jpeg';
-})
-
-
 // hello world button hover effect
 const helloWorldButton = document.getElementById('helloWorldBtn');
 const buttonText = helloWorldButton.querySelector('.btn-text');
