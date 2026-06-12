@@ -49,10 +49,9 @@ form input:hover {
 form h4 {
     position: absolute;
     margin-top: 4px;
-    pointer-events: none;
     padding: 4px;
 }
-form h4:hover {
+form input form h4:hover {
     color: var(--highlight-color-red);
 }
 

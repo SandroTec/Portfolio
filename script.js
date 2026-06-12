@@ -135,15 +135,20 @@ helloWorldButton.addEventListener('mouseleave', () => {
 
 // comtact form hover effect for input and headline
 const formInputs = document.querySelectorAll('form input');
-const formHeadlines = document.querySelectorAll('form h4');
 
-formInputs.forEach((input, i) => {
-    input.addEventListener('mouseenter', () => {
-        formHeadlines[i].style.color = ' #F87A55';
-    });
-    input.addEventListener('mouseleave', () => {
-        formHeadlines[i].style.color = ' #F8F9FA';
-    });
+formInputs.forEach((input) => {
+    const parentContainer = input.closest('div[class$="-form"]');
+    if (parentContainer) {
+        const headlinesInContainer = parentContainer.querySelectorAll('h4');
+
+        input.addEventListener('mouseenter', () => {
+            headlinesInContainer.forEach(h4 => h4.style.color = '#F87A55');
+        });
+        
+        input.addEventListener('mouseleave', () => {
+            headlinesInContainer.forEach(h4 => h4.style.color = '#F8F9FA');
+        });
+    }
 });
 
 //contact form 
