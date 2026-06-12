@@ -70,7 +70,8 @@
     color: var(--prime-color-white);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: -100px;
 }
 
@@ -95,13 +96,13 @@
 }
 
 
-.logo-copyright-container div p {
+.logo-copyright-container  p {
     display: flex;
     align-items: center;
     gap: 18px;
 }
 
-.mobile-logo-copyright-container div p {
+.mobile-logo-copyright-container  p {
     display: flex;
     align-items: center;
     gap: 18px;
