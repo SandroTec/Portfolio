@@ -241,3 +241,20 @@ footerContainers.forEach((footer) => {
         });
     }
 });
+
+
+// Logo Hover
+
+const logos = document.querySelectorAll('.logoAB');
+
+logos.forEach(logo => {
+    logo.addEventListener('mouseenter', () => {
+        logo.src = './assets/img/AB_Logo-yellow.png'; 
+        logo.style.paddingTop = '10px';
+    });
+
+    logo.addEventListener('mouseleave', () => {
+        logo.src = './assets/img/AB_Logo.png';
+        logo.style.paddingTop = '0px';
+    });
+});
