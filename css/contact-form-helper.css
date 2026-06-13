@@ -36,20 +36,39 @@
     align-items: center;
 }
 
-.round-sticker {
+.sticker-container {
     position: relative;
-    height: 180px;
-    width: 180px;
+    width: 250px;  
+    height: 250px;
+}
+
+.round-sticker {
+    width: 100%;
+    height: 100%;
 }
 
 .logo-on-sticker {
     position: absolute;
-    margin-left: -140px;
-    margin-top: 50px;
-    z-index: 1000;
-    width: 100px;
-    height: 75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; 
 }
+
+.sticker-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 6px;
+    color: #000;
+    offset-path: border-box; 
+    transform: translate(122px, 122px);
+}
+
+
 
 .yellow-arrow-mobile {
     display: none;

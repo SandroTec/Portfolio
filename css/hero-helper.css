@@ -244,6 +244,7 @@ h1 {
 
 .mobile-social-links a img:hover {
     background: var(--highlight-color-blue);
+    transition: ease-out;
 
 }
 

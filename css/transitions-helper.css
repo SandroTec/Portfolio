@@ -170,7 +170,7 @@
 
 
 @media (max-width: 950px) {
-    .rolling-link .icon {
+.rolling-link .icon {
   position: absolute;
   left: 0;
   top: -25px; 
