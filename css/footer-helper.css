@@ -57,7 +57,6 @@
 .mobile-social-links {
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
 }
 
 .mobile-legal-notice {

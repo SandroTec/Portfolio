@@ -214,3 +214,16 @@
     opacity: 1;
   }
 }
+
+
+
+@media (max-width: 350px) {
+    .rolling-link:hover .icon {
+        transform: translateX(25px) translateY(0px) rotate(360deg); 
+        opacity: 1;
+    }
+
+    .contact-section-footer-links .text {
+        font-size: 20px !important;
+    }
+}
