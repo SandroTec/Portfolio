@@ -209,43 +209,66 @@ h1 {
     align-items: flex-end;
     padding-bottom: 250px;
 }
-
 .social-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    height: 136px;
     padding-left: 72px;
 }
-.mobile-social-links {
-    display: flex;
-    width: 100%;
-    height: 136px;
-    padding-left: 72px;
+
+.social-links a {
+    display: inline-block;
+    overflow: hidden;
+
+    background-image: linear-gradient(
+        to bottom,
+        var(--highlight-color-blue),
+        var(--highlight-color-blue)
+    );
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 0%;
+    border-radius: 12px;
+
+    transition: background-size 0.4s ease;
+}
+
+.social-links a:hover {
+    background-size: 100% 100%;
 }
 
 .social-links a img {
-    border-radius: 16px;
-    border: 1px solid var(--prime-color-white);
+    display: block;
+}
 
+.mobile-social-links {
+    display: flex;
+    padding-left: 72px;
+}
+
+.mobile-social-links a {
+    display: inline-block;
+    overflow: hidden;
+
+    background-image: linear-gradient(
+        to bottom,
+        var(--highlight-color-blue),
+        var(--highlight-color-blue)
+    );
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 0%;
+    border-radius: 12px;
+
+    transition: background-size 0.4s ease;
+}
+
+.mobile-social-links a:hover {
+    background-size: 100% 100%;
 }
 
 .mobile-social-links a img {
-    border-radius: 16px;
-    border: 1px solid var(--prime-color-white);
-
-}
-
-.social-links a img:hover {
-    background: var(--highlight-color-blue);
-
-}
-
-.mobile-social-links a img:hover {
-    background: var(--highlight-color-blue);
-    transition: ease-out;
-
+    display: block;
 }
 
 #aboutMeSection button a {
