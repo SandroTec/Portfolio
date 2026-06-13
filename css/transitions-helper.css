@@ -99,6 +99,26 @@
     }
 }
 
+.element-revealHideTopToBottom {
+    animation: revealHideTopToBottom 6s infinite;
+}
+
+@keyframes revealHideTopToBottom {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }
+    25% {
+        clip-path: inset(0 0 0 0);
+    }
+    /* 75%: Es bleibt voll sichtbar */
+    75% {
+        clip-path: inset(0 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 100% 0);
+    }
+}
+
 
 
 
