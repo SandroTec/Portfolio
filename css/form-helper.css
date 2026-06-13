@@ -55,6 +55,11 @@ form input form h4:hover {
     color: var(--highlight-color-red);
 }
 
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
 .error-msg {
     color: #ff4d4d;
     font-size: 0.85rem;
