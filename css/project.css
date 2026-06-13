@@ -211,7 +211,9 @@ footer a img {
 
     .right-hand-side {
         width: 100%;
-        padding-top: 20%;
+        height: auto;
+        margin-top: -500px;
+        gap: 20px;
     }
 
     footer {
@@ -268,7 +270,7 @@ footer a img {
     }
 
     .left-hand-side {
-        height: auto;
+        height: 120vh;
         background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
         background-size: cover;
         padding: 100px 0;
