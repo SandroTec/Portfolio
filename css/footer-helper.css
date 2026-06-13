@@ -122,7 +122,9 @@
         margin-left: 0;
     }
 
-    .legal-notice .footer-hover {
-        width: 180px;
+    .legal-notice + .footer-hover {
+        width: 100px;
+        margin-top: -10px !important;
+        margin-right: -60px;
     }
 }

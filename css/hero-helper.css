@@ -214,7 +214,7 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 72px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social-links a {
@@ -245,6 +245,7 @@ h1 {
 .mobile-social-links {
     display: flex;
     padding-left: 72px;
+    gap: 20px;
 }
 
 .mobile-social-links a {

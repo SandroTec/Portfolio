@@ -192,18 +192,25 @@
 
 
 @media (max-width: 950px) {
-.rolling-link .icon {
-  position: absolute;
-  left: 0;
-  top: -25px; 
-  opacity: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
-  transform: translateX(5px) translateY(0px) rotate(180deg); 
-  pointer-events: none;
-}
+  .rolling-link .icon {
+    position: absolute;
+    left: 0;
+    top: -25px; 
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateX(0px) translateY(0px) rotate(180deg); 
+    height: 32px;
+    width: 32px;
+  }
 
-.rolling-link:hover .icon {
-    transform: translateX(40px) translateY(0px) rotate(360deg); 
+  .rolling-link {
+    overflow: visible !important; 
+    margin-top: 25px; 
+    padding: 5px 10px !important;
+  }
+
+  .rolling-link:hover .icon {
+    transform: translateX(55px) translateY(0px) rotate(360deg); 
     opacity: 1;
-}
+  }
 }

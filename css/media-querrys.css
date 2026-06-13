@@ -342,6 +342,7 @@
     .mobile-social-links {
         margin-top: 40px;
         padding-left: 0;
+        gap: 20px;
     }
 
     .mobile-logo-copyright-container {
@@ -377,10 +378,7 @@
         margin-right: 25px;
     }
 
-    .footer-hover {
-        margin-top: -50px;
-        right: 20px;
-    }
+   
 
     .firstRow, .secondRow {
         gap: 0;
