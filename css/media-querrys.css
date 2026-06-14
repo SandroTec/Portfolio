@@ -94,7 +94,6 @@
     .footer-hover {
         width: 130px;
         margin-left: 0px;
-        right: 80px;
     }
 
 }
@@ -158,6 +157,10 @@
 
     nav div:hover .mobile-hover {
         opacity: 1; 
+    }
+
+    .language-container {
+        padding: 0;
     }
     
     .ab-hover {
