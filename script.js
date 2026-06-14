@@ -2,15 +2,27 @@
 
 //Open Projectsites
 function openFirstProject() {
-    window.location.href = "/Portfolio/html/project-one.html";
+    window.open(
+        "/Portfolio/html/project-one.html",
+        "_blank",
+        "noopener,noreferrer"
+    );
 }
 
 function openSecondProject() {
-    window.location.href = "/Portfolio/html/project-two.html";
+    window.open(
+        "/Portfolio/html/project-two.html",
+        "_blank",
+        "noopener,noreferrer"
+    );
 }
 
 function openThirdProject() {
-    window.location.href = "/Portfolio/html/project-three.html";
+    window.open(
+        "/Portfolio/html/project-three.html",
+        "_blank",
+        "noopener,noreferrer"
+    );
 }
 
 //hoverring effect for join Image 
