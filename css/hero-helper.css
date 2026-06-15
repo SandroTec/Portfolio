@@ -279,11 +279,17 @@ h1 {
 }
 
 @media (max-width: 950px) {
+    #heroSection {
+        max-height: min-content;
+    }
+
     .design-element {
-        padding-top: 100px;
+        padding-top: -100px;
+        height: 150px;
     }
 
     .second-desing-element {
-        padding-top: 100px;
+        padding-top: -100px;
+        height: 100px;
     }
 }
