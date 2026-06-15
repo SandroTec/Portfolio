@@ -6,8 +6,8 @@
 
 body {
     background-image: url(../assets/img/01_Background/Design\ Size\ Relation@3x/Note\ book\ paper.png);
-    background-size: cover;
-    background-repeat: repeat-x;
+    background-size: contain;
+    background-repeat: repeat-y;
     background-color: rgb(29, 29, 29);
     font-family: 'Bricolage Grotesque', sans-serif;
     height: 100vh;
@@ -24,7 +24,6 @@ body {
 }
 
 .go-back-container {
-    padding-top: 15%;
     width: 90%;
 }
 
@@ -68,8 +67,8 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: left;
+    padding-left: 50px;
 }
 
 .headline {
@@ -87,6 +86,10 @@ main {
     flex-direction: column;
     text-align: left;
     gap: 20px;
+}
+
+.content p {
+    width: 500px;
 }
 
 .right-hand-side {
@@ -175,14 +178,34 @@ footer a img {
     margin-left: 12px;
 }
 
+@media (max-width: 2350px) {
+    .content {
+        width: 300px;
+    }
+}
+
 @media (max-width: 1300px) {
-    nav a {
-        color: var(--prime-color-black) !important;
+    
+
+    .content p {
+        width: 300px;
     }
 
 }
 
+
 @media (max-width: 1150px) {
+    h1 {
+        font-size: 36px !important;
+        padding-top: 75px;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 950px) {
     .mobile-go-back-disappear {
         display: none;
     }
@@ -200,26 +223,17 @@ footer a img {
         
     }
 
-    
-    h1 {
-        font-size: 46px !important;
-        padding-top: 75px;
-    }
-
-    .left-hand-side {
-        width: 100%;
-    }
-
     .right-hand-side {
         width: 100%;
         height: auto;
-        margin-top: -500px;
         gap: 20px;
     }
 
     footer {
         bottom: 0;
         justify-content: center;
+        padding-top: 40px;
+        gap: 20px;
     }
 
     .project-image {
@@ -238,16 +252,14 @@ footer a img {
     .mobile-footer-link:hover {
         color: var(--highlight-color-red) !important;
     }
-}
 
-
-@media (max-width: 950px) {
     body {
         font-family: 'Bricolage Grotesque', sans-serif;
         overflow-wrap: break-word;
         background-image: none;
         background-color: black;
         height: 100%;
+        
     }
 
     nav a {
@@ -267,21 +279,63 @@ footer a img {
     }
 
     .content {
-        gap: 4px;
+        gap: 18px;
+    }
+
+    .content p {
+        width: 100%;
     }
 
     .left-hand-side {
-        height: 120vh;
+        height: 130vh;
+        width: 100%;
         background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
-        background-size: cover;
-        padding: 100px 0;
+        background-size: contain;
+        background-repeat: repeat-x;
+        align-items: center;
+        padding: 0 0 100px 0;
     }
+
+    .right-hand-side {
+        margin-top: -400px;
+        gap: 40px;
+    }
+    
 }
 
 
 @media (max-width: 700px) {
     .left-hand-side {
         padding-top: 0;
+        background-size: cover;
+        background-repeat: repeat-x;
+
+    }
+
+
+    .btn-container {
+        width: 90%;
     }
 }
 
+@media (max-width: 500px) {
+    .left-hand-side {
+        height: 130vh;
+    }
+
+    .right-hand-side {
+        margin-top: -600px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .left-hand-side {
+        background-size: cover;
+    }
+
+    .right-hand-side {
+        margin-top: -600px;
+        
+    }
+}
