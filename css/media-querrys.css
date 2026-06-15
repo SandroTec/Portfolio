@@ -9,7 +9,7 @@
 
 @media (min-width: 1740px) {
     .sticker-three {
-        margin-left: 30%;
+        margin-left: 600px;
     }
 }
 
@@ -51,6 +51,7 @@
 
     .info-container {
         width: 100%;
+        gap: 10px;
     }
 
     .project-firstRow {
@@ -59,14 +60,14 @@
         align-items: center;
     }
 
+    .first-project {
+        width: 100%;
+    }
+
     .project-secondRow {
         display: flex;
         flex-direction: column !important;
         align-items: center;
-    }
-
-    .project-section p {
-        padding: 0;
     }
     
     .contact-context {

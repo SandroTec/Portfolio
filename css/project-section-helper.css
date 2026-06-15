@@ -3,14 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0 !important;
 }
 
 .project-section p {
-    padding: 20px 70px;
+    max-width: 560px;
 }
 
 .project-section h3 {
-    padding: 0 70px;
+    padding: 20px 0;
 }
 
 .project-images {
@@ -23,9 +24,11 @@
 .project-firstRow {
     display: flex;
     height: 50%;
+    padding: 60px 0;
+    gap: 20px;
 }
 .first-project {
-    width: 100%;
+    width: 50%;
     height: 100%;
     cursor: pointer;
     display: flex;
@@ -78,6 +81,8 @@
 .project-secondRow {
     display: flex;
     justify-content: center;
+    padding: 30px 0;
+    gap: 20px;
 }
 
 
@@ -168,4 +173,3 @@
     transform: scale(0.95);
     filter: brightness(0.6);
 }
-
