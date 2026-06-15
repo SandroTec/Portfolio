@@ -88,10 +88,6 @@ main {
     gap: 20px;
 }
 
-.content p {
-    width: 500px;
-}
-
 .right-hand-side {
     width: 50%;
     height: 100%;
@@ -195,6 +191,10 @@ footer a img {
 
 
 @media (max-width: 1150px) {
+    .content {
+        width: 500px;
+    }
+
     h1 {
         font-size: 36px !important;
         padding-top: 75px;
@@ -297,7 +297,7 @@ footer a img {
     }
 
     .right-hand-side {
-        margin-top: -400px;
+        margin-top: -600px;
         gap: 40px;
     }
     
@@ -312,9 +312,12 @@ footer a img {
 
     }
 
-
     .btn-container {
         width: 90%;
+    }
+
+    .content {
+        width: 280px;
     }
 }
 
@@ -323,9 +326,6 @@ footer a img {
         height: 130vh;
     }
 
-    .right-hand-side {
-        margin-top: -600px;
-    }
 }
 
 
@@ -335,7 +335,6 @@ footer a img {
     }
 
     .right-hand-side {
-        margin-top: -600px;
         
     }
 }
