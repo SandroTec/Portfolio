@@ -180,6 +180,11 @@
 
 
 @media (max-width: 950px) {
+    .colleagues-section {
+        margin-bottom: 70px;
+
+    }
+
     .blue-arrow {
         width: 150px;
     }
