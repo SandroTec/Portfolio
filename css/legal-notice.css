@@ -12,6 +12,7 @@ body {
 .header-bg{
     background-image: url('../assets/img/01_Background/Design\ Size\ Relation@3x/03_Skills.png');
     background-position: center;
+    background-size: cover;
     width: 100%;
     height: auto;
     min-height: 20vh;
@@ -25,6 +26,7 @@ nav {
     display: flex;
     align-items: flex-start;
     padding-top: 60px;
+    padding-left: 20px;
 }
 
 h1 {
@@ -35,6 +37,7 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
+    padding: 0 20px;
 }
 
 footer div a{
@@ -61,12 +64,13 @@ footer div a{
 }
 
 .align-text-center {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     margin-top: -40px;
+    padding-left: 20px;
 }
 
 .max-content {
@@ -91,6 +95,10 @@ footer div a{
 .logo-copyright-container p {
     display: flex;
     align-items: center;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 @media (max-width: 1150px) {
