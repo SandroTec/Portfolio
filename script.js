@@ -2,27 +2,15 @@
 
 //Open Projectsites
 function openFirstProject() {
-    window.open(
-        "/Portfolio/html/project-one.html",
-        "_blank",
-        "noopener,noreferrer"
-    );
+    window.location.href = "/Portfolio/html/project-one.html";
 }
 
 function openSecondProject() {
-    window.open(
-        "/Portfolio/html/project-two.html",
-        "_blank",
-        "noopener,noreferrer"
-    );
+    window.location.href = "/Portfolio/html/project-two.html";
 }
 
 function openThirdProject() {
-    window.open(
-        "/Portfolio/html/project-three.html",
-        "_blank",
-        "noopener,noreferrer"
-    );
+    window.location.href = "/Portfolio/html/project-three.html";
 }
 
 //hoverring effect for join Image 
@@ -55,7 +43,7 @@ function peelSticker() {
             sticker.src = stickerPeeledOff;
             appetizer.classList.add('d-none');
             furtureSkills.classList.remove('d-none');
-        }, 80); 
+        }, 100); 
 
     } else if (currentSrc === stickerPeeledOff) {
         sticker.src = stickerTransition;
@@ -64,7 +52,7 @@ function peelSticker() {
             sticker.src = stickerDefault;
             appetizer.classList.remove('d-none');
             furtureSkills.classList.add('d-none');
-        }, 80); 
+        }, 100); 
     }
 }
 
