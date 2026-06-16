@@ -8,6 +8,7 @@ body {
     background-image: url(../assets/img/01_Background/Design\ Size\ Relation@3x/Note\ book\ paper.png);
     background-size: contain;
     background-repeat: repeat-y;
+    background-position: right;
     background-color: rgb(29, 29, 29);
     font-family: 'Bricolage Grotesque', sans-serif;
     height: 100vh;
@@ -81,7 +82,7 @@ main {
 }
 
 .content {
-    width: 80%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -174,9 +175,18 @@ footer a img {
     margin-left: 12px;
 }
 
-@media (max-width: 2350px) {
-    .content {
+@media (min-width: 2350px) {
+
+    body {
+        background-position: right;
+    }
+    
+    .left-hand-side {
         width: 300px;
+    }
+
+    .content {
+        width: 100%;
     }
 }
 
@@ -192,7 +202,7 @@ footer a img {
 
 @media (max-width: 1150px) {
     .content {
-        width: 500px;
+        width: 300px;
     }
 
     h1 {

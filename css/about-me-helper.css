@@ -112,6 +112,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding: 20px 0;
 }
 
 .talk-btn-container button {
