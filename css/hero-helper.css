@@ -197,7 +197,7 @@ h1 {
     box-shadow: 2px 4px 0px 0px var(--prime-color-white);
 }
 
-.get-in-touch-btn:hover {
+.get-in-touch-btn:hover, .get-in-touch-btn a:hover {
     background-color: var(--highlight-color-red);
     box-shadow: 0px 0px 0px 0px var(--prime-color-white);
 }
@@ -208,12 +208,15 @@ h1 {
     justify-content: flex-start;
     align-items: flex-end;
     padding-bottom: 250px;
+    pointer-events: none;
 }
 .social-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 50px;
     padding-left: 20px;
+    pointer-events: all;
 }
 
 .social-links a {
