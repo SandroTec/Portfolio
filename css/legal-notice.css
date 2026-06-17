@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Bricolage Grotesque', sans-serif;
-    box-sizing: border-box;
     width: 100%;
 }
 

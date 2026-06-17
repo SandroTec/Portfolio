@@ -94,7 +94,6 @@
 
 
 .logo-copyright-container  p {
-    display: flex;
     align-items: center;
     gap: 18px;
 }
