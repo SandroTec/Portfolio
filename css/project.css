@@ -5,10 +5,10 @@
 }
 
 body {
-    background-image: url(../assets/img/01_Background/Design\ Size\ Relation@3x/Note\ book\ paper.png);
+    background-image: url(../assets/img/01_Background/Img-Original-Size/Note\ book\ paper.png);
     background-size: contain;
     background-repeat: repeat-y;
-    background-position: right;
+    background-position: left;
     background-color: rgb(29, 29, 29);
     font-family: 'Bricolage Grotesque', sans-serif;
     height: 100vh;
@@ -181,7 +181,7 @@ footer a img {
 @media (min-width: 2350px) {
 
     body {
-        background-position: right;
+        background-position: center;
     }
     
     .left-hand-side {
