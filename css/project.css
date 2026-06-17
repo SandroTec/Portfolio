@@ -117,11 +117,13 @@ main {
     color: var(--prime-color-white);
 
 }
+
 .btn-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-left: -40px;
 }
 
 .btn-container button {
@@ -293,6 +295,7 @@ footer a img {
 
     .content {
         gap: 18px;
+        height: 70%;
     }
 
     .content p {
@@ -300,18 +303,23 @@ footer a img {
     }
 
     .left-hand-side {
-        height: 130vh;
+        height: 1450px;
         width: 100%;
         background-image: url(../assets/img/01_Background/Img-Original-Size/16_Project-view-background-mobile.png);
-        background-size: contain;
+        background-size: cover;
+        background-position: left;
         background-repeat: repeat-x;
         align-items: center;
         padding: 0 0 100px 0;
     }
 
     .right-hand-side {
-        margin-top: -600px;
         gap: 40px;
+        margin-top: -500px;
+    }
+
+    .btn-container {
+        justify-content: center;
     }
     
 }
@@ -333,14 +341,6 @@ footer a img {
         width: 280px;
     }
 }
-
-@media (max-width: 500px) {
-    .left-hand-side {
-        height: 130vh;
-    }
-
-}
-
 
 @media (max-width: 350px) {
     .left-hand-side {
