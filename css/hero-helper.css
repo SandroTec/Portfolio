@@ -137,7 +137,7 @@ h1 {
     border-radius: 100px;
     border-width: 1px;
     background: transparent;
-    cursor: pointer;
+    cursor: auto;
 }
 
 .hello-world-btn .btn-text {
