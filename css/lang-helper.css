@@ -1,13 +1,13 @@
 .lang-en {
-  display: none ;
+  display: none !important;
 }
 
 body.lang-en-active .lang-en {
-  display: block;
+  display: block !important;
  
 }
 
 body.lang-en-active .lang-de {
-  display: none ;
+  display: none !important;
 
 }

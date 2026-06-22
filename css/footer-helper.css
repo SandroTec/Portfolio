@@ -36,7 +36,11 @@
     pointer-events: none; 
 }
 
- .legal-notice:hover + .footer-hover {
+.legal-notice:hover + .footer-hover {
+    opacity: 1;
+}
+
+.mobile-legal-notice:hover + .footer-hover {
     opacity: 1;
 }
 
