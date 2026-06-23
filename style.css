@@ -36,3 +36,7 @@ section {
 .d-none {
     display: none;
 }
+
+.mL-20px {
+    margin-left: -20px;
+}
