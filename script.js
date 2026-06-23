@@ -134,30 +134,33 @@ helloWorldButton.addEventListener('mouseleave', () => {
 });
 
 
-// comtact form hover effect for input and headline
+
+
+// contact form hover effect for input and headline
+
 const formInputs = document.querySelectorAll('form input');
 
 formInputs.forEach((input) => {
     const parentContainer = input.closest('div[class$="-form"]');
+
     if (parentContainer) {
         const headlinesInContainer = parentContainer.querySelectorAll('h4');
 
         input.addEventListener('mouseenter', () => {
             headlinesInContainer.forEach(h4 => h4.style.color = '#F87A55');
         });
-        
+
         input.addEventListener('mouseleave', () => {
             headlinesInContainer.forEach(h4 => h4.style.color = '#F8F9FA');
         });
     }
 });
 
-//contact form 
+// contact form
 
 const form = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus'
+const formStatus = document.getElementById('formStatus');
 
-);
 const nameInput = document.getElementById('nameInput');
 const nameError = document.getElementById('nameError');
 
@@ -170,35 +173,83 @@ const messageError = document.getElementById('messageError');
 const privacyCheck = document.getElementById('privacyCheck');
 const privacyError = document.getElementById('privacyError');
 
+
+// Live Validation
+
+nameInput.addEventListener('blur', validateName);
+mailInput.addEventListener('blur', validateMail);
+messageInput.addEventListener('blur', validateMessage);
+
+privacyCheck.addEventListener('change', validatePrivacy);
+
+// Optional: Fehler verschwinden direkt beim Korrigieren
+
+nameInput.addEventListener('input', validateName);
+mailInput.addEventListener('input', validateMail);
+messageInput.addEventListener('input', validateMessage);
+
+
+// Validation Functions
+
+function validateName() {
+    if (!nameInput.value.trim()) {
+        nameError.textContent = "*Please enter your name.";
+        return false;
+    }
+
+    nameError.textContent = "";
+    return true;
+}
+
+function validateMail() {
+    if (!mailInput.value.trim()) {
+        mailError.textContent = "*Please enter your email address.";
+        return false;
+    }
+
+    if (!mailInput.checkValidity()) {
+        mailError.textContent = "*Please enter a valid email address.";
+        return false;
+    }
+
+    mailError.textContent = "";
+    return true;
+}
+
+function validateMessage() {
+    if (!messageInput.value.trim()) {
+        messageError.textContent = "*Please enter a message.";
+        return false;
+    }
+
+    messageError.textContent = "";
+    return true;
+}
+
+function validatePrivacy() {
+    if (!privacyCheck.checked) {
+        privacyError.textContent = "*You must agree to the privacy policy to proceed.";
+        return false;
+    }
+
+    privacyError.textContent = "";
+    return true;
+}
+
+
+// Form Submit
+
 form.addEventListener('submit', async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     resetErrors();
 
-    let isValid = true;
-
-    if (!nameInput.value.trim()) {
-        nameError.textContent = "*Please enter your name.";
-        isValid = false;
-    }
-
-    if (!mailInput.value.trim()) {
-        mailError.textContent = "*Please enter your email address.";
-        isValid = false;
-    } else if (!mailInput.checkValidity()) {
-        mailError.textContent = "*Please enter a valid email address.";
-        isValid = false;
-    }
-
-    if (!messageInput.value.trim()) {
-        messageError.textContent = "*Please enter a message.";
-        isValid = false;
-    }
-
-    if (!privacyCheck.checked) {
-        privacyError.textContent = "*You must agree to the privacy policy to proceed.";
-        isValid = false;
-    }
+    const isValid = [
+        validateName(),
+        validateMail(),
+        validateMessage(),
+        validatePrivacy()
+    ].every(Boolean);
 
     if (!isValid) return;
 
@@ -206,7 +257,8 @@ form.addEventListener('submit', async (e) => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-        formStatus.innerHTML = "Sending...";
+        formStatus.textContent = "Sending...";
+
         const response = await fetch('https://formspree.io/f/xnjrlbjd', {
             method: 'POST',
             headers: {
@@ -217,26 +269,38 @@ form.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            formStatus.innerHTML = "Thank you! Your message has been sent successfully.";
+            formStatus.textContent =
+                "Thank you! Your message has been sent successfully.";
+
             form.reset();
         } else {
             const errorData = await response.json();
-            formStatus.innerHTML = "Oops! Something went wrong.";
+
+            formStatus.textContent =
+                "Oops! Something went wrong.";
+
             console.error(errorData);
         }
+
     } catch (error) {
-        formStatus.innerHTML = "Network error. Please try again later.";
+        formStatus.textContent =
+            "Network error. Please try again later.";
+
         console.error("Fetch error:", error);
     }
 });
+
+
+// Reset Errors
 
 function resetErrors() {
     nameError.textContent = "";
     mailError.textContent = "";
     messageError.textContent = "";
     privacyError.textContent = "";
-    formStatus.innerHTML = "";
+    formStatus.textContent = "";
 }
+
 
 // colleagues sticker footer hovering:
 const footerContainers = document.querySelectorAll('.sticker-footer');
