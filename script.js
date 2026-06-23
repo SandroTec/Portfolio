@@ -59,10 +59,13 @@ function peelSticker() {
 // headline hover effect
 const headline = document.getElementById('interactive-headline');
 const secondHeadline = document.getElementById('interactive-headline_second_part');
+const deSecondHeadline = document.getElementById('interactive-headline_second_part_de');
 const text = headline.textContent;
 const secondText = secondHeadline.textContent;
+const deSecondText = deSecondHeadline.textContent
 headline.textContent = '';
 secondHeadline.textContent = '';
+deSecondHeadline.textContent = '';
 
 [...text].forEach(char => {
     const span = document.createElement('span');
@@ -84,6 +87,17 @@ secondHeadline.textContent = '';
     manipulateLetters(span, char)
 
     secondHeadline.appendChild(span);
+});
+
+[...deSecondText].forEach(char => {
+    const span = document.createElement('span');
+    span.textContent = char;       
+    if (char === ' ') {
+        span.style.whiteSpace = 'pre';
+    }
+    manipulateLetters(span, char)
+
+    deSecondHeadline.appendChild(span);
 });
 
 function manipulateLetters(span, char) {
