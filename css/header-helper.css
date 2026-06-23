@@ -69,16 +69,7 @@ nav div:hover .header-hover {
     height: 75px;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    left: 20px; 
-    top: 0;
-    width: 1px;
-    height: 100vh;
-    background: red;
-    z-index: 99999;
-}
+
 
 .language-container {
     display: flex;
