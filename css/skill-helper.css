@@ -28,6 +28,14 @@
     margin-left: -25px;
 }
 
+.circle-headline-de {
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: -45px;
+}
+
 .skill-section p {
     color: var(--prime-color-white);
     margin-bottom: 5px;
