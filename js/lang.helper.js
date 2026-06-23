@@ -4,6 +4,8 @@ const langEnButtons = document.querySelectorAll('.lang-EN-btn');
 const body = document.body;
 const vectorBubbles = document.querySelectorAll('.vector-bubble');
 
+const circleHeadlineSkills = document.querySelector('.circle-headline')
+
 function setLanguageToGerman() {
   body.classList.remove('lang-en-active');
   document.documentElement.lang = 'de';
@@ -37,3 +39,4 @@ if (savedLang === 'en') {
 } else {
   setLanguageToGerman();
 }
+

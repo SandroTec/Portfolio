@@ -49,9 +49,11 @@ const logos = document.querySelectorAll('.logoAB');
 logos.forEach(logo => {
     logo.addEventListener('mouseenter', () => {
         logo.src = '/Portfolio/assets/img/AB_Logo-yellow.png'; 
+        logo.style.transform = 'translateY(10px)';
     });
 
     logo.addEventListener('mouseleave', () => {
         logo.src = '/Portfolio/assets/img/AB_Logo.png';
+        logo.style.transform = 'translateY(0)';
     });
 });
