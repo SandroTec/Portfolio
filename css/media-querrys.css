@@ -54,6 +54,10 @@
         gap: 10px;
     }
 
+    .project-images {
+        width: 100%;
+    }
+
     .project-firstRow {
         display: flex;
         flex-direction: column !important;
@@ -62,6 +66,15 @@
 
     .first-project {
         width: 100%;
+        align-items: center;
+    }
+
+    .second-project {
+        align-items: center;
+    }
+
+    .third-project{
+        align-items: center;
     }
 
     .project-secondRow {
@@ -90,6 +103,14 @@
         width: 130px;
         margin-left: 0px;
     }
+
+    .circle-headline-de {
+    width: 300px;
+    height: 55px;
+    position: absolute;
+    margin-top: -5px;
+    margin-right: -40px;
+}
 
 }
 
