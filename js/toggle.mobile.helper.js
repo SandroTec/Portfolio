@@ -1,7 +1,7 @@
 const mobileHeader = document.querySelector('.mobile-header');
 const toggleMobileMenu = document.getElementById('toggleMobileMenu');
 const menuImage = document.querySelector('.menu-image');
-
+const headerLogo = document.querySelector('.header-logo');
 const headerBG = document.getElementById('bg-image');
 
 toggleMobileMenu.addEventListener('mouseenter', () => {
@@ -9,8 +9,11 @@ toggleMobileMenu.addEventListener('mouseenter', () => {
     
     if (isMenuOpen) {
         menuImage.src = '/Portfolio/assets/img/04_social_icons/close-icon-hover.png';
+        
+        
     } else {
         menuImage.src = '/Portfolio/assets/img/04_social_icons/Menu-Hover.png';
+        
     }
 });
 
@@ -28,12 +31,18 @@ toggleMobileMenu.addEventListener('click', () => {
     if (mobileHeader.style.display === 'none' || mobileHeader.style.display === '') {
         mobileHeader.style.display = 'flex';
         menuImage.src = '/Portfolio/assets/img/04_social_icons/close-icon-hover.png'; 
+        toggleMobileMenu.style.position = 'fixed';
+        headerLogo.style.position = 'fixed';
+        headerLogo.style.zIndex = '25';
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html")) {
             headerBG.classList.remove('header-bg');
         }
     } else {
         mobileHeader.style.display = 'none';
         menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
+        toggleMobileMenu.style.position = 'block';
+        headerLogo.style.position = 'relative';
+        headerLogo.style.zIndex = '5';
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
             headerBG.classList.add('header-bg');
         }
