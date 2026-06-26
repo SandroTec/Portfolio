@@ -1,12 +1,12 @@
 
 main .max-content {
-    height: 100%;
+    height: 100vh;
     justify-content: space-between;
 }
 
 .hero-information-container {
     width: 100%;
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: 10%
@@ -302,5 +302,10 @@ h1 {
     .second-desing-element {
         padding-top: -100px;
         height: 100px;
+    }
+
+    .hero-information-container {
+        margin-top: 0;
+        height: auto;
     }
 }
