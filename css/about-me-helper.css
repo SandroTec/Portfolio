@@ -130,3 +130,9 @@ h2 {
 }
 
 
+@media (max-width: 950px) {
+    .locations-left-side {
+        width: 100%;
+        align-items: center;
+    }
+}
