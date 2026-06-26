@@ -36,7 +36,7 @@
 
 .sticker-one {
     position: relative;
-    margin-left: -45%;
+    margin-left: -35%;
     transform: rotate(-6deg); 
 }
 
@@ -46,7 +46,7 @@
 
 .sticker-three {
     position: absolute;
-    margin-left: 40%;
+    margin-left: 30%;
     transform: rotate(6deg); 
 }
 
@@ -102,7 +102,7 @@
     position: absolute;
     height: 20px;
     width: 90%;
-    margin-left: 5%;
+    margin-left: 20px;
     margin-top: 60px;
     z-index: 1;
 }
