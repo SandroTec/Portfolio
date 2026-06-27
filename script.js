@@ -282,7 +282,7 @@ form.addEventListener('submit', async (e) => {
     try {
         formStatus.textContent = "Sending...";
 
-        const response = await fetch('https://formspree.io/f/xnjrlbjd', {
+        const response = await fetch('https://formspree.io/f/mjgzjewr', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -296,12 +296,14 @@ form.addEventListener('submit', async (e) => {
                 "Thank you! Your message has been sent successfully.";
 
             form.reset();
+            updateSubmitButton();
         } else {
             const errorData = await response.json();
 
             formStatus.textContent =
                 "Oops! Something went wrong. Please try again later!";
-
+                
+            updateSubmitButton();
             console.error(errorData);
         }
 
