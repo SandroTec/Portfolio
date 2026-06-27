@@ -149,8 +149,8 @@
 .skill-sticker-content-peeled {
     width: 200px;
     position: absolute;
-    margin-top: -160px;
-    margin-left: 30px;
+    margin-top: -180px;
+    padding: 0 20px;
     pointer-events: none;
     display: flex;
     flex-direction: column;

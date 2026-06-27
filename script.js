@@ -173,6 +173,7 @@ const messageError = document.getElementById('messageError');
 const privacyCheck = document.getElementById('privacyCheck');
 const privacyError = document.getElementById('privacyError');
 
+const submitButtons = form.querySelectorAll('button[type="submit"]');
 
 // Live Validation
 
@@ -180,14 +181,25 @@ nameInput.addEventListener('blur', validateName);
 mailInput.addEventListener('blur', validateMail);
 messageInput.addEventListener('blur', validateMessage);
 
-privacyCheck.addEventListener('change', validatePrivacy);
+nameInput.addEventListener('input', () => {
+    validateName();
+    updateSubmitButton();
+});
 
-// Optional: Fehler verschwinden direkt beim Korrigieren
+mailInput.addEventListener('input', () => {
+    validateMail();
+    updateSubmitButton();
+});
 
-nameInput.addEventListener('input', validateName);
-mailInput.addEventListener('input', validateMail);
-messageInput.addEventListener('input', validateMessage);
+messageInput.addEventListener('input', () => {
+    validateMessage();
+    updateSubmitButton();
+});
 
+privacyCheck.addEventListener('change', () => {
+    validatePrivacy();
+    updateSubmitButton();
+});
 
 // Validation Functions
 
@@ -236,6 +248,22 @@ function validatePrivacy() {
     return true;
 }
 
+function isFormValid() {
+    return (
+        validateName() &&
+        validateMail() &&
+        validateMessage() &&
+        validatePrivacy()
+    );
+}
+
+function updateSubmitButton() {
+    submitButtons.forEach(button => {
+        button.disabled = !isFormValid();
+    });
+}
+
+updateSubmitButton(); // when reloaded the button stays / goes to disabled mode
 
 // Form Submit
 
@@ -244,14 +272,9 @@ form.addEventListener('submit', async (e) => {
 
     resetErrors();
 
-    const isValid = [
-        validateName(),
-        validateMail(),
-        validateMessage(),
-        validatePrivacy()
-    ].every(Boolean);
-
-    if (!isValid) return;
+    if (!isFormValid) {
+        return
+    }
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
@@ -277,7 +300,7 @@ form.addEventListener('submit', async (e) => {
             const errorData = await response.json();
 
             formStatus.textContent =
-                "Oops! Something went wrong.";
+                "Oops! Something went wrong. Please try again later!";
 
             console.error(errorData);
         }

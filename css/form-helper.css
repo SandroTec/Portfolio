@@ -1,3 +1,11 @@
+
+.name-form,
+.mail-form,
+.message-form,
+.privacy-notice-container {
+    position: relative; 
+}
+
 .message-form {
     display: flex;
     flex-direction: column;
@@ -8,7 +16,7 @@ form {
 }
 
 input {
-    height: 44px;
+    height: 94px;
     width: 100%;
     background-color: transparent !important; 
     background: transparent !important;
@@ -31,11 +39,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 1000px transparent inset !important; 
-    
-    /* Erzwingt deine Textfarbe */
     -webkit-text-fill-color: var(--prime-color-white) !important;
-    
-    /* Behält die Transition bei */
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -47,24 +51,36 @@ form input:hover {
 
 form h4 {
     position: absolute;
-    margin-top: 4px;
-    padding: 4px;
+    margin-top: 8px;
+    padding: 0px;
 }
-form input form h4:hover {
+
+form .name-form h4:hover,
+form .mail-form h4:hover,
+form .message-form h4:hover {
     color: var(--highlight-color-red);
 }
 
 .checkbox {
     width: 20px;
     height: 20px;
+    padding: 10px;
 }
 
 .error-msg {
+    position: absolute;   
+    left: 0;
+    bottom: 0px;        
     color: #ff4d4d;
     font-size: 0.85rem;
-    margin-top: 4px;
     min-height: 18px; 
+    white-space: nowrap;  
 }
+
+.privacy-notice-container .error-msg {
+    bottom: -20px;       
+}
+
 
 .form-footer {
     display: flex;
@@ -88,4 +104,18 @@ form input form h4:hover {
     box-shadow: 2px 4px 0px 0px var(--prime-color-white);
 }
 
+.form-footer button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; 
+    box-shadow: none;   
+    transform: none;    
+}
 
+@media (max-width: 950px) {
+    
+    form h4 {
+        position: absolute;
+        margin-top: 4px;
+        padding: 0px;
+    }
+}

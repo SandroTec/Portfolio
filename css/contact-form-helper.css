@@ -41,6 +41,7 @@
     position: relative;
     width: 250px;  
     height: 250px;
+    padding: 20px;
 }
 
 .round-sticker {
@@ -67,6 +68,7 @@
     color: #000;
     offset-path: border-box; 
     transform: translate(122px, 122px);
+    padding: 20px;
 }
 
 #formStatus {
