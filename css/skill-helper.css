@@ -16,7 +16,7 @@
 .skill-section h2 {
     color: var(--prime-color-white);
     position: relative;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .circle-headline {

@@ -15,7 +15,8 @@ header {
     opacity: 0;
 }
 .header-logo {
-    position: relative;
+    position: relative ;
+    z-index: 1000;
 }
 
 nav {

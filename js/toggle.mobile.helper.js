@@ -33,7 +33,6 @@ toggleMobileMenu.addEventListener('click', () => {
         menuImage.src = '/Portfolio/assets/img/04_social_icons/close-icon-hover.png'; 
         toggleMobileMenu.style.position = 'fixed';
         headerLogo.style.position = 'fixed';
-        headerLogo.style.zIndex = '25';
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html")) {
             headerBG.classList.remove('header-bg');
         }
@@ -42,7 +41,6 @@ toggleMobileMenu.addEventListener('click', () => {
         menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
         toggleMobileMenu.style.position = 'block';
         headerLogo.style.position = 'relative';
-        headerLogo.style.zIndex = '5';
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
             headerBG.classList.add('header-bg');
         }

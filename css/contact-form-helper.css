@@ -69,7 +69,9 @@
     transform: translate(122px, 122px);
 }
 
-
+#formStatus {
+    padding: 20px 0;
+}
 
 .yellow-arrow-mobile {
     display: none;
