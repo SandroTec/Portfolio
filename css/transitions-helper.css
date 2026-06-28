@@ -217,9 +217,9 @@
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .rolling-link:hover .icon {
-        transform: translateX(25px) translateY(0px) rotate(360deg); 
+        transform: translateX(25px) translateY(0px) rotate(360deg) !important; 
         opacity: 1;
     }
 
