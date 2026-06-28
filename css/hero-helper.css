@@ -108,6 +108,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    gap: 10px;
 }
 
 #interactive-headline span {
@@ -293,6 +294,10 @@ h1 {
 @media (max-width: 950px) {
     #heroSection {
         max-height: min-content;
+    }
+
+    .headline {
+        gap: 2px;
     }
 
     .design-element {
