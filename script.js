@@ -43,7 +43,7 @@ function peelSticker() {
             sticker.src = stickerPeeledOff;
             appetizer.classList.add('d-none');
             furtureSkills.classList.remove('d-none');
-        }, 100); 
+        }, 250); 
 
     } else if (currentSrc === stickerPeeledOff) {
         sticker.src = stickerTransition;
@@ -52,7 +52,7 @@ function peelSticker() {
             sticker.src = stickerDefault;
             appetizer.classList.remove('d-none');
             furtureSkills.classList.add('d-none');
-        }, 100); 
+        }, 250); 
     }
 }
 
