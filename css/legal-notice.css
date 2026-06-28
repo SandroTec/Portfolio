@@ -36,7 +36,7 @@ nav {
 
 h1 {
     color: var(--prime-color-white);
-    z-index: 1000;
+    z-index: 2;
 }
 
 footer {
@@ -123,8 +123,9 @@ ul {
     }
 
     h1 {
+        font-size: 46px !important;
         margin-top: -220px;
-        padding-bottom: 40px
+        padding-bottom: 200px
     }
 
     .align-text-center {
@@ -140,12 +141,13 @@ ul {
 
 @media (max-width: 550px) {
     h1 {
-        font-size: 46px !important;
-        margin-top: -180px;
+        font-size: 36px !important;
+        margin-top: -210px;
+        word-break: break-all;
     }
+    
 
     h2 {
         font-size: 24px !important;
-        word-break: break-all;
     }
 }
