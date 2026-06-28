@@ -263,7 +263,7 @@ function updateSubmitButton() {
     });
 }
 
-updateSubmitButton(); // when reloaded the button stays / goes to disabled mode
+
 
 // Form Submit
 
