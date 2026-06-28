@@ -106,6 +106,10 @@ ul {
     .align-text-center {
         margin-top: -90px;
     }
+
+    h1 {
+        font-size: 46px !important;
+    }
 }
 
 @media (max-width: 950px) {
