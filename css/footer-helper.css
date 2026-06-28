@@ -128,3 +128,11 @@
         margin-right: -50px;
     }
 }
+
+@media (max-width: 400px) {
+    .legal-notice + .footer-hover {
+        width: 80px;
+        margin-top: -25px !important;
+        margin-right: -20px;
+    }
+}
