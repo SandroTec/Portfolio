@@ -39,7 +39,7 @@ toggleMobileMenu.addEventListener('click', () => {
     } else {
         mobileHeader.style.display = 'none';
         menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
-        toggleMobileMenu.style.position = 'block';
+        toggleMobileMenu.style.position = 'absolute';
         headerLogo.style.position = 'relative';
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
             headerBG.classList.add('header-bg');
