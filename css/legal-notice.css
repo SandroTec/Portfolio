@@ -8,6 +8,7 @@
 body {
     font-family: 'Bricolage Grotesque', sans-serif;
     width: 100%;
+    min-height: 100vh;
 }
 
 .header-bg{
@@ -34,6 +35,10 @@ nav {
     box-sizing: border-box;
 }
 
+.align-text-center {
+    padding: 0 0 200px 0; 
+}
+
 h1 {
     color: var(--prime-color-white);
 }
@@ -41,6 +46,7 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     padding: 0 20px;
 }
 
