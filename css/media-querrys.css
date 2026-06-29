@@ -329,8 +329,8 @@
     }
 
     .contact-section .left-side {
-        padding: 0;
-        width: 90%;
+        padding: 20px;
+        width: 100%;
     }
 
     .right-side {
@@ -369,6 +369,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
     }
 
     .sub-container {
