@@ -13,10 +13,11 @@ header {
 .mobile-header {
     display: none;
     opacity: 0;
+    z-index: 10;
 }
 .header-logo {
     position: relative ;
-    z-index: 1000;
+    z-index: 20;
 }
 
 nav {
