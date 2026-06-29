@@ -37,6 +37,7 @@ nav {
 
 .align-text-center {
     padding: 0 0 200px 0; 
+    gap: 10px;
 }
 
 h1 {
