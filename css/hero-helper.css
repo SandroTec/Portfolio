@@ -301,8 +301,8 @@ h1 {
     }
 
     .design-element {
-        padding-top: -100px;
-        height: 150px;
+        margin-top: 80px;
+        height: 120px;
     }
 
     .second-desing-element {
@@ -318,5 +318,19 @@ h1 {
 
     .btn-and-headline-container {
         gap: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn-and-headline-container {
+        gap: 0;
+    }
+
+    .hero-information-container {
+        gap: 10px;
+    }
+
+    .second-desing-element {
+        height: 60px;
     }
 }
