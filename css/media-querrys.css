@@ -123,6 +123,7 @@
         display: none;
     }
 
+    
 
     .logo-mobile-container {
         width: 100%;
@@ -205,9 +206,9 @@
         align-items: center;
     }
 
-    .headline span {
-        font-size: 28px;
-        min-width: 1.1em;
+    h1 {
+        font-size: 66px;
+        min-width: 2.4em;
 
     }
 
@@ -228,19 +229,10 @@
         justify-content: center;
     }
 
-    .second-desing-element {
-        height: 100px;
-    }
+    
 
     .polaroid-container {
         display: none;
-    }
-
-    .second-desing-element {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .mobile-polaroid-container {
@@ -375,6 +367,8 @@
     .sub-container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
     }
 
     .yellow-arrow {
@@ -398,11 +392,16 @@
         margin-right: 0;
     }
 
-   
-
     .firstRow, .secondRow {
-        gap: 0;
+        gap: 20px;
         padding: 0 20px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 46px;
+        min-width: 2.4em;
+
     }
 }
 
