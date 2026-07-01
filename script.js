@@ -175,6 +175,12 @@ const privacyError = document.getElementById('privacyError');
 
 const submitButtons = form.querySelectorAll('button[type="submit"]');
 
+let touched = {
+    name: false,
+    mail: false,
+    message: false
+};
+
 // Live Validation
 
 nameInput.addEventListener('blur', validateName);
@@ -182,16 +188,19 @@ mailInput.addEventListener('blur', validateMail);
 messageInput.addEventListener('blur', validateMessage);
 
 nameInput.addEventListener('input', () => {
+    touched.name = true;
     validateName();
     updateSubmitButton();
 });
 
 mailInput.addEventListener('input', () => {
+    touched.mail = true;
     validateMail();
     updateSubmitButton();
 });
 
 messageInput.addEventListener('input', () => {
+    touched.message = true;
     validateMessage();
     updateSubmitButton();
 });
@@ -204,6 +213,7 @@ privacyCheck.addEventListener('change', () => {
 // Validation Functions
 
 function validateName() {
+    if (!touched.name && nameInput.textContent != '') return true;
     if (!nameInput.value.trim()) {
         nameError.textContent = "*Please enter your name.";
         return false;
@@ -214,6 +224,7 @@ function validateName() {
 }
 
 function validateMail() {
+    if (!touched.mail && mailInput.textContent != '') return true;
     if (!mailInput.value.trim()) {
         mailError.textContent = "*Please enter your email address.";
         return false;
@@ -229,6 +240,7 @@ function validateMail() {
 }
 
 function validateMessage() {
+    if (!touched.message && messageInput.textContent != '') return true;
     if (!messageInput.value.trim()) {
         messageError.textContent = "*Please enter a message.";
         return false;
@@ -257,9 +269,19 @@ function isFormValid() {
     );
 }
 
+function isFormValidWithoutErrors() {
+    return (
+        nameInput.value.trim() &&
+        mailInput.value.trim() &&
+        mailInput.checkValidity() &&
+        messageInput.value.trim() &&
+        privacyCheck.checked
+    );
+}
+
 function updateSubmitButton() {
     submitButtons.forEach(button => {
-        button.disabled = !isFormValid();
+        button.disabled = !isFormValidWithoutErrors();
     });
 }
 
@@ -272,7 +294,7 @@ form.addEventListener('submit', async (e) => {
 
     resetErrors();
 
-    if (!isFormValid) {
+    if (!isFormValid()) {
         return
     }
 
