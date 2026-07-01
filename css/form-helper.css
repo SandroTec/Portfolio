@@ -110,6 +110,12 @@ form .message-form h4:hover {
     transform: none;    
 }
 
+.form-footer button:hover:not(:disabled) {
+    background-color: var(--highlight-color-red);
+    box-shadow: 0px 0px 0px 0px var(--prime-color-white);
+}
+
+
 @media (max-width: 950px) {
     
     form h4 {
