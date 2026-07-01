@@ -37,17 +37,39 @@ toggleMobileMenu.addEventListener('click', () => {
             headerBG.classList.remove('header-bg');
         }
     } else {
-        mobileHeader.style.display = 'none';
-        menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
-        toggleMobileMenu.style.position = 'absolute';
-        headerLogo.style.position = 'relative';
-        if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
-            headerBG.classList.add('header-bg');
-        }
+        closeMobileMenu();
     }
 });
 
+function closeMobileMenu() {
+    mobileHeader.style.display = 'none';
+    menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
+    toggleMobileMenu.style.position = 'absolute';
+    headerLogo.style.position = 'relative';
+    if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
+        headerBG.classList.add('header-bg');
+    }
+}
 
+const mobileLinks = mobileHeader.querySelectorAll('a');
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        closeMobileMenu();
+    });
+});
+
+document.addEventListener('click', (event) => {
+    const isMenuOpen = mobileHeader.style.display === 'flex';
+
+    if (
+        isMenuOpen &&
+        !mobileHeader.contains(event.target) &&
+        !toggleMobileMenu.contains(event.target)
+    ) {
+        closeMobileMenu();
+    }
+});
 
 // Logo Hover
 
