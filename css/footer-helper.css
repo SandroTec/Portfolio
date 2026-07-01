@@ -64,6 +64,7 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+    width: 100%;
 }
 
 .logo-copyright-container {
@@ -106,7 +107,7 @@
 .mobile-logo-copyright-container  p {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 2px;
 }
 
 
@@ -120,12 +121,22 @@
 @media (max-width: 600px) {
     .footer-left-side {
         margin-left: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .legal-notice + .footer-hover {
         width: 120px;
         margin-top: -40px !important;
         margin-right: -50px;
+    }
+
+    
+    .mobile-logo-copyright-container p {
+        width: 100%;
+        justify-content: flex-end;
     }
 }
 

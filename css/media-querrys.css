@@ -359,8 +359,7 @@
     .mobile-logo-copyright-container {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 0 20px;
     }
 
@@ -383,6 +382,10 @@
 }
 
 @media (max-width: 600px) {
+
+    .mobile-logo-copyright-container {
+        flex-direction: column;
+    }
 
     .mobile-project-btn {
         margin-left: 120px;
