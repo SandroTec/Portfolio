@@ -80,6 +80,15 @@ form .message-form h4:hover {
     bottom: -20px;       
 }
 
+.privacy-notice-container a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.privacy-notice-container a:hover {
+    color: var(--highlight-color-yellow);
+    
+}
 
 .form-footer {
     display: flex;
