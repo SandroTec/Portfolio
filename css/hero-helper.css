@@ -59,9 +59,8 @@ main .max-content {
     position: absolute;
     color: var(--prime-color-white);
     width: 172px;
-    height: 180px;
-
-    margin-top: 14px;
+    height: 190px;
+    margin-top: 12px;
 }
 
 .polaroid-image:hover {
@@ -81,7 +80,7 @@ main .max-content {
     font-family: 'kalma';
     position: absolute;
     font-size: 30px;
-    margin-top: 200px;
+    margin-top: 205px;
 }
 
 .polaroid-container {
