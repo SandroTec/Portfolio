@@ -179,7 +179,7 @@ footer a:hover {
 footer a img {
     height: 44px;
     width: 56px;
-    margin-left: 12px;
+    margin-left: 6px;
 }
 
 @media (min-width: 2350px) {
@@ -345,6 +345,10 @@ footer a img {
 
     .content {
         width: 280px;
+    }
+
+    footer a {
+        width: auto;
     }
 }
 
