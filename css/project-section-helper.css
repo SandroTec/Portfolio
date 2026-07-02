@@ -16,7 +16,7 @@
 
 .project-images {
     border-radius: 12px;
-    width: 100%;
+    width: 650px;
     height: 460px;
 }
 
@@ -170,4 +170,25 @@
 .project-btn:hover ~ .project-images {
     transform: scale(0.95);
     filter: brightness(0.6);
+}
+
+
+@media (max-width: 950px) {
+    .project-firstRow, .project-secondRow {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first-project, .second-project, .third-project, .info-container {
+        width: 100% !important;
+    }
+
+    .project-btn {
+        display: none;
+    }
+
+    .mobile-project-btn {
+        display: flex;
+    }
+    
 }

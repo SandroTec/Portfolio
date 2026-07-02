@@ -50,7 +50,7 @@
     
 
     .info-container {
-        width: 100%;
+        width: 50%;
         gap: 10px;
     }
 
@@ -65,7 +65,6 @@
     }
 
     .first-project {
-        width: 100%;
         align-items: center;
     }
 
