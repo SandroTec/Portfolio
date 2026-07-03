@@ -109,7 +109,7 @@ h1 {
 }
 
 #interactive-headline span {
-    min-width: 2.4rem;
+    max-width: 2.4rem;
     margin: -4px;
 }
 
