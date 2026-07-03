@@ -98,20 +98,19 @@ h1 {
   min-width: 0.7em;         
   transition: color 0.2s ease-in-out; 
 
-  padding: 4px;
-  margin: -2px;
+  
 }
 
 .headline {
     white-space: nowrap;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 #interactive-headline span {
-    margin: -8px;
     min-width: 2.4rem;
+    margin: -4px;
 }
 
 .headline-hover {
@@ -289,6 +288,10 @@ h1 {
 @media (max-width: 950px) {
     #heroSection {
         max-height: min-content;
+    }
+
+    #interactive-headline span {
+        margin: -4px;
     }
 
     .headline {
