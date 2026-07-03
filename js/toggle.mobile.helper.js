@@ -4,6 +4,8 @@ const menuImage = document.querySelector('.menu-image');
 const headerLogo = document.querySelector('.header-logo');
 const headerBG = document.getElementById('bg-image');
 
+const overlay = document.getElementById('menu-overlay');
+
 toggleMobileMenu.addEventListener('mouseenter', () => {
     const isMenuOpen = mobileHeader.style.display === 'flex';
     
@@ -29,19 +31,24 @@ toggleMobileMenu.addEventListener('mouseleave', () => {
 
 toggleMobileMenu.addEventListener('click', () => {
     if (mobileHeader.style.display === 'none' || mobileHeader.style.display === '') {
+        overlay.classList.add('active');
         mobileHeader.style.display = 'flex';
         menuImage.src = '/Portfolio/assets/img/04_social_icons/close-icon-hover.png'; 
         toggleMobileMenu.style.position = 'fixed';
         headerLogo.style.position = 'fixed';
+        
         if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html")) {
             headerBG.classList.remove('header-bg');
         }
+
+        
     } else {
         closeMobileMenu();
     }
 });
 
 function closeMobileMenu() {
+    overlay.classList.remove('active');
     mobileHeader.style.display = 'none';
     menuImage.src = '/Portfolio/assets/img/04_social_icons/01_Menu.png'; 
     toggleMobileMenu.style.position = 'absolute';
@@ -49,6 +56,7 @@ function closeMobileMenu() {
     if (window.location.pathname.includes("legal-notice.html") || window.location.pathname.includes("privacy-policy.html"))  {
         headerBG.classList.add('header-bg');
     }
+    
 }
 
 const mobileLinks = mobileHeader.querySelectorAll('a');
