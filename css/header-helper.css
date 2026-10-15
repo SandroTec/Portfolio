@@ -18,6 +18,12 @@ header {
 .header-logo {
     position: relative ;
     z-index: 20;
+    
+}
+
+.header-logo:hover {
+    content: url('/assets/img/AB_Logo-yellow.png');
+    margin-top: 11px;
 }
 
 #menu-overlay {
