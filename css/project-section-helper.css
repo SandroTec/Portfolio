@@ -180,6 +180,12 @@
     filter: brightness(0.6);
 }
 
+@media (max-width: 1150px) {
+    .project-images {
+        max-width: 461px;
+    }
+}
+
 
 @media (max-width: 950px) {
     .project-firstRow, .project-secondRow, .project-third-row {
