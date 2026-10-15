@@ -22,8 +22,8 @@ header {
 }
 
 .header-logo:hover {
-    content: url('/assets/img/AB_Logo-yellow.png');
-    margin-top: 11px;
+    
+    margin-top: 18px;
 }
 
 #menu-overlay {
@@ -95,7 +95,9 @@ nav div:hover .header-hover {
     height: 75px;
 }
 
-
+.logoAB:hover {
+    content: url('/assets/img/AB_Logo-yellow.png');
+}
 
 .language-container {
     display: flex;
@@ -184,4 +186,10 @@ nav div:hover .header-hover {
 
 #toggleMobileMenu {
     background-color: black;
+}
+
+@media (max-width: 950px) {
+    .logoABhover {
+        margin-top: 11px;
+    }
 }
