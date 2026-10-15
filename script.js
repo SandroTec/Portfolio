@@ -13,6 +13,16 @@ function openThirdProject() {
     window.location.href = "/Portfolio/html/project-three.html";
 }
 
+function openFourthProject() {
+    window.location.href = "/Portfolio/html/project-four.html";
+}
+
+
+function openFivthProject() {
+    window.location.href = "/Portfolio/html/project-five.html";
+}
+
+
 //hoverring effect for join Image 
 const joinImage = document.getElementById('joinImage');
 const joinMovingImage = joinImage.querySelector('.join-image');
@@ -285,10 +295,7 @@ function updateSubmitButton() {
     });
 }
 
-
-
 // Form Submit
-
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -339,7 +346,6 @@ form.addEventListener('submit', async (e) => {
 
 
 // Reset Errors
-
 function resetErrors() {
     nameError.textContent = "";
     mailError.textContent = "";
@@ -348,10 +354,8 @@ function resetErrors() {
     formStatus.textContent = "";
 }
 
-
 // colleagues sticker footer hovering:
 const footerContainers = document.querySelectorAll('.sticker-footer');
-
 footerContainers.forEach((footer) => {
     const link = footer.querySelector('.profile-link');
     const img = footer.querySelector('.footerImage');

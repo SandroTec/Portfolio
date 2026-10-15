@@ -64,17 +64,12 @@
         align-items: center;
     }
 
-    .first-project {
-        align-items: center;
+    .first-project, .second-project, .third-project, .fourth-project, .fivth-project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
     }
 
-    .second-project {
-        align-items: center;
-    }
-
-    .third-project{
-        align-items: center;
-    }
 
     .project-secondRow {
         display: flex;
@@ -82,6 +77,12 @@
         align-items: center;
     }
     
+    .project-third-row {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
     .contact-context {
         display: flex;
         flex-direction: column !important;

@@ -182,12 +182,12 @@
 
 
 @media (max-width: 950px) {
-    .project-firstRow, .project-secondRow {
+    .project-firstRow, .project-secondRow, .project-third-row {
         flex-direction: column;
         height: auto;
     }
 
-    .first-project, .second-project, .third-project, .info-container {
+    .first-project, .second-project, .third-project, .fourth-project, .fivth-project .info-container {
         width: 100% !important;
     }
 
@@ -199,4 +199,5 @@
         display: flex;
     }
     
+
 }
