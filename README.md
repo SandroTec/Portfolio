@@ -118,6 +118,36 @@ A React application consuming data from a public API.
 
 ---
 
+### 🎴 Memory Game
+
+An interactive card-matching game developed with TypeScript, focusing on clean game logic, user interaction, and a responsive interface.
+
+**Highlights**
+
+* TypeScript
+* SCSS Styling
+* Game State Management
+* Card Matching Logic
+* Interactive Animations
+* Responsive Design
+
+---
+
+### 📊 Poll App
+
+An interactive polling application built with Angular and Supabase, allowing users to create surveys, cast votes, and explore results in real time.
+
+**Highlights**
+
+* Angular & TypeScript
+* Supabase Database Integration
+* Real-Time Updates
+* Survey Creation & Voting
+* Dynamic Filtering & Categories
+* Responsive Design
+
+---
+
 ## 🌱 Currently Learning
 
 I strongly believe that software development requires continuous learning.
@@ -137,8 +167,6 @@ My current focus includes:
 ## 🎯 Career Goal
 
 My objective is to start my professional career as a Junior Frontend or Fullstack Developer where I can contribute, learn from experienced developers and continuously improve my technical skills.
-
-Long-term, I aim to develop scalable software products and eventually build my own software company.
 
 ---
 
@@ -171,7 +199,7 @@ https://github.com/SandroTec
 
 LinkedIn
 
-*(Add your LinkedIn profile here)*
+https://www.linkedin.com/in/alessandro-bonomo-87608436b/
 
 ---
 
