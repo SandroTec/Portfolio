@@ -95,8 +95,10 @@ nav div:hover .header-hover {
     height: 75px;
 }
 
-.logoAB:hover {
-    content: url('/assets/img/AB_Logo-yellow.png');
+.logoAB {
+  &:hover {
+    content: url('../assets/img/AB_Logo-yellow.png');
+  }
 }
 
 .language-container {
