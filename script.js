@@ -2,24 +2,24 @@
 
 //Open Projectsites
 function openFirstProject() {
-    window.location.href = "/Portfolio/html/project-one.html";
+    window.location.href = "/html/project-one.html";
 }
 
 function openSecondProject() {
-    window.location.href = "/Portfolio/html/project-two.html";
+    window.location.href = "/html/project-two.html";
 }
 
 function openThirdProject() {
-    window.location.href = "/Portfolio/html/project-three.html";
+    window.location.href = "/html/project-three.html";
 }
 
 function openFourthProject() {
-    window.location.href = "/Portfolio/html/project-four.html";
+    window.location.href = "/html/project-four.html";
 }
 
 
 function openFivthProject() {
-    window.location.href = "/Portfolio/html/project-five.html";
+    window.location.href = "/html/project-five.html";
 }
 
 
