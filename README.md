@@ -14,7 +14,7 @@ Instead of following a traditional academic path, I chose to build practical exp
 
 🔗 **Portfolio Website:**
 
-https://alessandro-bonomo.de/Portfolio/
+https://alessandro-bonomo.de/
 
 ---
 
