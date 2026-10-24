@@ -40,3 +40,13 @@ section {
 .mL-20px {
     margin-left: -20px;
 }
+
+.m-l-10 {
+    margin-left: 20px !important;
+}
+
+@media (max-width: 950px) {
+    .m-l-10 {
+    margin-left: 8px !important;
+}
+}
